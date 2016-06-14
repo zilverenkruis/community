@@ -1,0 +1,197 @@
+/*.IdeaPage {*/
+
+.lia-message-subject-status {
+    /*position: absolute;
+    right: 0;*/
+    border: 1px solid $blueLightest2;
+    margin-left: 120px;
+    padding: .1em .5em;
+    border-radius: 4px;
+    margin-bottom: .5em;
+    display: inline-block;
+    
+    @media screen and (max-width: 662px) {
+        margin-left: 0;
+    }        
+}
+.lia-quilt-idea-message {
+    .MessageStatus {
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.IdeaExchangePage {
+    .popular-tab {
+        display: none;
+    }
+    
+    .lia-tabs-standard-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;           
+        background-color: #fff;
+
+        .lia-tabs-standard {
+            margin-bottom: 0;
+            /*border-color: $blueLightest2;*/
+            border: 0;
+            .lia-link-navigation {
+                text-transform: capitalize;
+                font-size: 1.4em;
+                padding-left: 0;
+            }            
+        }
+        
+        /*@media screen and (max-width: 662px) {
+         
+        }*/
+        
+    }
+    
+    
+    @media screen and (min-width: 662px) {
+        .subtitle {
+            display: none;
+        }
+    }
+}
+
+.lia-message-idea {
+    .lia-message-author {
+        margin-left: 120px;
+        @media screen and (max-width: 662px) {
+            margin-left: 0;
+        }
+    }
+}
+
+
+
+.IdeaPage {
+    /*.lia-message-body {
+        margin-left: -118px;
+    }*/
+}
+
+
+
+/*message footer btns*/
+.IdeaPage .lia-button-image-kudos-wrapper .lia-button-image-kudos, 
+.IdeaExchangePage .lia-button-image-kudos-wrapper .lia-button-image-kudos {
+	background-color: transparent;
+}
+
+.IdeaPage .lia-button-image-kudos-wrapper .lia-button-image-kudos-count, 
+.IdeaExchangePage .lia-button-image-kudos-wrapper .lia-button-image-kudos-count {
+	border-left: 0;
+    margin-left: 0;
+    
+    > * {
+    /*kudos-count-link {*/
+    	margin-left: 0;
+    }
+
+}
+
+.IdeaPage .lia-button-image-kudos-wrapper .lia-button-image-kudos-count .kudos-count-link, 
+.IdeaExchangePage .lia-button-image-kudos-wrapper .lia-button-image-kudos-count .kudos-count-link {
+	padding: 6px 12px;
+    .lia-component-kudos-widget-message-kudos-count {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+.IdeaPage .lia-button-image-kudos-wrapper .lia-button-image-kudos-label, 
+.IdeaExchangePage .lia-button-image-kudos-wrapper .lia-button-image-kudos-label {
+	display: inline;	
+}
+
+.lia-button-image-kudos-vertical .kudos-link:before {
+    color: #fff;
+}
+
+.lia-button-image-kudos-count, .lia-button-image-kudos-give {
+	display: inline-block;
+    > * {
+    /*kudos-count-link {*/
+    	margin-left: 0;
+    }	
+}
+
+
+
+/*end message footer btns*/
+
+.LabelsForArticle .label-link {
+    background-color: transparent;
+    color: $blue;
+    
+    &:hover, &.:focus {
+        background-color: transparent;
+        color: inherit;
+        text-decoration: underline;
+    }
+    
+    &:before {
+        font-family: zk-centralenav-fontregular;
+        content: '\34';
+        display: inline-block;
+        /*width: 1em;
+        height: 1em;*/
+        margin: auto;
+        font-size: 1em;
+        margin-right: 5px;        
+    }    
+}
+.lia-message-labels + .lia-message-tags {
+    display: none;
+}
+.lia-message-labels, .lia-message-labels + .lia-message-tags + .lia-quilt-row {
+    float: left;
+    width: 50%;
+} 
+.lia-message-moderation {
+    float: left;
+    width: 100%;
+}
+
+.lia-message-actions .lia-message-comment-permalink {
+    display: none;
+}
+
+/*footer idea message*/
+/*.LabelsList, .lia-component-ideas-widget-statuses .MessageStatusesTaplet {
+    border-top: 0;
+    border-bottom: 0;
+}*/
+
+/*hide home page board*/
+.lia-quilt-2016-section-homepage-denkmee {
+    .message-board {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 662px) {
+    
+    .lia-body {
+        .lia-component-comments {
+            .lia-quilt-row.lia-quilt-row-main {
+                        padding-left: 0;
+            }        
+        }
+
+        .lia-message-body {
+            margin-left: 0;
+            margin-top: 1.5em;        
+        }
+        
+    }
+}

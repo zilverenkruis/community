@@ -1,0 +1,180 @@
+/*.lia-message-post-date,*/
+.lia-panel-message {
+    /*.lia-quilt-comment-message .lia-component-common-widget-date,*/
+    /*.lia-component-common-widget-date,*/
+    /*.lia-message-posted-on*/
+   
+    /*default*/
+    .lia-message-body {
+        margin-top: 60px;
+     
+    }
+    
+    /*.lia-component-comments {
+        .lia-quilt-row.lia-quilt-row-main {
+            padding-left: 117px;
+        }        
+    }*/
+    .lia-quilt-comment-message {
+        .lia-quilt-row-header {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        
+    }  
+      
+    .lia-message-dates,
+    .lia-component-post-date
+    {
+        margin-left: 120px;
+        width: auto;
+        display: inline-block;
+        @media screen and (max-width: 662px) { 
+            margin-left: 0;
+            display: block;   
+        }
+    }
+    /*end default*/
+    
+    
+    &.lia-message-blog {
+        .lia-component-common-widget-date, 
+        .lia-component-author-rank-name {
+            margin-left: 120px;
+        }
+        .lia-message-body {
+            margin-top: 53px;        
+        }
+        @media screen and (max-width: 662px) {
+            .lia-message-body {
+                margin-top: 20px;
+            }            
+            .lia-component-author-rank-name {
+                margin-left: 0;
+            }
+        }        
+    }
+    &.lia-message-board {
+        .lia-message-dates {
+            display: block;
+        }
+        .lia-quilt-row-main {
+            .lia-message-post-date {
+            /*.lia-component-common-widget-date {*/
+                display: none;
+            }
+        }
+        /*.lia-message-body {
+            margin-top: 25px;        
+        }   */
+    }
+    &.lia-message-idea.lia-panel-message-root {
+        .lia-message-body {
+            margin-top: 35px;        
+        }
+    }
+    
+    .lia-message-body,
+    &.lia-message-board .lia-message-body,
+    &.lia-message-idea.lia-panel-message-root,
+    &.lia-message-blog .lia-message-body
+    {
+        @media screen and (max-width: 662px) { 
+            margin-top: 15px;
+        }
+    }    
+}
+
+
+
+/*
+.lia-body {
+    
+
+}
+
+*/
+
+
+.lia-quilt-row-header .lia-quilt-column-header-right .lia-component-post-date {
+    display: none;
+}
+
+.lia-panel-message-content .lia-quilt-row-main .lia-component-common-widget-date,
+.lia-panel-message-content .lia-quilt-row-main .lia-component-post-date-last-edited,
+.lia-panel-message-content .lia-quilt-row-main .lia-message-edited-on,
+.lia-panel-message-content .lia-quilt-row-main .lia-message-posted-on {
+    display: inline-block;
+    width: auto;
+}
+
+.lia-message-idea .lia-panel-message-content .lia-quilt-row-main .lia-component-common-widget-date,
+.lia-message-idea .lia-panel-message-content .lia-quilt-row-main .lia-component-post-date-last-edited,
+.lia-message-idea .lia-panel-message-content .lia-quilt-row-main .lia-message-edited-on,
+.lia-message-idea .lia-panel-message-content .lia-quilt-row-main .lia-message-posted-on {
+    display: inline;
+}
+
+.lia-message-idea .lia-message-author .UserName + .DateTime:after {
+    content: '\A';
+    display: block;
+}
+
+
+
+.lia-body {
+    .lia-quilt-comment-message {
+        .lia-quilt-row-header {
+            /*.lia-component-post-date {*/
+            .lia-component-common-widget-date {
+                display: none;
+            }
+        }
+    }
+}
+
+
+/*.lia-quilt-blog-article .lia-quilt-row-main
+
+
+    
+                > * {
+                    display: none;
+                }
+                .lia-menu-navigation-wrapper {
+                    display: block;
+                }    
+    */
+    
+     /*{
+        {
+            .lia-quilt-column-header-right {
+                > * {
+                    display: none;
+                }
+                .lia-menu-navigation-wrapper {
+                    display: block;
+                }
+            }
+        }
+    }
+}*/
+
+.lia-quilt-blog-article-page 
+.lia-quilt-column-alley {
+    
+}
+
+/*@media screen and (max-width: 662px) {
+
+
+    .lia-quilt-comment-message .lia-component-common-widget-date,
+    .lia-message-posted-on
+    {
+        margin-left: 0;
+        width: auto;
+        display: block;
+    }
+
+
+}*/

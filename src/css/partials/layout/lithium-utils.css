@@ -1,0 +1,46 @@
+
+/*corrected from older css (whitespace)*/
+.clear-float:after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+    line-height: 0;
+}
+
+
+
+.ratio {
+    display: block;
+    &:before {
+        content: "";
+        display: block;
+    }
+    &.one-one {
+        &:before {
+            padding-top: 100%;
+        }        
+    }
+    &.four-third {
+        &:before {
+            padding-top: 75%;
+        }        
+    }    
+}
+
+.vertical-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);    
+}
+.vertical-bottom {
+	position: relative;
+	bottom: 0;
+	transform: translateY(50%);    
+}
+@define-mixin verticalCenter {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}

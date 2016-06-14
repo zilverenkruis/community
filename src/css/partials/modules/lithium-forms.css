@@ -1,0 +1,7 @@
+.ReplyPage {
+    form {
+        .lia-form-subject-entry {
+            display: none;
+        }
+    }
+}

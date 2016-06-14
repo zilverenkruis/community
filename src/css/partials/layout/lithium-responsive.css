@@ -1,0 +1,11 @@
+@media screen and (max-width: 980px) {
+    .hide-on-mobile {
+        display: none; 
+    }    
+
+    .center-content, 
+    .lia-quilt-row-main-one > .lia-quilt, 
+    .lia-quilt-row-main-one~.lia-quilt-row > .lia-quilt {
+        padding: 0 $page-padding;    
+    }
+}

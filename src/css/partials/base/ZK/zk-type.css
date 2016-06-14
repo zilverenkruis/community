@@ -1,0 +1,494 @@
+.lia-content {
+
+    p {
+        margin: 0 0 $baseLineHeight / 2;
+
+    }
+
+    .text-small {
+        font-size: $fontSizeSmall;
+    }
+
+    .text-smallest {
+        font-size: $fontSizeMini;
+    }
+
+    .lead {
+        margin-bottom: $baseLineHeight;
+        font-size: $baseFontSize * 1.5;
+        font-weight: 200;
+        line-height: $baseLineHeight * 1.5;
+    }
+
+    .span24.text-center p,
+    .span24.text-center h1,
+    .span24.text-center h2,
+    .span24.text-center h3,
+    .span24.text-center h4,
+    .span24.text-center h5,
+    .span24.text-center h6 {
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    small, .small {
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+
+    .note {
+        font-size: 14px;
+        font-size: 1.4rem;
+        color: $blue;
+    }
+
+    .date {
+        font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 12px;
+        font-family: $sansFontFamily;
+        font-weight: 400;
+        display: block;
+        color: $blueLightest;
+    }
+
+    .nowrap {
+        white-space: nowrap;
+    }
+
+    h1 .date {
+        font-size: 32px;
+        font-size: 3.2rem;
+        color: $blue;
+        line-height: 32px;
+        line-height: 4.2rem;
+
+    }
+
+    .box > h3:first-of-type .date {
+        line-height: 42px;
+        line-height: 4.2rem;
+    }
+
+    strong, .strong {
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    cite {
+        font-style: normal;
+    }
+
+    .muted {
+        color: $grayLight;
+    }
+
+    a {
+        cursor: pointer;
+
+        &.regular {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                color: inherit;
+            }
+        }
+
+        &.underline,
+        &.underline:hover {
+        text-decoration: underline;
+        }
+    }
+
+    a.muted:hover,
+    a.muted:focus {
+        color: darken($grayLight, 10%);
+    }
+
+    .text-warning {
+        color: $warningText;
+    }
+
+    a.text-warning:hover,
+    a.text-warning:focus {
+        color: darken($warningText, 10%);
+    }
+
+    .text-error {
+        color: $errorText;
+    }
+
+    a.text-error:hover,
+    a.text-error:focus {
+        color: darken($errorText, 10%);
+    }
+
+    .text-info {
+        color: $infoText;
+    }
+
+    a.text-info:hover,
+    a.text-info:focus {
+        color: darken($infoText, 10%);
+    }
+
+    .text-success {
+        color: $successText;
+    }
+
+    a.text-success:hover,
+    a.text-success:focus {
+        color: darken($successText, 10%);
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-no-margin {
+        margin-bottom: 0;
+    }
+
+    .text-large {
+        font-size: 3rem;
+    }
+
+
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        margin: ($baseLineHeight / 2) 0;
+        font-family: $headingsFontFamily;
+        font-weight: $headingsFontWeight;
+        line-height: $baseLineHeight;
+        color: $headingsColor;
+        text-rendering: optimizelegibility;
+
+
+
+        small {
+            font-weight: normal;
+            line-height: 1;
+            color: $grayLight;
+        }
+        & .normal {
+            font-weight: normal;
+        }
+        &.no-margin {
+            margin: 0;
+        }
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+
+    }
+
+    h1, .h1 {
+
+        font-size: 42px;
+        font-size: 4.2rem;
+        color: $blueDark;
+
+        line-height: 42px;
+        line-height: 4.2rem;
+        font-family: $titilliumHeavyFontFamily;
+        font-weight: 600;
+    }
+
+
+    h2, .h2 {
+        font-size: 28px;
+        font-size: 2.8rem;
+        color: $blue;
+        font-weight: 400;
+        line-height: 52px;
+        line-height: 5rem;
+    }
+
+
+    h3, .h3, body .ms-WPBody h3, body .ms-TPBody h3 {
+        font-size: 26px;
+        font-size: 2.6rem;
+        color: $blueLight;
+        font-weight: 400;
+        line-height: 44px;
+        line-height: 4.2rem;
+        margin-top: 2.5rem;
+    }
+
+
+
+    h4, .h4 {
+        font-family: $titilliumHeavyFontFamily;
+        font-weight: 600;
+        font-size: 22px;
+        font-size: 2.2rem;
+        color: $blueDark;
+    }
+
+
+    h5, .h5 {
+        font-family: $sansFontFamily;
+        font-size: 18px;
+        font-size: 1.8rem;
+        color: $blueLighter;
+    }
+
+
+    h6, .h6 {
+        font-family: $titilliumHeavyFontFamily;
+        font-weight: 600;
+        font-size: 18px;
+        font-size: 1.8rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+
+
+    h1.small {
+        font-size: 36px;
+        font-size: 3.6rem;
+        line-height: 36px;
+        line-height: 3.6rem
+    }
+
+    h2 small {
+        font-size: $baseFontSize * 1.25;
+    }
+
+
+    h3 small {
+        font-size: $baseFontSize;
+    }
+
+    h4 small {
+        font-size: $baseFontSize;
+    }
+
+    h2 {
+
+        .stars {
+            display: inline-block;
+            /*background: url('../img/sprite_stars_blue.png') no-repeat;*/
+
+            width: 80px;
+            height: 16px;
+
+            &.stars4 {
+                background-position: 0 -48px;
+            }
+            &.stars3 {
+                background-position: 0 -32px;
+            }
+            &.stars2 {
+                background-position: 0 -16px;
+            }
+            &.stars1 {
+                background-position: 0 0;
+            }
+        }
+    }
+
+}
+
+.page-header {
+	padding-bottom: ($baseLineHeight / 2) - 1;
+	margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
+	border-bottom: 1px solid $grayLighter;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0 0 $baseLineHeight / 2 25px;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+	margin-bottom: 0;
+}
+
+li {
+	line-height: $baseLineHeight;
+}
+
+ul.unstyled,
+ol.unstyled,
+.container.content ul.unstyled,
+.container.content ol.unstyled,
+.container.content ul.unstyled li,
+.container.content ol.unstyled li {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+	&:before {
+		content: "";
+	}
+}
+
+.container.content ul.indented li,
+.container.content ol.indented li {
+	padding-left: 1.4rem;
+}
+
+ul.inline,
+ol.inline,
+.container.content ul.inline,
+.container.content ol.inline {
+	margin-left: 0;
+	list-style: none;
+	> li {
+		display: inline-block;
+		padding-left: 5px;
+		padding-right: 5px;
+		&:before {
+			content: "";
+		}
+	}
+}
+
+
+dl {
+	margin-bottom: $baseLineHeight;
+}
+
+dt,
+dd {
+	line-height: $baseLineHeight;
+}
+
+dt {
+	color: $purpleLighter;
+}
+
+dd {
+	margin-left: $baseLineHeight / 2;
+}
+
+
+.dl-horizontal {
+	/*.clearfix();*/
+	dt {
+		float: left;
+		width: 150px;
+		clear: left;
+		text-align: left;
+		/*.text-overflow();*/
+	}
+	dd {
+		margin-left: 170px;
+		ul.unstyled {
+			margin: 0;
+
+		}
+	}
+}
+
+
+hr {
+	clear: both;
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid $blueLightest2;
+}
+
+.blueLightest2 hr {
+    border-color: $white;
+}
+
+hr.blueLightest2 {
+    border-color: $blueLightest2;
+}
+
+abbr[title],
+
+abbr[data-original-title] {
+	cursor: help;
+	border-bottom: 1px dotted $grayLight;
+}
+
+abbr.initialism {
+	font-size: 90%;
+	text-transform: uppercase;
+}
+
+
+blockquote {
+	padding: 0 0 0 15px;
+	margin: 0 0 $baseLineHeight;
+	border-left: 5px solid $grayLighter;
+	p {
+		margin-bottom: 0;
+		font-size: $baseFontSize * 1.25;
+		font-weight: 300;
+		line-height: 1.25;
+	}
+	small {
+		display: block;
+		line-height: $baseLineHeight;
+		color: $grayLight;
+		&:before {
+			content: '\2014 \00A0';
+		}
+	}
+
+	&.pull-right {
+		float: right;
+		padding-right: 15px;
+		padding-left: 0;
+		border-right: 5px solid $grayLighter;
+		border-left: 0;
+		p,
+		small {
+			text-align: right;
+		}
+		small {
+			&:before {
+				content: '';
+			}
+			&:after {
+				content: '\00A0 \2014';
+			}
+		}
+	}
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+	content: "";
+}
+
+address {
+	display: block;
+	margin-bottom: $baseLineHeight;
+	font-style: normal;
+	line-height: $baseLineHeight;
+}
+
+p.blue {
+	color: $blue;
+}
+p.blueLighter {
+	color: $blueLighter;
+}
+p.blueDarkest {
+	color: $blueDarkest;
+}

@@ -1,0 +1,106 @@
+.forum-navigation {
+    /*border-top: 1px solid $pink;*/
+    padding: 2em 0;    
+}
+.forum-navigation-parent {
+    display: flex;
+    height: 300px;
+}
+.forum-navigation-cat {
+    font-weight: bold;
+}
+
+.col-category {
+    /*float: left;*/
+    flex: 1;
+    height: 100%;
+}
+.col-Vergoedingen {
+    /*float: left;*/
+    flex: 2;               
+}
+.forum-boards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.nav-column {
+   
+}
+
+.forum-board {
+    margin: .5em 1em .5em 0;
+}
+
+/*desktop*/
+@media screen and (min-width: 980px) {
+    
+    .forum-navigation-cat {
+        margin-bottom: .75em;
+    }
+    
+}
+
+
+
+/*tablet mobile*/
+@media screen and (max-width: 980px) {
+
+    .forum-navigation-parent {
+        height: auto;
+        flex-direction: column;        
+    }
+
+
+
+
+
+    .forum-categories {
+        /*float: none;*/
+    }
+
+    .col-category {
+        border: 1px solid $blueLighter;
+        color: $blueLighter;
+        @mixin border-radius $baseBorderRadius;
+        padding: 16px;
+        margin-bottom: 1em;
+        cursor: pointer;
+        /*transition: max-height .2s;        */
+        .forum-navigation-cat {
+            &:before {
+                font-family: zk-centralenav-fontregular;
+                content: 'c';
+                color: $pink;
+                display: inline-block;
+                transition: .1s transform linear;
+                margin-right: .5em;
+            }            
+        }
+        &.closed {
+            .forum-navigation-cat {
+                &:before {
+                    transform: rotate(-90deg);
+                }    
+            }        
+        }
+    }
+    
+    /*.col-category.closed {
+        max-height: 0;
+        overflow: hidden;
+    }    */
+    
+    .forum-boards {
+        max-height: 800px;        
+        transition: max-height .2s;    
+        
+    }
+    
+    .closed .forum-boards {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+}

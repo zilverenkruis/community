@@ -1,0 +1,731 @@
+/*lia-button lia-button-primary*/
+.btn, 
+.lia-button, 
+.lia-button-image-kudos-horizontal .kudos-link,
+.lia-button-image-kudos.lia-button-image-kudos-enabled .kudos-link
+{
+	text-decoration: none;
+	position: relative;
+	outline: 0;
+	display: inline-block;
+	white-space: nowrap;
+	margin-bottom: 0; 
+
+	line-height: $baseLineHeight;
+
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: solid $btnBorder;
+	border-width: 0 0 2px 0;
+	background: $white;
+
+	border-bottom-color: darken($btnBorder, 10%);
+	@mixin border-radius $baseBorderRadius;
+
+	&[data-icon] {
+		padding: 1px 11px 1px 16px;
+	}
+	&[data-beforeicon] {
+		padding: 1px 16px 1px 11px;
+	}
+	&[data-icon]:after,
+	&[data-beforeicon]:before {
+		font-size: 1.2rem;
+        margin-top: -1px;
+	}
+
+	&:hover,
+	&:focus,
+	&.active,
+	&:active,
+	&:visited,
+	&.disabled,
+	&[disabled] {
+		outline: 0;
+		text-decoration: none;
+	}
+
+
+	&.disabled,
+	&.disabled:focus,
+	&[disabled],
+	&[disabled]:focus {
+		cursor: default;
+		background: $grayLight;
+		border-color: $gray;
+
+		&:hover {
+			background: $grayLight;
+		}
+
+		&:active {
+			border-width: 0 0 2px 0;
+		}
+	}
+
+    &.right{
+      float: right;
+
+    }
+
+}
+/*moved this out above code to prevent inheriting:*/
+.btn, 
+.lia-button {
+	padding: 1px 16px 1px 16px;	
+}
+
+.btn-larger {
+	padding: 12px 40px;
+	font-size: 18px;
+	font-size: $fontSizeLarge;
+	@mixin border-radius $borderRadiusLarge;
+
+	&[data-beforeicon]:before {
+		font-size: 16px;
+		font-size: 1.6rem;
+		margin-top: -2px;
+	}
+	&[data-icon]:after {
+		padding: 0 0 0 16px;
+		font-size: 16px;
+		font-size: 1.6rem;
+		margin-top: -2px;
+	}
+	&[data-beforeicon]:before {
+		padding: 0 16px 0 0px;
+	}
+	&[data-icon] {
+		padding: 12px 30px 12px 40px;
+	}
+	&[data-beforeicon] {
+		padding: 12px 40px 12px 30px;
+	}
+
+	&.btn-normal-inversed {
+		&:active {
+			padding-top: 13px;
+			padding-bottom: 11px;
+		}
+	}
+}
+
+
+.btn-large,
+.lia-panel-message-root .lia-action-reply.reply-action-link.reply-action-link
+{
+	padding: 6px 16px;
+	/*font-size: 18px;*/
+	font-size: inherit;
+	@mixin border-radius $borderRadiusLarge;
+
+	&[data-beforeicon]:before {
+		font-size: 16px;
+		font-size: 1.6rem;
+        margin-top: -2px;
+    }
+	&[data-icon]:after {
+		padding: 0 0 0 19px;
+		font-size: 16px;
+		font-size: 1.6rem;
+        margin-top: -2px;
+	}
+	&[data-beforeicon]:before {
+		padding: 0 19px 0 0px;
+	}
+	&[data-icon] {
+		padding: 6px 16px;
+	}
+	&[data-beforeicon] {
+		padding: 6px 16px;
+	}
+
+	> input {
+		color: $white;
+		text-decoration: none;
+		background: none;
+		border: 0;
+		line-height: 20px;
+		vertical-align: baseline;
+		display: inline-block;
+		margin: -5px -30px;
+		padding: 5px 30px;
+	}
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	/*@mixin box-sizing border-box;*/
+    box-sizing: border-box;
+
+	&[data-icon]:after {
+		padding: 0;
+		position: absolute;
+		top: 34%;
+		bottom: 0;
+		height: 1em;
+		margin-bottom: auto;
+
+		right: 16px;
+		line-height: 1;
+	}
+
+	&.active,
+	&:active {
+		&:after {
+			padding-top: 2px;
+		}
+	}
+
+
+}
+
+
+.btn-block + .btn-block {
+	margin-top: 5px;
+}
+
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	&.btn-block {
+		width: 100%;
+	}
+}
+
+.btn-info,
+.btn-normal-inversed,
+.btn-primary-inversed {
+	&.active,
+	&:active {
+
+		padding-top: 2px;
+		padding-bottom: 0px;
+	}
+	&.btn-large:active {
+		padding-top: 8px;
+		padding-bottom: 4px;
+	}
+}
+
+.btn-normal,
+.btn-primary,
+.btn-facebook,
+.btn-twitter,
+.btn-white,
+.btn-radio,
+.lia-button-image-kudos-horizontal .kudos-link,
+
+.lia-panel-message-root .lia-action-reply.reply-action-link.reply-action-link,
+ {
+	&.active,
+	&:active {
+		border-width: 2px 0 0 0;
+	}
+}
+
+/*.lia-button-primary.lia-button-primary??? bad cssik */
+.btn-primary, 
+.lia-button-primary.lia-button-primary,
+.lia-panel-message-root .lia-action-reply.reply-action-link.reply-action-link {
+	background: $btnPrimaryBackground;
+	color: $white;
+	border-color: $btnPrimaryBorder;
+	> a {
+		color: $white;
+		text-decoration: none;
+		display: inline-block;
+		margin: -5px -30px;
+		padding: 5px 30px;
+	}
+	> input {
+		color: $white;
+		text-decoration: none;
+		background: none;
+		border: 0;
+		line-height: 20px;
+		vertical-align: baseline;
+		display: inline-block;
+		margin: -5px -30px;
+		padding: 5px 30px;
+	}
+	&:focus,
+	&:hover {
+		background: $btnPrimaryBackgroundHighlight;
+		color: $white;
+		border-color: $btnPrimaryBorder;		
+	}
+	&:active,
+	&:visited,
+	&:focus {
+		color: $white;
+	}
+}
+
+.btn-info, .btn-primary-inversed {
+	color: $btnPrimaryBackground;
+	background: $white;
+	border: 1px solid $btnPrimaryBackground;
+
+	> a {
+		color: $btnPrimaryBackground;
+		text-decoration: none;
+		display: inline-block;
+		margin: -5px -30px;
+		padding: 5px 30px;
+	}
+	> input {
+		color: $btnPrimaryBackground;
+		text-decoration: none;
+		background: none;
+		border: 0;
+		line-height: 20px;
+		vertical-align: baseline;
+		display: inline-block;
+		margin: -5px -30px;
+		padding: 5px 30px;
+	}
+	&:focus {
+		color: $btnPrimaryBackgroundHighlight;
+		border-color: $btnPrimaryBackgroundHighlight;
+	}
+	&:hover {
+		color: $btnPrimaryBackgroundHighlight;
+		border-color: $btnPrimaryBackgroundHighlight;
+	}
+	&.active,
+	&:active {
+		color: $btnPrimaryBackgroundHighlight;
+
+		border-color: $btnPrimaryBackgroundHighlight;
+	}
+}
+
+.btn-normal,
+.lia-button-image-kudos-horizontal .kudos-link,
+.lia-button-image-kudos.lia-button-image-kudos-enabled .kudos-link,
+.lia-button-image-kudos.lia-button-image-kudos .kudos-link
+{
+	background: $btnNormalBackground;
+	color: $white;
+	border-color: $btnNormalBorder;
+	border-radius: 4px;
+	> a {
+		color: $white;
+		text-decoration: none;
+		display: inline-block;
+		margin: -5px -30px;
+		padding: 5px 30px;
+	}
+	> input {
+		color: $white;
+		text-decoration: none;
+		background: none;
+		border: 0;
+		line-height: 20px;
+		vertical-align: baseline;
+		display: inline-block;
+		margin: -5px -30px;
+		padding: 5px 30px;
+	}
+	&:focus,
+	&:hover {
+		background: $btnNormalBackgroundHighlight;
+		color: $white;
+	}
+	&:active,
+	&:visited,
+	&:focus {
+		color: $white;
+	}
+}
+
+.btn-note{
+	border: 0;
+	background-color: $turquoise;
+}
+
+.btn-white {
+	background: $white;
+	color: $blue;
+	border-color: #bfdce9;
+	> a {
+		color: $blue;
+		text-decoration: none;
+		display: inline-block;
+		margin: -5px -30px;
+		padding: 5px 30px;
+	}
+	> input {
+		color: $blue;
+		text-decoration: none;
+		background: none;
+		border: 0;
+		line-height: 20px;
+		vertical-align: baseline;
+		display: inline-block;
+		margin: -5px -30px;
+		padding: 5px 30px;
+	}
+	&:focus,
+	&:hover {
+		background: $white;
+		color: $blue;
+	}
+	&:active,
+	&:visited,
+	&:focus {
+		color: $blue;
+	}
+	&.blueLightest2 {
+		&:focus,
+		&:hover {
+			background: $blueLightest2;
+		}
+	}
+}
+
+.btn-facebook,
+.btn-twitter,
+.btn-blue,
+.btn-bluelighter {
+	color: $white;
+	border-color: $btnNormalBorder;
+
+	&:focus,
+	&:hover {
+		background: $btnNormalBackgroundHighlight;
+		color: $white;
+	}
+	&:active,
+	&:visited,
+	&:focus {
+		color: $white;
+	}
+	&.btn-block {
+		text-align: left;
+	}
+	&[data-beforeicon]:before {
+		font-size: 14px;
+	}
+	&[data-beforeicon].btn-large:before {
+		font-size: 25px;
+	}
+}
+
+.btn-twitter {
+    background: $blueTwitter;
+    padding: 12px 44px !important;
+}
+.btn-facebook {
+    background: $blueFacebook;
+    padding: 12px 44px !important;
+}
+.btn-blue {
+    background: $blue;
+}
+.btn-bluelighter {
+    background: $blueLighter;
+}
+
+.btn-tile {
+	display: block;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	.text {
+		font-size: 18px;
+		font-weight: bold;
+	}
+}
+
+.btn-phone {
+	&[data-beforeicon].btn-large:before {
+		font-size: 25px;
+		margin-top: -5px;
+	}
+}
+
+.btn-normal-inversed {
+	color: $btnNormalBackground;
+	border: 1px solid $btnNormalBackground;
+
+	&:focus {
+		color: $btnNormalBackgroundHighlight;
+		border-color: $btnNormalBackgroundHighlight;
+	}
+	&:hover {
+		color: $btnNormalBackgroundHighlight;
+		border-color: $btnNormalBackgroundHighlight;
+	}
+	&.active,
+	&:active {
+		color: $btnNormalBackgroundHighlight;
+
+		border-color: $btnNormalBackgroundHighlight;
+	}
+}
+
+.collectiviteit-mobile .btn-results-mobile {
+  color: $btnNormalBackground;
+  border: 1px solid $btnNormalBackground;
+  margin: 10px 0;
+  text-align: left;
+  padding: 10px 5px 5px 10px;
+  display: block;
+  strong {
+    margin-top: 5px;
+  }
+  &:after {
+    position: absolute;
+    color: #c93a83;
+    top: 4px;
+  }
+  &:focus {
+    color: $btnNormalBackgroundHighlight;
+    border-color: $btnNormalBackgroundHighlight;
+  }
+  &:hover {
+    color: $btnNormalBackgroundHighlight;
+    border-color: $btnNormalBackgroundHighlight;
+  }
+  &.active,
+  &:active {
+    color: $btnNormalBackgroundHighlight;
+
+    border-color: $btnNormalBackgroundHighlight;
+  }
+}
+
+.btn-consument {
+	color: $blue;
+	padding: 2px 12px 2px 12px;
+	font-family: $sansFontFamily;
+	font-size: 1.4rem;
+	margin: 0;
+	background: $blueLightest2;
+	border: 1px solid $blueLightest2;
+	font-weight: normal;
+	&[data-icon]:after {
+		vertical-align: baseline;
+		margin: 0;
+		padding: 0 0 0 1rem
+	}
+	&.active,
+	&:active {
+		color: $btnPrimaryBackgroundHighlight;
+		background: $blueLightest2;
+	}
+	&:focus {
+		color: $btnInfoBorder;
+		background: $blueLightest2;
+	}
+	&:hover {
+		color: $btnPrimaryBackgroundHighlight;
+		background: $blueLightest2;
+		border-color: $blueLightest2;
+	}
+}
+
+.btn-radio {
+	color: $blue;
+	font-family: $sansHeavyFontFamily;
+	font-weight: bold;
+	background: $btnRadioBackground;
+	border: 0;
+	border: 3px solid  $white;
+	border-bottom: 3px solid #BFDCE9;
+	margin: 2px 8px;
+	padding: 3px 0;
+	white-space: normal;
+	@mixin border-radius $baseBorderRadius;
+	&:hover {
+		border-color: $blueLightest;
+	}
+	&:focus {
+		color: $blue;
+	}
+	&.large {
+		width: 13.7rem;
+		height: 6.7rem;
+		font-family: $sansFontFamily;
+		font-size: 1.6rem;
+		color: $blueDarkest;
+		font-weight: 400;
+		padding: 0;
+	}
+	&.large:active,
+	&.large.active,
+	&.large:hover {
+		width: 13.7rem;
+	}
+
+	&.medium {
+		width: 10.5rem;
+		height: 3.5rem;
+		padding: 0;
+	}
+	&.starbutton,
+	&.mediumlarge {
+		position: relative;
+		width: 11.4rem;
+		font-family: $sansFontFamily;
+		font-size: 1.3rem;
+		color: $blueDarkest;
+		font-weight: 400;
+	}
+	&.mediumlarge {
+		padding: 1.0rem 0.3rem;
+	}
+	&.starbutton {
+		padding: 3.5rem 0.3rem 1.0rem;
+	}
+	&.starbutton:before {
+		/*background: url('../img/sprite_stars_bluedark.png') no-repeat;*/
+		content: "";
+		height: 16px;
+		left: 26px;
+		position: absolute;
+		top: 17px;
+		width: 62px;
+	}
+	&.starbutton.stars4:before {
+		background-position: 0 -48px;
+	}
+	&.starbutton.stars3:before {
+		background-position: 0 -32px;
+	}
+	&.starbutton.stars2:before {
+		background-position: 0 -16px;
+	}
+	&.starbutton.stars1:before {
+		background-position: 0 0;
+	}
+	&.starbutton.stars0:before {
+		background-position: 0 16px;
+	}
+	&.active,
+	&:active,
+	&:hover,
+	&:focus {
+		color: $blue;
+		border: 3px solid  $btnRadioBorderHighlight;
+		@mixin border-radius $baseBorderRadius;
+	}
+	&.active:hover {
+		border-color: $btnRadioBorderHighlight;
+	}
+}
+&.funnel-content .btn-radio{
+    min-width: 8.0rem;
+}
+
+&.pull-left .btn-radio {
+	margin: 2px 8px 2px 0;
+}
+
+button.btn,
+input[type="submit"].btn {
+
+
+	&::-moz-focus-inner {
+		padding: 0;
+		border: 0;
+	}
+
+
+	&.btn-larger {
+		*padding-top: 7px;
+		*padding-bottom: 7px;
+	}
+
+	&.btn-large {
+		*padding-top: 7px;
+		*padding-bottom: 7px;
+	}
+	&.btn-small {
+		*padding-top: 3px;
+		*padding-bottom: 3px;
+	}
+	&.btn-mini {
+		*padding-top: 1px;
+		*padding-bottom: 1px;
+	}
+}
+
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+	font-family: $sansFontFamily;
+	font-size: 16px;
+	background-color: transparent;
+	background-image: none;
+	/*@mixin box-shadow(none);*/
+	padding-left: 0;
+	padding-right: 0;
+	text-decoration: none;
+}
+
+.btn-link, a.btn-link {
+	border-color: transparent;
+	cursor: pointer;
+	color: $linkColor;
+	@mixin border-radius 0;
+	&[data-icon] {
+		padding: 1px 11px 1px 0px;
+	}
+	&[data-beforeicon] {
+		padding: 1px 16px 1px 11px;
+	}
+    &.full-width {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-bottom: 1.0rem;
+        &[data-icon]:after {
+            padding: 0;
+            position: absolute;
+            top: 34%;
+            bottom: 0;
+            height: 1em;
+            margin-bottom: auto;
+            right: 36px;
+            line-height: 1;
+        }
+
+    }
+}
+
+.btn-link:hover,
+.btn-link:focus,
+a.btn-link:hover,
+a.btn-link:focus {
+
+	color: $linkColorHover;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.btn-link[disabled]:hover,
+.btn-link[disabled]:focus {
+	color: $grayDark;
+	text-decoration: none;
+}
+
+
+
+
+.btn-link[data-icon]:after, ul.block-links .btn-link i[data-icon]:after {
+	color: $pink;
+}
+
+.btn-link[data-beforeicon]:before {
+	color: $pink;
+}
+

@@ -1,0 +1,166 @@
+
+#lia-body .lia-page .lia-content .lia-quilt-column-main-content .full-width-bg {
+    margin-top: -80px;   
+}
+
+
+.full-width-header {
+    width: 100%; 
+    background: transparent;
+    position: relative;
+    
+    
+    .header-text .title {
+        font-size: 3em;
+        line-height: 1;
+        margin-top: .3em;
+        margin-bottom: .3em;
+    }       
+    .description {
+        font-size: 1.1em;
+    }    
+    &.zk-curved {
+        height: 334px;
+        .header-text {
+            float: left;
+            width: 80%;
+            height: 100%;
+            background: #0068BD;
+            box-sizing: border-box;
+            padding: .5em 1em;
+            overflow: hidden;
+            .title {
+                color: #fff;                
+            }
+            .description {
+                color: #fff;
+            }                
+        }
+        @media screen and (max-width: 662px) {
+            display: none;            
+        }            
+    }
+    &.home {
+        text-align: center;
+        height: 334px;
+        padding-top: 20px;        
+        .header-text {
+            position: relative;
+        }
+        .title {
+            font-weight: 200;
+            margin-bottom: 0;
+            color: $blue;
+        }
+        .description {
+            color: $blue;            
+        }    
+        .header-image {
+            bottom: 0;
+            background: url('/html/assets/headerHome-people-big.png')  transparent center bottom no-repeat;
+            background-size: contain;
+        }
+    }
+    
+}
+
+
+.lia-quilt-row > .full-width-header {
+    margin-top: -40px;
+    margin-bottom: -40px;
+}
+
+
+
+
+#lia-body .lia-page .lia-content .lia-quilt-row-header .full-width-bg {
+/*.full-width-bg {*/
+    /*background-color: #0068BD;*/
+    background: url('/html/assets/2016-denkmee-header.jpg') #0068BD top right no-repeat;
+    @media screen and (max-width: 662px) {
+        background: none !important;
+        display: none;            
+    }          
+}
+/*.BlogPage,.IdeaExchangePage .lia-quilt-category-page-tkb2016 {
+    .full-width-bg {
+        @media screen and (max-width: 662px) {
+            background: none;
+            display: none;            
+        }          
+    }    
+}*/
+
+.full-width-header .header-image {
+    /*background-image: url("https://www.zilverenkruis.nl/SiteCollectionImages/Consumenten/Homepageheader/belastingaangifte.jpg");*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.full-width-header .header-mask {
+    position: absolute;
+    /*width: 40%;*/
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+.full-width-header .header-text .forum-button {
+    font-size: 1.2em;
+}
+.full-width-header .header-curve-mask {
+    height: 100%;
+    float: left;
+    width: 15%;
+    margin-left: -1px;
+}       
+
+
+
+/*header from custom content*/
+/*.lia-quilt-row-zk-custom-header {
+    .lia-panel-heading-bar-wrapper {
+        display: none;
+    }
+    .lia-panel {
+        border-radius: 0;
+        background-color: transparent;
+        .lia-panel-content {
+            padding: 0;
+        }        
+    } 
+    
+}*/
+
+
+.CustomContent {
+    margin-bottom: 0;
+    .lia-panel-heading-bar, .lia-panel-content {
+        padding: 0;
+        border: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .full-width-header .header-text .title {
+        font-size: 2.2em;
+    }
+}
+
+
+
+@media screen and (max-width: 662px) {
+    .full-width-header {
+        &.home {
+            .header-image {
+                background-image: url('/html/assets/headerHome-people-small.png');
+            }        
+        }
+    }
+}
+
+

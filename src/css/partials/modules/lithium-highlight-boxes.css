@@ -1,0 +1,86 @@
+
+/*equal height flexbox row*/
+.row-eq-h {
+    display: flex;  
+    justify-content: space-between;
+}
+
+.col-eq-h {
+    width: 20%;
+    flex: 1;               
+}
+.col-eq-h:first-child {
+    margin-right: 1em;
+}
+.col-eq-h:last-child {
+    margin-left: 1em;
+}
+
+.full-width-paragraph {
+    text-align: center;
+    margin-bottom: 3.5em;
+    > .title {
+        font-size: 2em !important;
+        margin-bottom: .5em !important;
+    }
+    .box {
+        width: 100%; 
+        min-height: 200px; 
+        text-align: center;
+        box-sizing: border-box;
+        position: relative;
+        min-height: 65px;
+        padding: 16px;
+        margin-bottom: 16px;
+        background: #fff;
+        border-radius: 4px;      
+    }    
+}
+
+/*box*/
+
+.ideas-hulp {
+    
+    .box {
+        text-align: center;
+        background-color: #279EDA; 
+        >.icon:first-child {
+            fill: #279EDA;
+        }
+        p {
+            color: #fff;
+            line-height: 1.4em;
+        }        
+    }
+    .box-cross {
+        position: absolute;
+        right: -37px;
+        top: 90px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: #fff;
+        z-index: 10;
+        .icon {
+            width: 65%;
+            height: 65%;
+            margin-top: 10px;
+        }        
+    }
+    .box-icon {
+        width: 100px;
+        height: 100px;
+        fill: #fff;
+    }
+    
+    @media screen and (max-width: 662px) {
+        display: none;
+    }    
+}
+/*overwrite lithium css*/
+#lia-body .lia-page .lia-content .ideas-hulp .box .title {
+    font-weight: 700;
+    font-size: 1.35em;
+    color: #fff !important;
+    margin-bottom: .7em;
+}

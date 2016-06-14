@@ -1,0 +1,31 @@
+/*default fill corner white*/
+.icon-svg-corner {
+    fill: #fff; 
+}   
+
+/*row green*/
+.lia-quilt-row-navigation ~ .lia-quilt-row:nth-child(odd)     {
+    .items-list {
+        .icon-svg-corner {
+            fill: #fff; 
+        }
+    }
+    .top-authors {
+        .icon-svg-corner {
+            fill: $moreBlueLightLithium; 
+        }        
+    }
+}
+/*row white*/
+.lia-quilt-row-navigation ~ .lia-quilt-row:nth-child(even)     {
+    .items-list {
+        .icon-svg-corner {
+            fill: $moreBlueLightLithium;
+        }
+    }
+    .top-authors {
+        .icon-svg-corner {
+            fill: #fff; 
+        }        
+    }    
+}

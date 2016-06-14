@@ -1,0 +1,187 @@
+/*.CommunityPage .lia-component-quilt-header,*/
+.lia-body .lia-component-quilt-header {
+    border-bottom: 0;
+}
+
+/*login box*/
+#lia-body .lia-content .userlogin {
+   background: #fff; 
+   .lia-panel-heading-bar {
+        font-family: titillium_websemibold,sans-serif;
+        line-height: 1.2em;
+        font-size: 1.3em;
+        padding: 7px 10px;
+        color: #00508f;       
+   }
+}
+#lia-body .lia-content .userlogin.logged-on::before {
+    background: #fff;
+}
+
+
+/*hide stuff:*/
+.lia-quilt-category-page-forum2016 .lia-breadcrumb {
+    display: none;
+}
+
+
+.lia-quilt-vitality {
+    border-bottom: 0;
+}
+
+.lia-vitality-users-online {
+    color: $blue;
+    font-size: 1.2em;    
+    &:before {
+        content: 'Er zijn nu';
+        background-image: none;
+        width: auto;
+        height: auto;
+        margin-right: 0;
+     
+    }
+    &:after {
+        content: 'gebruikers online'
+    }
+    .lia-vitality-key {
+        display: none;
+    }
+    .lia-vitality-stats {
+        margin-left: .25em;        
+    }
+    .lia-vitality-value {
+        font-size: 1.5em;
+        font-weight: bold;
+        border: 1px solid $blue;
+        @mixin border-radius $baseBorderRadius;
+        padding: 0 .2em;
+        line-height: 1.35em;
+        color: $blue;
+    }
+}
+
+
+.lia-quilt-category-page-forum2016 {
+    .lia-component-custom-latest-post-category-all {
+        padding-top: 40px;
+        /*background: transparent;        */
+    }
+}
+
+
+/*.InfoMessage */
+.lia-component-common-widget-page-feedback {
+    background-color: #ceecdd;
+    border-color: #bce5c9;
+    color: #24b6a6;
+    
+    .lia-text {
+        a, a:link, a:visited {
+            color: #24b6a6;            
+        }
+    }
+}
+
+
+.lia-message-signature {
+    margin-top: 1em;
+}
+
+
+
+.lia-breadcrumb {
+    
+    > .lia-list-standard-inline > li + li:before {
+        content: '\61';
+        font-family: zk-centralenav-fontregular;
+        color: $pink;
+        padding-left: 0;
+    }
+    
+    .lia-list-standard-inline {
+        .crumb {
+            &:first-child a {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+/*kan dit bij allemaal? nog checken iedergeval blog article*/
+.lia-quilt-comment-message > .lia-quilt-row-header, 
+.lia-quilt-layout-one-column-message > .lia-quilt-row-header, 
+.lia-quilt-layout-two-column-message > .lia-quilt-row-header, 
+.lia-quilt-layout-blog-message > .lia-quilt-row-header, 
+.lia-quilt-layout-forum-message > .lia-quilt-row-header, 
+.lia-quilt-blog-article > .lia-quilt-row-header {
+    padding: 0;	
+}
+.lia-quilt-comment-message > .lia-quilt-row-main, 
+.lia-quilt-layout-one-column-message > .lia-quilt-row-main, 
+.lia-quilt-layout-two-column-message > .lia-quilt-row-main, 
+.lia-quilt-layout-blog-message > .lia-quilt-row-main, 
+.lia-quilt-layout-forum-message > .lia-quilt-row-main, 
+.lia-quilt-blog-article > .lia-quilt-row-main {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*custom box in content?*/
+.lia-message-body-content {
+    > div {
+        border: 0 !important;
+        border-radius: 4px !important;
+        margin: 0 !important;
+    }
+}
+
+
+.CommentEditorForm {
+    border: 0;
+    padding: 0;
+}
+
+.quote-message-link {
+    display: none;
+}
+
+.lia-panel-section {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+ul.defaultlist {
+	display: table;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    li {
+        display: table-row;
+        &:before {
+			content: '\2022';
+			display: table-cell;
+			padding-right: 7.5px;        
+        }
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .lia-breadcrumb {
+        padding: 0 $page-padding;
+        
+        > .lia-list-standard-inline > .crumb:nth-last-of-type(3) > .lia-link-navigation:before {
+        color: $pink;
+        }
+    }
+    .CommentEditorForm {
+        padding: 0 $page-padding;
+    }
+    
+    .lia-quilt-column-alley-single > .lia-menu-bar {
+        margin-left: 0;
+        margin-right: 0;
+    } 
+}

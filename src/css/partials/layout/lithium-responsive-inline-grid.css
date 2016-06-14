@@ -1,0 +1,38 @@
+/*responsive inline grid based on inline block*/
+.inline-grid {
+    text-align: justify;
+    font-size: 0.1px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    .grid-item {
+        display: inline-block;
+        text-align: center;
+        /*font-size: initial;*/
+        font-size: $baseFontSize;
+    }
+    &:after { 
+        content: '';
+        display: inline-block;
+        width: 100%;        
+    }
+    
+    &.desktop-one-fourth {
+        .grid-item {
+            width: 23%;        
+        }        
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .inline-grid {
+        &.mobile-one-second {
+            .grid-item {
+                width: 49%;
+            }
+        }
+    }
+}
+
+
+

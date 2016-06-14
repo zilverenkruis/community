@@ -1,0 +1,7 @@
+.lia-paging-full-wrapper {
+    text-align: center;
+    .lia-paging-full {
+        float: none;
+        display: inline-block;    
+    }    
+}

@@ -1,0 +1,154 @@
+.zk-search-bar {
+    background-color: $lithium-blue-light;
+    padding: 1em 0;
+
+    .lia-button-wrapper-searchForm-action::before {
+        display: none;
+    }
+}
+
+
+.lia-content .zk-search-bar {
+
+    .lia-component-common-widget-search-form {
+        .SearchForm.lia-form-inline .search-input {
+            height: 55px;
+        }
+        .lia-form-inline .lia-search-form-granularity {
+            height: 55px;
+            
+            color: $blueLighter;
+            border-left: 1px solid;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            &:focus {
+                box-shadow: none;            
+            }       
+        }        
+    }
+    
+
+    .lia-form-search-query-input.lia-form-type-text:active, 
+    .search-input.lia-form-type-text:active, 
+    .active.lia-form-search-query-input.lia-form-type-text, 
+    .active.search-input.lia-form-type-text, 
+    .lia-form-search-query-input.lia-form-type-text:focus, 
+    .search-input.lia-form-type-text:focus, 
+    .focus.lia-form-search-query-input.lia-form-type-text, 
+    .focus.search-input.lia-form-type-text, 
+    .lia-form-search-query-input.lia-form-type-text:hover, 
+    .search-input.lia-form-type-text:hover {
+        z-index: 0;
+    }
+
+
+    .lia-search-input-wrapper > .search-input.lia-form-type-text {
+            @mixin border-radius $baseBorderRadius;
+            background-color: #fff;
+            box-shadow: none;
+            border: none;
+    }       
+    
+    .lia-form-inline .lia-button-wrapper-searchForm-action {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        vertical-align: middle;
+        /*border: 1px solid;*/
+        width: 58px;
+        height: 100%;
+        background-color: $blueLighter;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;        
+        &:after {
+            font-family: zk-centralenav-fontregular;
+            content: '\65';
+            font-size: 2em;
+            position: absolute;
+            right: 12px;
+            color: #fff;
+        }
+                
+    }
+    
+    .SearchForm.lia-form-inline .lia-button-searchForm-action {
+        background-image: none;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        /*position: static;        */
+        /*height: 100%;
+        width: 58px;
+        right: 0;
+        top: auto;
+        margin-top: 0px;  */
+    } 
+
+}
+
+
+
+/*.CommunityPage */
+.zk-search-bar .lia-component-common-widget-search-form {
+    margin-top: 0;
+}
+
+/*.CategoryPage */
+.zk-search-bar .lia-component-common-widget-search-form {
+    padding: 0;
+}
+
+
+.SearchPage {
+
+
+        
+        .lia-message-view-display .lia-message-discussion-style-icon, 
+        .lia-note-view-display .lia-message-discussion-style-icon {
+            left: 0;
+        }
+        
+    .lia-quilt-message-search-item {        
+        .lia-message-subject, .lia-message-byline-author-board {
+            margin-left: 60px;
+        }	
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 662px) {
+    
+    .lia-component-quilt-header .SearchForm.lia-component-common-widget-search-form {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .lia-content .zk-search-bar {
+
+        .lia-component-common-widget-search-form {
+            .SearchForm.lia-form-inline .search-input {
+                height: 45px;
+            }
+            .lia-form-inline .lia-search-form-granularity {
+                height: 45px;    
+            }        
+        }
+    }
+    
+    .lia-content .zk-search-bar {
+        .lia-form-inline .lia-button-wrapper-searchForm-action {
+            &:after {
+                font-size: 1.65em;
+            }
+        }
+    }
+}

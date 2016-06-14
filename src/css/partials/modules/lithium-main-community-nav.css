@@ -1,0 +1,119 @@
+.main-nav-hamburger {
+    color: #fff;
+    font-size: 2.5em;
+    cursor: pointer;
+    display: none;
+    padding: 0 .5em;
+}
+.main-community-nav {
+
+    &.isAdmin {
+        .main-nav-hamburger {
+            display: inline-block;
+        }
+        .main-nav-items {
+            display: none;
+             &.menu-visible {
+                display: block;
+             }
+        }
+    }
+    /*&.menu-visible{
+        .main-nav-items {
+            display: block;
+        }
+    }*/
+    
+    background: $blueLighter; 
+    .wrapper {
+        
+    }
+    .main-nav-item {
+        margin-right: .5em;
+    }
+    .main-nav-link {
+        color: #fff;
+        padding: 1em .5em;
+        display: block;
+    }
+    .main-nav-link, .lia-link-navigation {
+        color: #fff;
+        &.selected {
+            background-color: $blueDarkest;
+            @mixin border-radius $baseBorderRadius;
+        }
+    }    
+    .user-navigation-user-profile {
+        display: inline-block;
+    }
+}
+/*big btn nav with postinfo*/
+.main-community-big-nav {
+    background: $blueLighter;
+    padding-top: 1em;
+    .main-nav-item {
+        background-color: #fff;
+        margin: 0 0 1em 0;
+        @mixin border-radius $baseBorderRadius;
+    }    
+    .nav-link {
+        position: relative;
+    }
+    .item-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;        
+    }
+    
+    .item-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40%;
+    }
+    
+    .main-nav-title {
+        color: $blue;
+        font-weight: 700;
+    } 
+    .main-nav-meta {
+        color: $blueLighter;
+        font-weight: 300;
+    }
+    .main-nav-title, .main-nav-meta {
+        font-family: $titilliumHeavyFontFamily;
+        font-size: 1.25em;        
+    }    
+    .main-nav-icon {
+        width: 100%;
+        height: 42%;
+        margin-top: 18px;
+        img {
+            width: 100%;
+            height: 100%;            
+        }        
+    }
+    /*.Forum {
+        .main-nav-icon {
+            
+        }
+        
+    }*/
+}
+
+
+@media screen and (max-width: 980px) {
+    .main-nav-hamburger {
+        display: inline-block;
+    }
+    .main-nav-items {
+        display: none;
+        &.menu-visible {
+        display: block;
+        }        
+    }    
+}

@@ -1,0 +1,218 @@
+.items-list {
+    ul, li {
+        margin: 0;
+        padding: 0;
+    }
+    .item-img-wrapper {
+        width: 15%;
+        text-align: left;
+        position: relative;
+        > a {
+            display: inline-block;
+            max-width: 80px;
+            img {
+                @mixin border-radius $baseBorderRadius;
+            }
+        }
+    }
+  
+}
+
+.items-list {
+    .list-item {
+        padding: 1em 0;
+        &:not(:last-child) {
+            border-bottom: 1px solid $blueLightest;
+        }        
+    }
+    .item-text-wrapper {
+        width: 85%;
+        /*position: relative;*/
+        display: table;
+    }
+    .item-title {
+        margin: 0;
+        color: $blueDark;
+        font-size: 1.2em;
+        line-height: 1.4em;
+        a, a:link {
+            color: inherit;
+        }
+    }
+    
+    .item-author, .item-date, .latest_author, .message-board {
+        margin: .25em 0;
+        font-size: .95em;
+    }
+        
+    .message-board {
+        a {
+            border: 1px solid;
+            padding: .1em .4em;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: .95em;
+        }
+    }
+    
+    .item-info {
+        width: 62%;
+        display: table-cell;        
+    }
+    .item-meta-info {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+        color: $blueLighter;
+        font-weight: bold;
+        font-size: .95em;
+        .wrapper {
+            display: inline-block;
+        }
+        /*position: relative;
+        top: 50%;
+        transform: translateY(-50%);            */
+        .kudos, .replies, .views {
+            display: inline;
+            &:before {
+                content: '';
+                display: inline-block;
+                font-family: zk-centralenav-fontregular;
+                margin-right: 5px;
+            }
+        }
+        .kudos {
+            margin-right: 8px;
+            &:before {            
+                content: '\2a';
+            }
+        }
+        .replies {
+            &:before {
+                content: '\34';
+                vertical-align: bottom;
+            }
+        }
+    }  
+    .item-img-wrapper, .item-text-wrapper {
+        float: left;
+    }        
+    
+}
+
+
+
+
+
+
+
+
+.lia-quilt-column-alley-right {
+    .items-list {
+        .item-img-wrapper, .item-meta-info, .item-author, .message-board {
+            display: none;
+        }
+        .item-text-wrapper {
+            float: none;
+            display: block;
+            width: auto;
+        }
+        .item-info {
+            display: block;
+            width: auto;
+        }
+        .item-title {
+            a, a:link {
+                display: block;
+                padding-right: 15px;
+                position: relative;
+                &:after {
+                    font-family: zk-centralenav-fontregular;
+                    content: '\61';
+                    /*display: inline-block;*/
+                    @mixin verticalCenter;
+                    position: absolute;
+                    right: 0;
+                    color: $pink;
+                }
+            }
+        }
+    } 
+}
+
+
+.lia-component-featured-blog-articles {
+    .lia-panel-content {
+        padding: 0;
+    }
+    .items-list .list-item {
+        padding: 0;
+        padding-top: 0;
+
+        .item-info, .item-meta-info {
+            padding: .5em 1em;
+        }        
+        .item-text-wrapper {
+            width: 100%;
+            margin: 0;            
+        }
+                
+    }
+    .featured-article-image {
+        img {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+    }
+}
+
+
+
+/*on white bg banner background green*/
+.lia-quilt-row-navigation ~ .lia-quilt-row:nth-child(even)     {
+    .lia-panel {
+        background: $moreBlueLightLithium;        
+    }
+    .items-list {
+        .list-item {
+            &:not(:last-child) {
+                border-bottom-color:  #fff;
+            }        
+        }        
+    }
+}
+
+
+
+@media (max-width: 780px) {
+    .items-list {
+        .item-meta-info {
+            vertical-align: bottom;
+            .unit {
+                display: none;
+            }
+        }        
+    }
+}
+
+@media (max-width: 662px) {
+    .items-list {
+        .item-img-wrapper {
+            display: none;
+        }
+        .item-text-wrapper {
+            width: 100%;
+        }
+        /*.item-meta-info {
+            vertical-align: bottom;
+            .unit {
+                display: none;
+            }
+        }    */
+    }
+    .lia-quilt-2016-section-homepage-blog {
+        .lia-component-custom-latest-post-community-blog {
+            display: none;
+        }
+    }
+}

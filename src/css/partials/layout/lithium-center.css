@@ -1,0 +1,85 @@
+$maxwidth : 980px;
+
+.full-width-header, 
+.center-content, 
+#main-footer .container,
+.lia-breadcrumb,
+.lia-component-common-widget-page-feedback .lia-text
+/*,.lia-quilt-row-main-one,
+.lia-quilt-row-main-one + .lia-quilt-row */
+{
+    max-width: $maxwidth;
+    margin: auto;
+}
+
+.lia-quilt-row-main-one,
+.lia-quilt-row-main-one ~ .lia-quilt-row {
+    .lia-quilt {
+        max-width: $maxwidth;
+        margin: auto;        
+    }
+}
+
+/*.lia-quilt-idea-exchange-page-ideas2016
+, .lia-quilt-category-page-forum2016 */
+.lia-top-quilt
+{
+    /*.lia-quilt-row-main-one*/
+    /*,.lia-quilt-row-main-one  ~ .lia-quilt-row */
+    /*,*/
+    .lia-quilt-row-navigation  ~ .lia-quilt-row 
+    /*,.lia-quilt-row-main*/
+    {
+        .lia-quilt-column-alley {
+            margin: auto;
+            max-width: $maxwidth;
+        }        
+    }
+
+}
+/*top row navigation*/
+.ForumTopicPage,
+.IdeaPage,
+.TkbArticlePage
+{
+    .lia-quilt-row-navigation {
+        /*> .lia-quilt-column-alley {*/
+        > .lia-quilt-column > .lia-quilt-column-alley {
+            margin: auto;
+            max-width: $maxwidth;            
+        }
+    }
+}
+.BlogArticlePage {
+    .lia-quilt-row-header {
+        .lia-component-article-subject {
+            padding: 0;
+            .lia-blog-article-page-article-subject {
+                margin: auto;
+                max-width: 980px;
+                display: block;                
+            }
+        }
+    }
+    
+    /*.lia-quilt-row-main {
+        > .lia-quilt-column > .lia-quilt-column-alley {
+            margin: auto;
+            max-width: $maxwidth;
+        }
+    }*/
+    .lia-quilt-blog-article {
+            margin: auto;
+            max-width: $maxwidth;        
+    }    
+}
+
+@media screen and (max-width: 991px) {
+    .BlogArticlePage {
+        .lia-quilt-row-header {
+            .lia-component-article-subject {
+                padding: 0 $page-padding;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.lia-panel-message {
+    
+    .lia-button-image-kudos-give,
+    .lia-button-image-kudos-count {
+        margin-right: 1em;
+        
+        /*.lia-button-image-kudos-give {
+            margin-right: 1em;
+        }x*/
+        /*.lia-link-navigation {
+        }        */
+        
+    }
+                        
+    /*bleh*/
+    .lia-button-image-kudos .kudos-count-link, 
+    .lia-button-image-kudos .kudos-count-link:active, 
+    .lia-button-image-kudos .kudos-count-link:active:focus, 
+    .lia-button-image-kudos .kudos-count-link:active:hover, 
+    .lia-button-image-kudos .kudos-count-link:focus, 
+    .lia-button-image-kudos .kudos-count-link:hover, 
+    .lia-button-image-kudos .kudos-count-link.lia-link-disabled, 
+    .lia-button-image-kudos .kudos-count-link.lia-link-disabled:active, 
+    .lia-button-image-kudos .kudos-count-link.lia-link-disabled:active:focus, 
+    .lia-button-image-kudos .kudos-count-link.lia-link-disabled:active:hover, 
+    .lia-button-image-kudos .kudos-count-link.lia-link-disabled:focus, 
+    .lia-button-image-kudos .kudos-count-link.lia-link-disabled:hover {
+        background-color: $lithium-blue-light;
+        border-radius: 4px;
+        /*margin-left: 1em;*/
+    }
+    
+
+    .lia-message-kudos {
+
+        .kudos-link {
+            &:before {
+                content: 'D';
+                color: #fff;
+            }	
+            &:after {
+                content: 'Like';
+                font-family: $sansFontFamily;
+                color: #fff;
+            }
+            &:active, &:focus, &:hover {
+                border-width: 0 0 2px 0;			
+            }
+            &.lia-link-disabled {
+                content: 'Liked';            
+            }            
+        } 
+
+        
+        
+    }
+
+
+    
+    .lia-button-wrapper.lia-component-promote-message-button {
+        display: none;
+    }
+}

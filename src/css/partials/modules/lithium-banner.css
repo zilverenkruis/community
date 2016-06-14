@@ -1,0 +1,42 @@
+.banner {
+    background: #fff;
+    border-radius: 4px;
+    /*margin-top: 20px;*/
+    margin-bottom: 20px;
+    padding: 16px;
+    &.section-btn {
+        padding: 0;
+    }
+}
+/*.lia-content {*/
+    .banner {
+        .title {
+            color: @blueDark;
+            margin-bottom: 1em;
+            font-size: 1.3em;
+        }
+    }        
+/*}*/
+
+
+
+.banner.no-padding {
+    padding: 0; 
+}
+
+.banner .search-autocomplete-toggle-link {
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+    border-top: 1px solid rgb(214, 239, 240);
+    margin-top: 0px;    
+}
+
+
+/*on white bg banner background green*/
+.lia-quilt-row-navigation ~ .lia-quilt-row:nth-child(even)     {
+    /*background-color: $blueLightest2;*/
+    .banner {
+        background: $moreBlueLightLithium;
+    }
+}
