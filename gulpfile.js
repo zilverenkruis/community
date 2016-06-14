@@ -14,7 +14,7 @@ var source = 'src/',
     dest = 'build/';
 
 gulp.task('css', function() {
-  gulp.src(source + 'css/2016-lithium.css')
+  gulp.src(source + 'css/*.css')
   .pipe(postcss([
     // colorfunctions(),
     precss()
