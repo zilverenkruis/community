@@ -191,7 +191,17 @@
             .unit {
                 display: none;
             }
-        }        
+        }
+    }
+}
+
+@media (min-width: 781px) {
+    .items-list {
+        .item-meta-info {
+            .unit-count {
+                display: none;
+            }
+        }
     }
 }
 

@@ -347,3 +347,9 @@
 .UserAvatar {
     animation: avatar-fade-in 1.5s;
 }
+
+.lia-profile-hero-user .UserAvatar,
+.main-nav-items .UserAvatar,
+.lia-slide-menu-content .UserAvatar {
+    animation: none;
+}
