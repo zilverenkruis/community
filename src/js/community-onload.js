@@ -13,6 +13,7 @@ LITHIUM.jQuery(function($) {
 
         // ZK.createFullwidthBG($);
         ZK.scrollTo($);
+        ZK.connectSocialButtons($);
 
 
 }(LITHIUM.jQuery));

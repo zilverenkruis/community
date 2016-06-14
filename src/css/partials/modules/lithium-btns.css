@@ -35,7 +35,7 @@
 
         .kudos-link {
             &:before {
-                content: 'D';
+                /*content: 'D';*/
                 color: #fff;
             }	
             &:after {
@@ -50,14 +50,87 @@
                 content: 'Liked';            
             }            
         } 
-
-        
-        
     }
 
-
-    
     .lia-button-wrapper.lia-component-promote-message-button {
         display: none;
+    }
+}
+
+.lia-component-message_social {
+    display: inline-block;
+    .lia-panel-content {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+#message_social_container {
+    margin: 0;
+    margin-right:10px;
+    .btn {
+        padding: 6px 12px;
+        font-weight:bold;
+
+    }
+
+    .btn::before {
+        display: inline-block;
+        font: normal normal normal 16px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+        content: "\f1e0";
+        color: #fff;
+        margin-right: 4px;
+    }
+}
+
+.message_social_sharing {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+    border:2px solid #0068bd;
+    border-radius: 4px;
+
+    li {
+        padding:0;
+        margin:0;
+        list-style-type: none;
+    }
+
+    a {
+        display: block;
+        padding:10px 10px 10px 30px;
+        position: relative;
+    }
+
+    a:before {
+        position: absolute;
+        display: inline-block;
+        font: normal normal normal 16px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+        content: "\f081";
+        left:10px;
+        margin-top: 3px;
+    }
+
+    .share_twitter a:before {
+        content: "\f081";
+    }
+
+    .share_fb a:before {
+        content: "\f082";
+    }
+
+    .share_email a:before {
+        content: "\f003";
     }
 }

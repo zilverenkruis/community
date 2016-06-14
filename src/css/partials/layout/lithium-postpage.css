@@ -353,3 +353,62 @@
 .lia-slide-menu-content .UserAvatar {
     animation: none;
 }
+
+.lia-quilt-view-profile-hero .lia-user-avatar, .lia-quilt-view-profile-hero .lia-media-top-image-contributors .lia-media-image-contributor-avatar-wrapper, .lia-media-top-image-contributors .lia-quilt-view-profile-hero .lia-media-image-contributor-avatar-wrapper {
+    border-radius: 0%;
+}
+
+.UserAvatar > img {
+    border-radius: 0%;
+    height: auto;
+}
+
+.lia-image-cropper canvas {
+    border-radius: 0%;
+}
+
+/***** user profile ***/
+.lia-quilt-view-profile-hero .lia-profile-hero-avatar-wrapper:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -15px;
+    left: -8px;
+    border-top: 75px solid #40494c;
+    border-right: 75px solid transparent;
+}
+
+/***** main nav ***/
+.main-nav-items .last .UserAvatar.lia-link-navigation:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -9px;
+    left: 0px;
+    border-top: 15px solid #279EDA;
+    border-right: 15px solid rgba(0, 0, 0, 0);
+}
+
+.main-nav-items .last .UserAvatar.lia-link-navigation {
+    position: relative;
+ }
+
+/***** side out nav ***/
+.lia-slide-menu-content .UserAvatarProfile:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -1px;
+    left: 50%;
+    margin-left: -33px;
+    border-top: 23px solid #fff;
+    border-right: 23px solid rgba(0, 0, 0, 0);
+}
+
+.lia-slide-menu-content .UserAvatarProfile {
+    position: relative;
+
+}

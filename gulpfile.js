@@ -40,6 +40,7 @@ var jsFiles = [
     sourceJS + 'community-filter-dropdown.js',
     // sourceJS + 'community-correct-bg-height.js',
     sourceJS + 'community-create-bg.js',
+    sourceJS + 'community-social.js',
     sourceJS + 'community-onload.js'
 ]
 
