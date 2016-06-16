@@ -87,8 +87,12 @@
     }
     .main-nav-title, .main-nav-meta {
         font-family: $titilliumHeavyFontFamily;
-        font-size: 1.25em;        
-    }    
+        font-size: 1.25em;
+        @media screen and (min-width: 600px) and (max-width: 979px) {
+            font-size: 1em;
+            line-height:1.1;
+        }
+    }
     .main-nav-icon {
         width: 100%;
         height: 42%;

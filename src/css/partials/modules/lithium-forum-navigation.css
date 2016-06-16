@@ -4,7 +4,7 @@
 }
 .forum-navigation-parent {
     display: flex;
-    height: 300px;
+    height: 240px;
 }
 .forum-navigation-cat {
     font-weight: bold;
@@ -24,6 +24,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
+    max-width:100%;
 }
 .nav-column {
    
@@ -31,6 +32,10 @@
 
 .forum-board {
     margin: .5em 1em .5em 0;
+}
+
+.col-category .forum-board a {
+    display: block;
 }
 
 /*desktop*/
@@ -85,6 +90,7 @@
                 }    
             }        
         }
+
     }
     
     /*.col-category.closed {
@@ -94,7 +100,8 @@
     
     .forum-boards {
         max-height: 800px;        
-        transition: max-height .2s;    
+        transition: max-height .2s;
+        overflow: hidden;
         
     }
     

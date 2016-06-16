@@ -1,5 +1,9 @@
 /*.IdeaPage {*/
 
+.lia-panel-message-content .lia-message-author-avatar + .lia-message-subject {
+    margin-left: 120px;
+}
+
 .lia-message-subject-status {
     /*position: absolute;
     right: 0;*/
@@ -23,10 +27,23 @@
 }
 
 .IdeaExchangePage {
+
+    .lia-js-hidden {
+        display: block !important;
+    }
+
+    .lia-tab-overflow.lia-js-hidden {
+        display: none !important;
+    }
+
     .popular-tab {
         display: none;
     }
-    
+
+    .lia-tab-overflow {
+        display: none;
+    }
+
     .lia-tabs-standard-wrapper {
         padding-left: 20px;
         padding-right: 20px;

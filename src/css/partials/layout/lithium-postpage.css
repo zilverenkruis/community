@@ -484,6 +484,7 @@
     }
 }
 
+.lia-quilt-column-user-search-result .lia-link-navigation,
 .UserProfileSummary .lia-link-navigation{
     position: relative;
     overflow:hidden;
@@ -508,3 +509,4 @@
          display: block;
     }    
 }
+

@@ -43,8 +43,21 @@
     &.home {
         text-align: center;
         height: 334px;
-        padding-top: 20px;        
-        .header-text {
+        padding-top: 20px;
+        @media screen and (max-width: 800px) {
+            height: 264px;
+        }
+        @media screen and (max-width: 662px) {
+            height: 334px;
+        }
+        @media screen and (max-width: 500px) {
+            height: 284px;
+        }
+        @media screen and (max-width: 400px) {
+            height: 254px;
+        }
+
+.header-text {
             position: relative;
         }
         .title {
@@ -157,7 +170,7 @@
     .full-width-header {
         &.home {
             .header-image {
-                background-image: url('/html/assets/headerHome-people-small.png');
+                background-image: url('/html/assets/headerHome-people-mob.png');
             }        
         }
     }
