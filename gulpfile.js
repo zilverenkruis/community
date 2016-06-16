@@ -28,6 +28,7 @@ gulp.task('css', function() {
 
 var jsFiles = [
     sourceJS + 'community-main.js',
+    sourceJS + 'community-remove-empty-status.js',
     sourceJS + 'community-restructure-html.js',
     sourceJS + 'community-removeEmptyRows.js',    
     sourceJS + 'community-svg-corner.js',

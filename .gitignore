@@ -20,3 +20,7 @@ build/css/2016-lithium_ie9.css
 build/css/2016-lithium.css
 
 build/js/2016-zk-community.js
+
+.idea/jsLibraryMappings.xml
+
+.idea/libraries/community_node_modules.xml

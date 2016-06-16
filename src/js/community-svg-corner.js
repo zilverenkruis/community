@@ -13,7 +13,7 @@ ZK.svgCorner = function(fillColor) {
 		    svg.setAttribute("width", "100");
 		    svg.setAttribute("height", "100");
 		    // svg.setAttribute("style", "position: absolute; top: -3px;left: 0;fill: " + fillColor +";");
-		    svg.setAttribute("style", "position: absolute; top: -3px;left: 0;");
+		    svg.setAttribute("style", "position: absolute; top: -4px;left: -2px;");
 		    svg.setAttribute("class", "icon-svg-corner");
 			
 

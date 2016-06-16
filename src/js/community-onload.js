@@ -2,6 +2,7 @@ LITHIUM.jQuery(function($) {
 
         ZK.restructureHTML($);
         ZK.removeEmptyRows($);
+        ZK.removeEmptyStatus($);
         ZK.svgCorner();
         // ZK.shortenMessage($,400);
         // ZK.filterDropdown($);

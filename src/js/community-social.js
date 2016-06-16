@@ -23,6 +23,4 @@ ZK.connectSocialButtons = function($) {
         })
     }
 
-    console.log("<= started [¬º-°]¬ =>");
-
 };
