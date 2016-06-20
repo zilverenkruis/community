@@ -147,7 +147,8 @@
     .lia-content .zk-search-bar {
         .lia-form-inline .lia-button-wrapper-searchForm-action {
             &:after {
-                font-size: 1.65em;
+                 font-size: 1.5em;
+                 right: 18px;
             }
         }
     }

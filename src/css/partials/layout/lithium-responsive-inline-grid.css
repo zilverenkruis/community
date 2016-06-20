@@ -17,7 +17,7 @@
         width: 100%;        
     }
     
-\    &.desktop-one-fourth {
+    &.desktop-one-fourth {
         .grid-item {
             width: 23%;
             margin-right:1%;
