@@ -167,8 +167,30 @@ ul.defaultlist {
     }
 }
 
+.li-common-scroll-to-wrapper {
+    display: none;
+}
+
+.li-common-scroll-to-wrapper .li-common-scroll-to-link {
+    color: #0068BD;
+}
+
+@media screen and (max-width: 767px) {
+    .li-common-scroll-to-wrapper .li-common-scroll-to-link {
+        font: inherit;
+    }
+    .li-common-scroll-to-wrapper .li-common-scroll-to-link:before {
+        margin-right: 5px;
+    }
+}
 
 @media screen and (max-width: 991px) {
+
+    .li-common-scroll-to-wrapper {
+        display: block;
+    }
+
+
     .lia-breadcrumb {
         padding: 0 $page-padding;
         

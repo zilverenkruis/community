@@ -10,6 +10,19 @@
     padding-bottom: 40px;
 }*/
 
+.full-width-header.zk-curved {
+    &:before {
+    content: '';
+    width:500px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top:0px;
+    left:-300px;
+    background-color: #0068bd;
+}
+}
+
 .full-width-bg {
     position: absolute; 
     left: 0; width: 100%; 
@@ -19,19 +32,28 @@
     /*background-color: $blueLightLithium; */
     background-color: $moreBlueLightLithium; 
     overflow: hidden;
+
     &.blue {
         background-color: #0068BD;
         z-index: 0;
     }
+
     &.white {
         background-color: #fff;
     }
+
 }
+
+/*@media screen and (max-width: 1200px) {*/
+    /*.lia-panel-content .full-width-bg {*/
+        /*background-position: right -120px top !important;*/
+    /*}*/
+/*}*/
+
+
 .lia-quilt-row > .full-width-bg {
     margin-top: -40px;    
 }
-
-
 
 
 /*test:*/

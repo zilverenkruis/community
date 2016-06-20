@@ -107,8 +107,6 @@
 
 .SearchPage {
 
-
-        
         .lia-message-view-display .lia-message-discussion-style-icon, 
         .lia-note-view-display .lia-message-discussion-style-icon {
             left: 0;
@@ -121,6 +119,22 @@
     }
     
 }
+
+.ViewProfilePage {
+    .lia-message-view-display .lia-message-discussion-style-icon,
+    .lia-note-view-display .lia-message-discussion-style-icon {
+        left: 0;
+    }
+
+    .lia-message-view-display {
+        .lia-message-subject-wrapper.lia-component-subject {
+            margin-left: 50px;
+        }
+    }
+
+
+}
+
 
 
 

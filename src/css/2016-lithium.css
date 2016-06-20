@@ -22,6 +22,7 @@
 
 
 /*components*/
+
 @import "partials/modules/ZK/zk-boxes.css";
 @import "partials/modules/ZK/zk-buttons.css";
 @import "partials/modules/lithium-default-components.css";
@@ -30,6 +31,7 @@
 @import "partials/modules/lithium-search.css"; 
 @import "partials/modules/lithium-highlight-boxes.css";
 @import "partials/modules/lithium-authors.css";
+@import "partials/modules/lithium-faq-page.css";
 @import "partials/modules/lithium-page-header.css";
 @import "partials/modules/lithium-banner.css";
 @import "partials/modules/lithium-item-list.css"; 

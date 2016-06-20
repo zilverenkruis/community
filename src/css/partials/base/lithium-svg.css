@@ -1,6 +1,7 @@
 /*default fill corner white*/
 .icon-svg-corner {
-    fill: #fff; 
+    fill: #fff;
+    pointer-events: none;
 }   
 
 /*row green*/
@@ -12,7 +13,8 @@
     }
     .top-authors {
         .icon-svg-corner {
-            fill: $moreBlueLightLithium; 
+            fill: $moreBlueLightLithium;
+            pointer-events: none;
         }        
     }
 }
@@ -25,7 +27,8 @@
     }
     .top-authors {
         .icon-svg-corner {
-            fill: #fff; 
+            fill: #fff;
+            pointer-events: none;
         }        
     }    
 }

@@ -44,22 +44,11 @@
         text-align: center;
         height: 334px;
         padding-top: 20px;
-        @media screen and (max-width: 800px) {
-            height: 264px;
-        }
-        @media screen and (max-width: 662px) {
-            height: 334px;
-        }
-        @media screen and (max-width: 500px) {
-            height: 284px;
-        }
-        @media screen and (max-width: 400px) {
-            height: 254px;
-        }
 
-.header-text {
+        .header-text {
             position: relative;
         }
+
         .title {
             font-weight: 200;
             margin-bottom: 0;
