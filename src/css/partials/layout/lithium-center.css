@@ -38,6 +38,15 @@ $maxwidth : 980px;
 
 }
 /*top row navigation*/
+.ReplyPage {
+
+    .lia-quilt-row-main {
+        > .lia-quilt-column > .lia-quilt-column-alley {
+            margin: auto;
+            max-width: $maxwidth;
+        }
+    }
+}
 .ForumTopicPage,
 .IdeaPage,
 .TkbArticlePage

@@ -129,7 +129,8 @@
             /*.lia-component-topic-message */
             .lia-panel-message
             {
-                padding: $page-padding;
+                padding: $page-padding $page-padding 10px $page-padding;
+                margin-bottom: 2px;
             }
         }    
 

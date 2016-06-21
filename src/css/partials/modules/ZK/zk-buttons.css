@@ -111,11 +111,18 @@
 	}
 }
 
+.lia-component-reply-list .reply-action-link {
+	float:right;
+	background: #C93A83;
+	color: #fff;
+	border-color: #A0144C;
+}
 
 .btn-large,
+.lia-component-reply-list .reply-action-link,
 .lia-panel-message-root .lia-action-reply.reply-action-link.reply-action-link
 {
-	padding: 6px 16px;
+	padding: 6px 16px;1
 	/*font-size: 18px;*/
 	font-size: inherit;
 	@mixin border-radius $borderRadiusLarge;

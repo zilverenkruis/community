@@ -132,12 +132,15 @@
         }
     }
 
+    .lia-component-discussion-style-icon + .lia-component-subject,
+    .lia-component-discussion-style-icon + .lia-component-subject + .lia-component-byline-board{
+        margin-left: 50px;
+    }
 
+    .lia-message-view-display .lia-message-item-metadata-side {
+         margin-right: 0;
+    }
 }
-
-
-
-
 
 @media screen and (max-width: 662px) {
     

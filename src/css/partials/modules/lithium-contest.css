@@ -1,0 +1,142 @@
+.ContestSubmissionPage {
+
+    .lia-panel-message {
+        .lia-message-body {
+            margin-top: 0;
+        }
+
+        .lia-button-image-kudos-give,
+        .lia-button-image-kudos-count {
+            float:right;
+            margin-right: 0;
+            margin-left:1em;
+        }
+    }
+
+    .lia-panel-message-content .lia-component-kudos {
+        margin-right: 0;
+    }
+}
+
+
+.ContestPage {
+
+    .lia-tabs-standard {
+        display: none;
+    }
+
+    .lia-quilt-contest-gallery-view {
+        .lia-quilt-row-footer {
+             margin-top: 0;
+        }
+    }
+
+    .lia-quilt-contest-gallery-content {
+        .lia-component-author {
+            margin-left: 0;
+        }
+        .lia-component-common-widget-date {
+            display: block;
+        }
+    }
+
+    .lia-button-image-kudos .kudos-count-link.lia-link-disabled {
+        background-color: #D7EFF0;
+        padding: 0 13px;
+        margin-left: 15px;
+        border-radius: 4px;
+        position: relative;
+        font-size: 1.65em;
+
+
+        &:before {
+            position:absolute;
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-right: 10px solid #D7EFF0;
+            border-bottom: 5px solid transparent;
+            top:50%;
+            left:-10px;
+            transform:  translateY(-50%);
+        }
+    }
+
+    .lia-image-contest.lia-component-submissions {
+
+        .contest-gallery-card {
+
+            border-width:0;
+            border-radius:4px;
+            width: 31%;
+            box-sizing: border-box;
+            margin: 1%;
+            padding: 0;
+
+            @media screen and (max-width: 900px) {
+                width: 48%;
+            }
+
+            @media screen and (max-width: 662px) {
+                width: 100%;
+                margin:0%;
+            }
+
+            .contest-gallery-content,
+            .lia-component-kudos-widget-button {
+                padding: 5px 20px 15px 20px;
+            }
+
+            .MessageReadByModeratorCell {
+                position: absolute;
+                right: 10px;
+                top:auto;
+            }
+
+        }
+
+        .lia-list-tile-image {
+            max-height: 230px;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+
+            img {
+                transform: translate(0,0);
+                left: 0;
+                max-width: none;
+                min-height: auto;
+                position: relative;
+                top: 0;
+                width: 100%;
+            }
+        }
+
+        .lia-button-image-kudos-horizontal > .lia-button-image-kudos-count,
+        .lia-button-image-kudos-horizontal > .lia-button-image-kudos-give {
+            float:right;
+        }
+    }
+
+    .lia-component-contests-widget-uploaded-contest-image-display {
+
+        .lia-quilt-row-header,
+        .lia-quilt-row-footer {
+            display: none;
+        }
+    }
+
+    .KudosButton {
+
+         .lia-button-image-kudos-horizontal {
+             width: 100%;
+         }
+
+         .lia-button-image-kudos-label {
+             display:none;
+         }
+    }
+}

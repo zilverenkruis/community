@@ -4,6 +4,24 @@
     margin-left: 120px;
 }
 
+.comment-status-bar {
+    display:none;
+
+    .MessageStatus {
+        border: 1px solid $blue;
+        padding: .1em 1em;
+        border-radius: 4px;
+        margin-bottom: .5em;
+        display: inline-block;
+        font-weight: bold;
+        color: $blue;
+
+        a {
+            font-weight:normal;
+        }
+    }
+}
+
 .lia-message-subject-status {
     /*position: absolute;
     right: 0;*/
@@ -15,6 +33,10 @@
     display: inline-block;
     font-weight: bold;
     color: $pinkLight;
+
+    .MessageReadByModeratorCell {
+        display:inline;
+    }
 
     .lia-link-navigation {
         font-weight: normal;
@@ -34,6 +56,15 @@
 }
 
 .IdeaExchangePage {
+
+    .lia-decoration-border-menu-bar {
+        position: relative;
+
+        .lia-menu-bar-buttons {
+            position: absolute;
+            right: 0;
+        }
+    }
 
     .lia-tabs-standard .lia-js-hidden {
         display: block !important;
@@ -191,25 +222,58 @@
 
 /*end message footer btns*/
 
+[href].label-link:hover, [href].label-link:focus {
+    background-color: #fff;
+}
+a.label-link:hover, a.label-link:focus {
+    color: $blue;
+}
+
+.lia-quilt-layout-idea-message .lia-quilt-column-footer .lia-quilt-column-left {
+    float: right;
+    text-align: right;
+    color: #279EDA;
+    margin-top: 10px;
+
+    a {
+        color: #279EDA;
+        font-weight: bold;
+        font-size: 14px;
+
+        &:before {
+            display: inline-block;
+            font: normal normal normal 16px/1 FontAwesome;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: translate(0, 0);
+            content: "\f075";
+            position: absolute;
+            margin-left: -30px;
+            top: 0px;
+            font-size: 24px;
+        }
+    }
+}
+
 .LabelsForArticle .label-link {
     background-color: transparent;
     color: $blue;
+    border: 1px solid $blue;
+    padding: .1em 1em;
+    border-radius: 4px;
+    margin-bottom: .5em;
+    display: inline-block;
+    font-weight: bold;
+    color: $blue;
+    font-size:16px;
+    line-height:28px;
+
 
     &:hover, &.:focus {
         background-color: transparent;
-        color: inherit;
+        color: $blue;
         text-decoration: underline;
-    }
-
-    &:before {
-        font-family: zk-centralenav-fontregular;
-        content: '\34';
-        display: inline-block;
-        /*width: 1em;
-        height: 1em;*/
-        margin: auto;
-        font-size: 1em;
-        margin-right: 5px;
     }
 }
 .lia-message-labels + .lia-message-tags {

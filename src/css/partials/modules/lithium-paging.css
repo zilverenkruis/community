@@ -5,3 +5,84 @@
         display: inline-block;    
     }    
 }
+
+.lia-menu-bar .lia-paging-full-wrapper {
+    float: none;
+}
+
+.lia-paging-full-pages > .lia-paging-page-last > .lia-link-navigation {
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    margin-right: 0;
+}
+
+.lia-paging-full-pages > .lia-paging-page-first > .lia-link-navigation {
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    margin-left: 0;
+}
+
+.lia-paging-full-pages li > .lia-link-disabled,
+.lia-paging-full-pages li > .lia-link-disabled:hover,
+.lia-paging-full-pages li > .lia-link-disabled:focus {
+    background-color:#C73E83;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    color: #fff;
+    margin-left: 0;
+}
+
+.lia-paging-full > li > a,
+.lia-paging-full-pages > li > a,
+.lia-paging-full > li > span,
+.lia-paging-full-pages > li > span {
+    padding: 6px 12px;
+    line-height: 1;
+    text-decoration: none;
+    color: #0068BD;
+    background-color: transparent;
+    border-width:0;
+}
+
+.lia-paging-full .lia-link-navigation,
+.lia-paging-full-pages .lia-link-navigation {
+    padding: 4px 8px;
+    font-size: 15px;
+}
+
+.lia-count-pager-page-next > .lia-link-navigation:after,
+.lia-paging-page-next > .lia-link-navigation:after {
+    position: absolute;
+    top: -2px;
+    font-size: 25px;
+    right: -10px;
+    color: #C73E83;
+}
+
+.lia-count-pager-page-previous > .lia-link-navigation:before,
+.lia-paging-page-previous > .lia-link-navigation:before {
+    position: absolute;
+    top: -2px;
+    font-size: 25px;
+    color: #C73E83;
+    left: -10px;
+}
+
+.lia-paging-full > li > a:hover,
+.lia-paging-full-pages > li > a:hover,
+.lia-paging-full > li > a:focus,
+.lia-paging-full-pages > li > a:focus,
+.lia-paging-full > li > span:hover,
+.lia-paging-full-pages > li > span:hover,
+.lia-paging-full > li > span:focus,
+.lia-paging-full-pages > li > span:focus {
+    color: #0068BD;
+    background-color: transparent;
+}
+
+.lia-panel-message-content .lia-message-labels .LabelsForArticle {
+    margin-bottom: 0;
+}
