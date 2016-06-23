@@ -134,3 +134,18 @@
         content: "\f003";
     }
 }
+
+.lia-user-navigation-sign-in {
+
+    .user-navigation-user-profile {
+        padding-right: 0;
+    }
+
+    a {
+        color:#fff;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}

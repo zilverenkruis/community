@@ -42,7 +42,7 @@
     }
     &.home {
         text-align: center;
-        height: 334px;
+        /*height: 334px;*/
         padding-top: 20px;
 
         .header-text {
@@ -55,8 +55,10 @@
             color: $blue;
         }
         .description {
-            color: $blue;            
-        }    
+            color: $blue;
+            max-width: 90%;
+            margin: 0 auto;
+        }
         .header-image {
             bottom: 0;
             background: url('/html/assets/headerHome-people-big.png')  transparent center bottom no-repeat;
@@ -145,24 +147,90 @@
     }
 }
 
-
-
 @media screen and (max-width: 980px) {
     .full-width-header .header-text .title {
         font-size: 2.2em;
     }
 }
 
+.full-width-header {
+    &.home {
 
+        .description {
+            margin-top: 2em;
+        }
 
-@media screen and (max-width: 662px) {
-    .full-width-header {
-        &.home {
-            .header-image {
-                background-image: url('/html/assets/headerHome-people-mob.png');
-            }        
+        .unread-notifications {
+            border: 1px solid #279EDA;
+            border-radius: 4px;
+            background-color: #fff;
+            padding: 0 8px;
+            display: inline-block;
+            color: #279EDA;
+
+            &:after {
+                font-family: zk-centralenav-fontregular;
+                content: '\61';
+                position: relative;
+                right: 0;
+                font-size: 12px;
+                margin-left: 5px;
+                color: #279EDA;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+
+        }
+
+        .unread-private-messages {
+            border: 1px solid #C93A83;
+            border-radius: 4px;
+            background-color: #fff;
+            padding: 0 8px;
+            display: inline-block;
+            color: #C93A83;
+
+            &:after {
+                font-family: zk-centralenav-fontregular;
+                content: '\61';
+                position: relative;
+                right: 0;
+                color: #C93A83;
+                font-size: 12px;
+                margin-left: 5px;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+
+        }
+
+        .header-image {
+            display: none;
+        }
+
+        .header-text {
+            background-image: url('/html/assets/headerHome-people-big.png');
+            padding-bottom: 160px;
+            background-size: contain;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            min-height: 314px;
         }
     }
 }
 
+@media screen and (max-width: 662px) {
+    .full-width-header {
+        &.home {
+            .header-text {
+                padding-bottom: 35vw;
+                background-image: url('/html/assets/headerHome-people-mob.png');
+            }
+        }
+    }
+}
 

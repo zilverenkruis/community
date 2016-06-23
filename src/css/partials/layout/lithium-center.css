@@ -60,9 +60,20 @@ $maxwidth : 980px;
     }
 }
 .BlogArticlePage {
+
+    .lia-component-message_social {
+        margin: auto;
+        max-width: 980px;
+        display: block;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
     .lia-quilt-row-header {
         .lia-component-article-subject {
             padding: 0;
+
+            .lia-component-message_social,
             .lia-blog-article-page-article-subject {
                 margin: auto;
                 max-width: 980px;
@@ -91,4 +102,10 @@ $maxwidth : 980px;
             }
         }
     }
+}
+
+.btn-primary:before,
+.lia-button-primary.lia-button-primary:before,
+.lia-panel-message-root .lia-action-reply.reply-action-link.reply-action-link:before {
+    color: #fff;
 }

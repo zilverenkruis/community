@@ -63,6 +63,7 @@
         .lia-menu-bar-buttons {
             position: absolute;
             right: 0;
+            bottom: -70px;
         }
     }
 

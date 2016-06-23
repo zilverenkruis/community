@@ -93,7 +93,6 @@
 }
 
 
-
 /*.CommunityPage */
 .zk-search-bar .lia-component-common-widget-search-form {
     margin-top: 0;
@@ -121,6 +120,44 @@
 }
 
 .ViewProfilePage {
+
+    .lia-button-primary.lia-button-primary {
+        padding: 6px 12px;
+
+        &:before {
+            display:none;
+        }
+    }
+
+    .lia-component-quilt-user-profile-statistics {
+        padding-bottom: 20px;
+    }
+
+    .lia-panel .lia-panel-heading-bar {
+        border: 0 solid #fff;
+        padding-left: 0;
+        padding-bottom: 0;
+
+        .lia-panel-heading-bar-title {
+            color:#113E83;
+            font-size: 21px;
+        }
+    }
+
+
+    .ManageRolesTaplet .lia-manage-roles-form {
+        border-top: 1px solid #fff;
+    }
+
+    .lia-quilt-view-profile-hero {
+        background-color:#fff;
+    }
+
+    .lia-component-badges-widget-user-badges-list,
+    .lia-quilt-user-profile-statistics {
+        background-color: #E5F5F5;
+    }
+
     .lia-message-view-display .lia-message-discussion-style-icon,
     .lia-note-view-display .lia-message-discussion-style-icon {
         left: 0;

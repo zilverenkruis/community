@@ -1,5 +1,6 @@
 /*lia-button lia-button-primary*/
-.btn, 
+
+.btn,
 .lia-button, 
 .lia-button-image-kudos-horizontal .kudos-link,
 .lia-button-image-kudos.lia-button-image-kudos-enabled .kudos-link
@@ -736,3 +737,9 @@ a.btn-link:focus {
 	color: $pink;
 }
 
+#commentOnThis {
+	padding: 6px 12px;
+	font-weight: bold;
+	line-height: 25px;
+	font-size: 16px;
+}

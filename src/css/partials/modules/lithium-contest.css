@@ -140,3 +140,22 @@
          }
     }
 }
+
+.lia-message-labels:after,
+.lia-message-tags:after {
+    content: " ";
+    display:inline-block;
+}
+
+#close,
+.popout .container a#close {
+    border: 1px solid #333;
+    position: absolute;
+    right: 5px !important;
+    top: 5px !important;
+    border-radius: 4px;
+    width: 16px;
+    height: 22px;
+    font-size: 30px;
+    left: auto;
+}

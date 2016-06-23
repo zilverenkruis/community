@@ -1,0 +1,74 @@
+.PrivateNotesPage {
+
+    .lia-tabs-standard > li > span > a,
+    .lia-tabs-standard > li .default-menu-option {
+        padding: 10px 0 10px 10px;
+    }
+
+    .lia-tabs-standard-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        background-color: #fff;
+        margin-top:80px;
+
+        .lia-tabs-standard {
+            /*border-color: $blueLightest2;*/
+            border: 0;
+            margin: -60px -20px 0;
+            overflow:hidden;
+
+        @media screen and (max-width: 767px) {
+            margin: -50px -20px 0;
+        }
+
+        .lia-link-navigation {
+            text-transform: capitalize;
+            font-size: 1.1em;
+            padding-left: 0;
+        }
+
+        .lia-tabs {
+            margin-right:10px;
+            position:relative;
+            background-color: #279EDA;
+            z-index:10;
+            border-left: 1px solid #fff;
+
+            a {
+            padding-left: 10px;
+            border-bottom-color: transparent;
+            color:#E5F5F5;
+        }
+
+        .lia-tabs-active {
+            margin-right: 20px;
+        }
+
+        &:before {
+            position: absolute;
+            right: -50px;
+            content: " ";
+            display: block;
+            border-bottom: 50px solid #279EDA;
+            border-right: 50px solid rgba(0, 0, 0, 0);
+            }
+        }
+
+        .lia-tabs-active {
+            background-color: #fff;
+            z-index:20;
+            a {
+                color:#002857;
+            }
+            &:before {
+                border-bottom-color: #fff;
+            }
+        }
+
+    }
+
+
+    }
+
+}

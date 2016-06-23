@@ -141,10 +141,6 @@
 
         .lia-panel-message
         {
-            
-            
-
-    
             .lia-component-author-rank-name {
                 display: inline-block;
             }
@@ -152,11 +148,6 @@
             /*.lia-component-post-date-last-edited {
                 display: none;
             }*/
-
-    
-    
-    
-    
         }
         
         .lia-component-reply-list {
@@ -369,15 +360,23 @@
 }
 
 /***** user profile ***/
+.lia-quilt-view-profile-hero {
+    color: #0073cf;
+
+    .UserOnline {
+        color: #0073cf;
+    }
+}
+
 .lia-quilt-view-profile-hero .lia-profile-hero-avatar-wrapper:after {
     content: '';
     position: absolute;
     width: 50px;
     height: 50px;
-    top: -15px;
-    left: -8px;
-    border-top: 75px solid #40494c;
-    border-right: 75px solid transparent;
+    top: -2px;
+    left: -2px;
+    border-top: 60px solid #fff;
+    border-right: 60px solid rgba(0, 0, 0, 0);
 }
 
 /***** main nav ***/
@@ -435,6 +434,7 @@
 
 .cMessageAuthorAvatarColumn .lia-component-messages-column-message-author-avatar {
     position: relative;
+    overflow:hidden;
 
     &:after {
         content: '';
@@ -486,7 +486,7 @@
 }
 
 .lia-quilt-column-user-search-result .lia-link-navigation,
-.UserProfileSummary .lia-link-navigation{
+.UserProfileSummary .lia-user-avatar{
     position: relative;
     overflow:hidden;
     display:block;
@@ -511,3 +511,13 @@
     }    
 }
 
+/*on white bg banner background green*/
+.lia-quilt-row-navigation ~ .lia-quilt-row:nth-child(even) .lia-panel {
+    background: #E5F5F5;
+
+    .UserProfileSummary .lia-user-avatar {
+        &:after {
+             border-top-color: #E5F5F5;
+        }
+    }
+}
