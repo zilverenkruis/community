@@ -104,19 +104,32 @@
 }
 
 
+.CategoryPage {
+    .items-list .item-img-wrapper > a {
+        display: inline-block;
+        max-width: 120px;
+    }
+
+    .lia-quilt-category-page-forum2016 .lia-component-custom-latest-post-category-all {
+         padding-top: 0;
+    }
+}
+
 .SearchPage {
 
-        .lia-message-view-display .lia-message-discussion-style-icon, 
-        .lia-note-view-display .lia-message-discussion-style-icon {
-            left: 0;
-        }
-        
-    .lia-quilt-message-search-item {        
-        .lia-message-subject, .lia-message-byline-author-board {
-            margin-left: 60px;
-        }	
+    .lia-message-view-message-search-item {
+        padding-left:60px;
+        margin-bottom: 5px;
+        padding-right:40px;
     }
-    
+
+
+    .lia-message-view-display .lia-message-discussion-style-icon,
+    .lia-note-view-display .lia-message-discussion-style-icon {
+        left: -60px;
+        top:20px;
+    }
+
 }
 
 .ViewProfilePage {

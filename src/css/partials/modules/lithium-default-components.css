@@ -289,7 +289,23 @@ ul.defaultlist {
         color: #555;
         text-decoration: none;
     }
-
-
 }
 
+.lia-message-view-display .lia-message-discussion-style-icon, .lia-note-view-display .lia-message-discussion-style-icon {
+    left: -55px;
+    position: absolute;
+    top: 10px;
+}
+
+
+.lia-message-view-message-search-item,
+.lia-message-view-display.lia-message-view-recent-posts-item {
+    padding-left:70px;
+    margin-bottom: 5px;
+    padding-right:40px;
+}
+
+.lia-message-view-message-search-item .lia-message-item-metadata-side,
+.lia-message-view-display .lia-message-item-metadata-side {
+    margin-right: 0px;
+}
