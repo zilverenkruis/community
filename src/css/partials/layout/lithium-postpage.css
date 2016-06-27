@@ -85,7 +85,8 @@
                 background-color: transparent;
                 border: 0;
                 padding: 0;
-                margin: 1em 0;
+                margin: 0;
+                /*margin: 1em 0;*/
                 color: $blueLight;
             }            
         }
@@ -158,7 +159,9 @@
         
         .lia-message-author-avatar {
             height: 120px;
-            position: absolute;
+            width:120px;
+            float:left;
+            /*position: absolute;*/
             
             .lia-user-avatar {
             }
@@ -184,18 +187,16 @@
         .lia-message-author-avatar + .lia-component-author, 
         .lia-message-author-avatar + .lia-message-author-username
         {
-            margin-left: 120px;
+            /*margin-left: 120px;*/
             width: auto;
-            display: inline-block;
+            display: block;
         }
         
         .lia-quilt-row-footer {
             margin-top: 1em;
         }
         
-        
-  
-        
+
         .lia-component-reply-list {
             .lia-component-reply-button {
                 display: none;
@@ -341,9 +342,16 @@
 }
 
 .lia-profile-hero-user .UserAvatar,
-.main-nav-items .UserAvatar,
 .lia-slide-menu-content .UserAvatar {
     animation: none;
+    opacity: 1;
+}
+
+.main-nav-items .UserAvatar {
+    animation: none;
+    opacity: 1;
+    position: relative;
+    display: block;
 }
 
 .lia-quilt-view-profile-hero .lia-user-avatar, .lia-quilt-view-profile-hero .lia-media-top-image-contributors .lia-media-image-contributor-avatar-wrapper, .lia-media-top-image-contributors .lia-quilt-view-profile-hero .lia-media-image-contributor-avatar-wrapper {
@@ -384,10 +392,13 @@
 
 
 .main-nav-items .last .UserAvatar.lia-link-navigation {
-    position: absolute;
-    display: block;
-    overflow:hidden;
-    top:-40px;
+
+    @media screen and (min-width: 999px) {
+        position: absolute;
+        display: block;
+        overflow:hidden;
+        top:-65px;
+    }
 
     img {
         display: block;

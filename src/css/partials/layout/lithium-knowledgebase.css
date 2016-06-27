@@ -2,14 +2,14 @@
     .lia-message-subject-status {
         display: none;
     }
-}
 
-@media screen and (max-width: 767px) {
-    .lia-content .lia-message-read.lia-message-read > .lia-link-navigation {
-        margin-left: 25px;
-    }
+    @media screen and (max-width: 767px) {
+        .lia-content .lia-message-read.lia-message-read > .lia-link-navigation {
+            margin-left: 25px;
+        }
 
-    .lia-list-wide .lia-list-row > td:first-child.lia-data-cell-icon {
-        top: 19px;
+        .lia-list-wide .lia-list-row > td:first-child.lia-data-cell-icon {
+            top: 19px;
+        }
     }
 }

@@ -83,69 +83,6 @@
         display: none;
     }
 
-    .lia-tabs-standard-wrapper {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
-        background-color: #fff;
-        margin-top:80px;
-
-        .lia-tabs-standard {
-            /*border-color: $blueLightest2;*/
-            border: 0;
-            margin: -68px -20px 0;
-            overflow:hidden;
-
-            @media screen and (max-width: 767px) {
-                margin: -58px -20px 0;
-            }
-
-            .lia-link-navigation {
-                text-transform: capitalize;
-                font-size: 1.4em;
-                padding-left: 0;
-            }
-
-            .lia-tabs {
-                margin-right:30px;
-                position:relative;
-                background-color: #279EDA;
-                z-index:10;
-
-                a {
-                    padding-left: 20px;
-                    border-bottom-color: transparent;
-                    color:#E5F5F5;
-                }
-
-                &:before {
-                     position: absolute;
-                     right: -50px;
-                     content: " ";
-                     display: block;
-                     border-bottom: 50px solid #279EDA;
-                     border-right: 50px solid rgba(0, 0, 0, 0);
-                 }
-            }
-
-            .lia-tabs-active {
-                background-color: #fff;
-                z-index:20;
-                a {
-                    color:#002857;
-                }
-                &:before {
-                    border-bottom-color: #fff;
-                }
-            }
-
-        }
-
-        /*@media screen and (max-width: 662px) {
-
-        }*/
-
-    }
 
 
     @media screen and (min-width: 662px) {

@@ -44,10 +44,6 @@
 
     padding: 5px 0 6px;
 
-    @media screen and (max-width: 999px) {
-        display:none;
-    }
-
     &.isAdmin {
         .main-nav-hamburger {
             display: inline-block;
@@ -60,6 +56,61 @@
              }
         }
     }
+
+    @media screen and (max-width: 999px) {
+        padding: 0;
+
+        .user-navigation-settings-dropdown-link {
+            padding-right: 50px;
+        }
+
+        .user-navigation-settings-dropdown-link > .UserAvatar {
+            position: absolute;
+            right: 7px;
+            top: -7px;
+        }
+
+        &.isAdmin {
+            .main-nav-hamburger {
+                display: none;
+            }
+            .main-nav-items {
+                display: block;
+            }
+
+            .grid-item{
+                display: none;
+            }
+
+            .grid-item.last {
+                display: block;
+                position: absolute;
+                top: -39px;
+                right: 15px;
+            }
+
+        }
+
+        .main-nav-hamburger {
+            display: none;
+        }
+        .main-nav-items {
+            display: block;
+        }
+
+        .grid-item{
+            display: none;
+        }
+
+        .grid-item.last {
+            display: block;
+            position: absolute;
+            top: -35px;
+            right: 20px;
+        }
+
+    }
+
     /*&.menu-visible{
         .main-nav-items {
             display: block;

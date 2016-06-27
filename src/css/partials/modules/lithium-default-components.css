@@ -291,12 +291,25 @@ ul.defaultlist {
     }
 }
 
-.lia-message-view-display .lia-message-discussion-style-icon, .lia-note-view-display .lia-message-discussion-style-icon {
-    left: -55px;
-    position: absolute;
-    top: 10px;
+.lia-message-view-display .lia-message-discussion-style-icon,
+.lia-note-view-display .lia-message-discussion-style-icon {
+    left: 0;
+
+    @media screen and (max-width: 999px) {
+        left: 20px;
+    }
+
 }
 
+.lia-message-view-display .lia-quilt-column-full-content > .lia-quilt-column-alley,
+.lia-message-view-display .lia-quilt-column-left-content > .lia-quilt-column-alley {
+    margin-left: 58px;
+    margin-right: 40px;
+    @media screen and (max-width: 999px) {
+        margin-left: 78px;
+    }
+
+}
 
 .lia-message-view-message-search-item,
 .lia-message-view-display.lia-message-view-recent-posts-item {
@@ -305,7 +318,190 @@ ul.defaultlist {
     padding-right:40px;
 }
 
+.lia-content .lia-message-read.lia-message-read > .lia-link-navigation {
+    font-weight: normal;
+    display: inline-block;
+}
+
+.lia-content h2.message-subject {
+    line-height:1.2;
+}
+
 .lia-message-view-message-search-item .lia-message-item-metadata-side,
 .lia-message-view-display .lia-message-item-metadata-side {
     margin-right: 0px;
 }
+
+.ViewProfilePage .lia-quilt-column-search-content {
+    border-top: 0px solid #fff;
+    top: 0px;
+}
+
+.lia-decoration-border-menu-bar-content {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+
+
+/****************************/
+
+.lia-tabs-standard li > span > a:active,
+.lia-tabs-standard li > span > a:focus,
+.lia-tabs-standard li > span > a:hover,
+.lia-tabs-standard .lia-tab-overflow .default-menu-option:active,
+.lia-tabs-standard .lia-tab-overflow .default-menu-option:focus,
+.lia-tabs-standard .lia-tab-overflow .default-menu-option:hover,
+.lia-tabs-standard .lia-tabs-active > span > a:active,
+.lia-tabs-standard .lia-tabs-active > span > a:focus,
+.lia-tabs-standard .lia-tabs-active > span > a:hover,
+.lia-tabs-standard > .lia-tabs-active .default-menu-option:active,
+.lia-tabs-standard > .lia-tabs-active .default-menu-option:focus,
+.lia-tabs-standard > .lia-tabs-active .default-menu-option:hover {
+    border-bottom: 0px solid #0691c1;
+}
+
+#tabgroup.lia-tabs-standard-wrapper {
+    margin-top:0px;
+    padding: 20px;
+}
+
+
+.lia-tabs-standard-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+    background-color: #fff;
+    margin-top:30px;
+
+    .lia-tabs-secondary:not(.lia-tabs-vertical) > li > span > a:focus,
+    .lia-tabs-secondary:not(.lia-tabs-vertical) > li > span > a:hover {
+        background-color: #f4f6f7;
+        text-decoration: none;
+        color:#279EDA;
+    }
+
+    .lia-tabs-secondary {
+
+        .lia-link-navigation {
+            text-transform: capitalize;
+            font-size: 1em;
+            padding-left: 0;
+            @media screen and (max-width: 999px) {
+                font-size: 14px;
+            }
+        }
+
+        .lia-tabs {
+            margin-right: 0px;
+            position: relative;
+            background-color: #279EDA;
+            z-index: 10;
+            border-left: 1px solid #fff;
+            border-radius: 0 10px 0 0;
+
+            a {
+                padding: 10px;
+                border-bottom-color: transparent;
+                color: #E5F5F5;
+            }
+        }
+
+        .lia-tabs-active {
+            background-color: #fff;
+            z-index: 20;
+
+            a {
+                color: #002857;
+            }
+
+        }
+    }
+
+    .lia-tabs-standard {
+        /*border-color: $blueLightest2;*/
+        border: 0;
+        margin: -68px -20px 20px;
+        overflow:hidden;
+
+        @media screen and (max-width: 999px) {
+            margin: -63px -20px 0;
+        }
+
+        .lia-link-navigation {
+            text-transform: capitalize;
+            font-size: 14px;
+            padding-left: 0;
+        }
+
+        .lia-tabs {
+            margin-right:0px;
+            position:relative;
+            background-color: #279EDA;
+            z-index:10;
+            border-left:1px solid #fff;
+            border-radius : 0 10px 0 0;
+
+            a {
+                padding: 10px;
+                border-bottom-color: transparent;
+                color:#E5F5F5;
+            }
+
+            /*&:before {*/
+                 /*position: absolute;*/
+                 /*right: -50px;*/
+                 /*content: " ";*/
+                 /*display: block;*/
+                 /*border-bottom: 50px solid #279EDA;*/
+                 /*border-right: 50px solid rgba(0, 0, 0, 0);*/
+             /*}*/
+        }
+
+        .lia-tabs-active {
+            background-color: #eee;
+            z-index:20;
+
+            a {
+                color:#002857;
+            }
+
+            /*&:before {*/
+                 /*border-bottom-color: #fff;*/
+            /*}*/
+        }
+    }
+}
+
+.lia-ajax-loader-feedback, .lia-panel-status-banner-note, .lia-quilt-column-feedback .lia-component-common-widget-page-information {
+    background-color: #279EDA;
+    border-color: #279EDA;
+    color: #fff;
+}
+
+.boardIconColumn .lia-fa-forum,
+.lia-message-discussion-style-icon .lia-fa-forum,
+.lia-nav-item-container .lia-fa-forum,
+.lia-notification-feed-icon .lia-fa-forum {
+    background-color: #279EDA;
+}
+
+.lia-component-users-widget-unsaved-drafts,
+.CategoryListDisplay {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 980px;
+}
+
+.UserAvatarSelectorTabs {
+    padding-top: 30px;
+}
+
+a.tab-link:focus {
+    outline: none;
+    outline-offset: 0;
+}
+
+

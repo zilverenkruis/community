@@ -134,6 +134,16 @@
 
 .ViewProfilePage {
 
+    .lia-quilt-column-search-content .lia-component-common-widget-search-form {
+        display: block;
+    }
+
+    .userMessagesFeed {
+        max-width:980px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .lia-button-primary.lia-button-primary {
         padding: 6px 12px;
 
@@ -148,7 +158,6 @@
 
     .lia-panel .lia-panel-heading-bar {
         border: 0 solid #fff;
-        padding-left: 0;
         padding-bottom: 0;
 
         .lia-panel-heading-bar-title {
@@ -162,8 +171,25 @@
         border-top: 1px solid #fff;
     }
 
+    .lia-user-viewing-other .lia-component-send-message-button,
     .lia-quilt-view-profile-hero {
         background-color:#fff;
+        max-width:980px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top:0px;
+        padding-bottom:20px;
+        display:block;
+        width:100%;
+        text-align:center;
+
+        @media screen and (max-width: 991px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
     }
 
     .lia-component-badges-widget-user-badges-list,
@@ -171,21 +197,18 @@
         background-color: #E5F5F5;
     }
 
-    .lia-message-view-display .lia-message-discussion-style-icon,
-    .lia-note-view-display .lia-message-discussion-style-icon {
-        left: 0;
-    }
-
     .lia-message-view-display {
         .lia-message-subject-wrapper.lia-component-subject {
-            margin-left: 50px;
+            margin-left: 0px;
+
+
         }
     }
 
-    .lia-component-discussion-style-icon + .lia-component-subject,
-    .lia-component-discussion-style-icon + .lia-component-subject + .lia-component-byline-board{
-        margin-left: 50px;
-    }
+    /*.lia-component-discussion-style-icon + .lia-component-subject,*/
+    /*.lia-component-discussion-style-icon + .lia-component-subject + .lia-component-byline-board{*/
+        /*margin-left: 50px;*/
+    /*}*/
 
     .lia-message-view-display .lia-message-item-metadata-side {
          margin-right: 0;

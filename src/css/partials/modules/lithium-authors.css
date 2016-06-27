@@ -67,8 +67,24 @@
     }
 }
 
-@media screen and (max-width: 662px) {
+@media screen and (max-width: 599px) {
     .top-authors .top-author:nth-child(n+3){
         display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lia-quilt-view-profile-hero {
+        .lia-user-avatar {
+            height: 70px;
+            width: 70px;
+        }
+
+        .lia-profile-hero-avatar-wrapper:after {
+            width: 30px;
+            height: 30px;
+            border-top: 30px solid #fff;
+            border-right: 30px solid rgba(0, 0, 0, 0);
+        }
     }
 }

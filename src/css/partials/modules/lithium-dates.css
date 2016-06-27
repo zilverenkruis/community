@@ -40,7 +40,7 @@
     &.lia-message-blog {
         .lia-component-common-widget-date, 
         .lia-component-author-rank-name {
-            margin-left: 120px;
+            /*margin-left: 120px;*/
         }
         .lia-message-body {
             margin-top: 53px;        
@@ -178,3 +178,16 @@
 
 
 }*/
+
+.lia-panel-message-content .lia-quilt-row-header .lia-component-common-widget-date {
+    display: inline;
+}
+
+.lia-panel-message .lia-message-body,
+.lia-panel-message.lia-message-blog .lia-message-body {
+    margin-top: 0;
+}
+
+.CommentList.CommentList .lia-quilt-row-header .lia-component-post-date {
+    display: none;
+}
