@@ -77,18 +77,21 @@
         .lia-quilt-forum-topic-header {
             display: none;
         }
-        
+
         #actionMenuDropDown {
             /*width: 100%;*/
             /*text-align: right;   */
+
+
+
             .lia-js-menu-opener {
-                background-color: transparent;
-                border: 0;
-                padding: 0;
-                margin: 0;
-                /*margin: 1em 0;*/
-                color: $blueLight;
-            }            
+                background-color: #fff;
+                border: 1px solid #808587;
+                /*padding: 0;*/
+                /*margin: 0;*/
+                margin: 1em 0 0 0 ;
+                /*color: $blueLight;*/
+            }
         }
         
     
@@ -169,6 +172,7 @@
                 display: block;
                 width: 100px;
                 height: 100px;
+                position:relative;
                 /*background-color: $blueLighter;            */
                 > img {
                     border-radius: 4px;
@@ -360,7 +364,7 @@
 
 .UserAvatar > img {
     border-radius: 0%;
-    height: auto;
+    /*height: auto;*/
 }
 
 .lia-image-cropper canvas {
@@ -460,7 +464,7 @@
     }
 }
 
-.UserList .lia-user-item .lia-user-avatar,
+/*.UserList .lia-user-item .lia-user-avatar,*/
 .UserList .lia-user-item .lia-media-top-image-contributors .lia-media-image-contributor-avatar-wrapper,
 .lia-media-top-image-contributors .UserList .lia-user-item .lia-media-image-contributor-avatar-wrapper {
     position: relative;
@@ -531,4 +535,32 @@
              border-top-color: #E5F5F5;
         }
     }
+}
+
+
+
+.lia-quilt-kudos-user-page  {
+    .lia-quilt-column-main-content {
+        .lia-tabs-standard-wrapper,
+        .lia-component-tabs {
+            margin : 0 auto;
+            max-width:980px;
+
+            .lia-tabs-standard {
+                margin: -38px -20px 20px;
+            }
+        }
+    }
+
+    .lia-user-leaderboard-rank,
+    .lia-component-common-widget-user-avatar,
+    .lia-user-attributes {
+        float:left;
+    }
+
+    overflow:hidden;
+}
+
+.KudosUserPage .UserListBlock .UserProfileSummary {
+    overflow: hidden;
 }

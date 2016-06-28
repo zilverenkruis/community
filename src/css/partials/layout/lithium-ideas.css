@@ -22,11 +22,15 @@
     }
 }
 
+.IdeaExchangePage .lia-message-subject-status  {
+    margin-left: 0px;
+}
+
 .lia-message-subject-status {
     /*position: absolute;
     right: 0;*/
     border: 1px solid $pinkLight;
-    margin-left: 120px;
+    /*margin-left: 120px;*/
     padding: .1em 1em;
     border-radius: 4px;
     margin-bottom: .5em;
@@ -63,7 +67,7 @@
         .lia-menu-bar-buttons {
             position: absolute;
             right: 0;
-            bottom: -70px;
+            bottom: -20px;
         }
     }
 
@@ -83,7 +87,9 @@
         display: none;
     }
 
-
+    .lia-tabs-standard-wrapper .lia-tabs-standard {
+        margin: -65px -20px 20px;
+    }
 
     @media screen and (min-width: 662px) {
         .subtitle {
@@ -104,9 +110,9 @@
 
 
 .IdeaPage {
-    /*.lia-message-body {
-        margin-left: -118px;
-    }*/
+    .default-menu-option:after, .lia-common-dropdown-toggle:after {
+        content: "... \f0d7";
+    }
 }
 
 

@@ -141,6 +141,8 @@
 
 .CustomContent {
     margin-bottom: 0;
+    /*padding : 20px;*/
+
     .lia-panel-heading-bar, .lia-panel-content {
         padding: 0;
         border: 0;
