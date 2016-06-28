@@ -59,9 +59,21 @@ $maxwidth : 980px;
         }
     }
 }
+
+
 .BlogArticlePage {
 
-    
+    .lia-component-kudos {
+        position: absolute;
+        z-index: 20;
+        left: 90px;
+    }
+
+    #message_social {
+        position: absolute;
+        top: -66px;
+        z-index: 10;
+    }
 
     .lia-component-message_social {
         margin: auto;

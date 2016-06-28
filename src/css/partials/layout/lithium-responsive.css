@@ -9,3 +9,19 @@
         padding: 0 $page-padding;    
     }
 }
+
+.show-on-mobile {
+    display: none;
+}
+.show-on-not-mobile {
+    display: block;
+}
+
+@media screen and (max-width: 662px) {
+    .show-on-mobile {
+        display: block;
+    }
+    .show-on-not-mobile {
+        display: none;
+    }
+}

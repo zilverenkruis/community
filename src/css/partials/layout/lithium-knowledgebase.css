@@ -3,6 +3,16 @@
         display: none;
     }
 
+    .lia-panel-message-content .lia-component-kudos {
+        display: block;
+        margin-right: 0;
+    }
+
+    .UserProfileSummary .lia-user-avatar {
+        display: table-cell;
+    }
+
+
     @media screen and (max-width: 767px) {
         .lia-content .lia-message-read.lia-message-read > .lia-link-navigation {
             margin-left: 25px;

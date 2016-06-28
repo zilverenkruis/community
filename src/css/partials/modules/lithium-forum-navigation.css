@@ -15,7 +15,7 @@
     flex: 1;
     height: 100%;
 }
-.col-Vergoedingen {
+.col-vergoedingen {
     /*float: left;*/
     flex: 2;               
 }
@@ -112,3 +112,21 @@
 
 }
 
+@media screen and (min-width: 980px) {
+
+    .lia-quilt-category-page-hiddenboards2016 {
+
+        .forum-navigation-parent {
+            height: auto;
+        }
+
+        .forum-boards {
+            -ms-flex-direction: row;
+            flex-direction: row;
+
+            li {
+                flex:1;
+            }
+        }
+    }
+}
