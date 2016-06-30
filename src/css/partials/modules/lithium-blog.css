@@ -3,3 +3,21 @@
         display: none;
     }
 }
+
+.IE10 {
+    #latest_blog_posts_list {
+        display: block;
+        overflow: hidden;
+
+        .blog-item {
+            width: 32.25%;
+            margin-left:.5%;
+            margin-right:.5%;
+            float:left;
+        }
+
+        .blog-item:nth-child(3n){
+            clear:both;
+        }
+    }
+}
