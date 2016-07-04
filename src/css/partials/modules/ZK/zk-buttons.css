@@ -12,8 +12,6 @@
 	white-space: nowrap;
 	margin-bottom: 0; 
 
-	line-height: $baseLineHeight;
-
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
@@ -742,4 +740,5 @@ a.btn-link:focus {
 	font-weight: bold;
 	line-height: 25px;
 	font-size: 16px;
+	float: right;
 }

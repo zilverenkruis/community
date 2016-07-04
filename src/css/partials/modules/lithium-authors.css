@@ -67,7 +67,7 @@
     }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 663px) {
     .top-authors .top-author:nth-child(n+3){
         display: none;
     }
@@ -88,3 +88,9 @@
         }
     }
 }
+
+.lia-message-subject .lia-link-navigation {
+    font-size: 42px;
+    font-weight: normal;
+}
+

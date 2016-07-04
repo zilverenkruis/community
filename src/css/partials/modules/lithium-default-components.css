@@ -137,11 +137,6 @@
 }
 
 
-.CommentEditorForm {
-    border: 0;
-    padding: 0;
-}
-
 .quote-message-link {
     display: none;
 }
@@ -341,6 +336,11 @@ ul.defaultlist {
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    .TkbPage .lia-decoration-border-menu-bar-content {
+        margin: 0 0 20px 0;
+    }
+
 }
 
 /****************************/
@@ -550,5 +550,194 @@ a.tab-link:focus {
     .lia-quilt-row-main {
         max-width:980px;
         margin : 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .SimpleMessageList > .MessageList .lia-list-wide .lia-list-row {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .BlogArticlePage .lia-component-blogs-action-comment-on-this .lia-message-comment-post span {
+         display: inline-block;
+    }
+}
+
+.user-navigation-settings-dropdown-link {
+    .login {
+        display: none;
+    }
+}
+
+/*************/
+
+.ie9 {
+    footer {
+        .footer-awards {
+            .box {
+                height: 240px !important;
+            }
+        }
+
+        .row-fluid {
+            display: block;
+            overflow: hidden;
+        }
+
+        .span16 {
+            width: 65.5%;
+            margin-left:.5%;
+            margin-right:.5%;
+            float:left;
+        }
+
+        .span8 {
+            width: 32.25%;
+            margin-left:.5%;
+            margin-right:.5%;
+            float:left;
+        }
+
+    }
+
+    .lia-quilt-idea-exchange-page-ideas2016 {
+
+        .﻿row-eq-h {
+            display: block;
+            overflow: hidden;
+        }
+
+        .full-width-paragraph .box {
+            width: 32.25%;
+            margin-left:.5%;
+            margin-right:.5%;
+            float:left;
+        }
+
+    }
+}
+
+.ie9,
+.ie10 {
+    #latest_blog_posts_list {
+        display: block;
+        overflow: hidden;
+
+        .blog-item {
+            width: 32.25%;
+            margin-left:.5%;
+            margin-right:.5%;
+            float:left;
+        }
+
+        .blog-item:nth-child(3n+1){
+            clear: both;
+        }
+    }
+}
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        /*display: block;*/
+    }
+
+
+    td {
+        /* Behave  like a "row" */
+        /*border: none;*/
+        /*position: relative;*/
+    }
+}
+
+@media screen and (max-width: 662px) {
+    .ViewProfilePage .lia-media-image-list.lia-media-image-list.lia-list-tile .lia-media-image-item {
+        margin: 1px;
+        width: calc(25% - (2 * 1px));
+    }
+}
+
+.RelayFB {
+    margin-bottom:20px;
+}
+
+.CommentEditorForm {
+    border: 0;
+    padding:0 20px;
+
+    #tabgroup.lia-tabs-standard-wrapper {
+        margin-top: 0px;
+        padding: 0 20px 8px;
+    }
+}
+
+.mce-panel.mce-toolbar-grp {
+    background-color: #eee;
+    border-radius: 0 10px 0 0;
+
+}
+
+.lia-button-image-kudos-horizontal .kudos-link.lia-link-disabled:active:after,
+.lia-button-image-kudos-horizontal .kudos-link.lia-link-disabled:active:before,
+.lia-button-image-kudos-horizontal .kudos-link.lia-link-disabled:focus:after,
+.lia-button-image-kudos-horizontal .kudos-link.lia-link-disabled:focus:before,
+.lia-button-image-kudos-horizontal .kudos-link.lia-link-disabled:hover:after,
+.lia-button-image-kudos-horizontal .kudos-link.lia-link-disabled:hover:before {
+     color: #FFF;
+}
+
+.lia-paging-full-wrapper.lia-paging-pager {
+    margin-top: 20px;
+}
+
+.lia-panel-message-content .lia-message-subject,
+.lia-message-tkb .lia-message-heading {
+    margin-bottom: 0 px;
+}
+
+.contributing-user {
+    float:left;
+    margin:0 30px 0 -20px;
+
+    .UserAvatar {
+        display: none;
+    }
+
+    .lia-user-item .lia-user-avatar + .lia-user-attributes,
+    .lia-user-item .lia-user-avatar {
+        padding-right: 0;
+    }
+
+    .lia-user-attributes {
+
+        padding: 0;
+
+        a {
+            color : #0068bd;
+            border: 1px solid #0068bd;
+            padding: .1em 1em;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: .95em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: inline-block;
+
+            &:hover {
+                text-decoration : none;
+             }
+
+            span {
+                color : #0068bd;
+
+            }
+        }
     }
 }

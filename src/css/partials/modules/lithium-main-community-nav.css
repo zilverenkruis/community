@@ -40,11 +40,19 @@
     }
 }
 
-
-.lia-component-common-widget-slide-out-user-menu .lia-notifications-messages-aggregate {
-    right: 20px;
+@media screen and (max-width: 999px) {
+    .lia-component-common-widget-slide-out-user-menu .lia-notifications-messages-aggregate {
+        right: 20px;
+        top:-5px;
+    }
 }
 
+@media screen and (min-width: 1000px) {
+    .lia-component-common-widget-slide-out-user-menu .lia-notifications-messages-aggregate {
+        right: 0px;
+        top:-50px;
+    }
+}
 
 .user-navigation-user-profile {
     padding-right: 0;
@@ -223,4 +231,40 @@
         display: block;
         }        
     }    
+}
+
+@media screen and (min-width: 768px) {
+
+    td.latestPostDateColumn {
+        width: 20%;
+    }
+}
+
+.lia-fa,
+.lia-fa.lia-fa-thread.lia-fa-tkb:before {
+    color:#279eda;
+}
+
+.lia-quilt-row-zk-search .nav-link:hover {
+    text-decoration: underline !important;
+    background-color: #fff !important;
+    color: inherit !important;
+}
+
+@media only screen and (min-width: 663px) {
+    .nav-main__dropdown-part {
+        width: 33.32%;
+    }
+
+    .nav-main__dropdown {
+        max-width: 100%;
+    }
+
+    .nav-main__dropdown.columns2 .nav-main__dropdown-part {
+        width: 49.99%;
+    }
+
+    #hamburger {
+        display: none;
+    }
 }

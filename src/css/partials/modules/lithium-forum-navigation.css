@@ -130,3 +130,15 @@
         }
     }
 }
+
+.ie9 .forum-navigation-parent {
+    display: block;
+    height: auto;
+
+    .col-category {
+        float: left;
+        width:33%;
+    }
+
+}
+

@@ -210,9 +210,12 @@ a.label-link:hover, a.label-link:focus {
     display: inline-block;
     font-weight: bold;
     color: $blue;
-    font-size:16px;
+    font-size:11px;
     line-height:28px;
 
+    @media screen and (min-width: 663px) {
+        font-size:16px;
+    }
 
     &:hover, &.:focus {
         background-color: transparent;
@@ -223,9 +226,12 @@ a.label-link:hover, a.label-link:focus {
 .lia-message-labels + .lia-message-tags {
     display: none;
 }
-.lia-message-labels, .lia-message-labels + .lia-message-tags + .lia-quilt-row {
-    float: left;
-    width: 50%;
+
+@media screen and (min-width: 663px) {
+    .lia-message-labels, .lia-message-labels + .lia-message-tags + .lia-quilt-row {
+        float: left;
+        width: 50%;
+    }
 }
 .lia-message-moderation {
     float: left;

@@ -1152,42 +1152,41 @@ display: none;
         display: none !important;
     }
     &:before {
-                        /*font-family: 'zk-centralenav-font';*/
-                        font-family: 'zk-centralenav-fontregular';
-                        content: '\5a';
-                        display: inline;
-                        /*// display: inline-block;*/
-                        /*position: absolute;*/
-                        /*right: 10px;*/
-                        /*top: 6px;*/
-                        width: 1em;
-                        height: 1em;
-                        color: #0072cd;
-                        margin: auto;
-                        font-size: .8em;
+        /*font-family: 'zk-centralenav-font';*/
+        font-family: 'zk-centralenav-fontregular';
+        content: '\5a';
+        display: inline;
+        /*// display: inline-block;*/
+        /*position: absolute;*/
+        /*right: 10px;*/
+        /*top: 6px;*/
+        width: 1em;
+        height: 1em;
+        color: #0072cd;
+        margin: auto;
+        font-size: .8em;
     }
     
 }
 
 .lia-message-comment-view {
     &:before {
-                        font-family: 'zk-centralenav-fontregular';
-                        content: '\34';
-                        display: inline;
-                        /*// display: inline-block;*/
-                        /*position: absolute;*/
-                        /*right: 10px;*/
-                        /*top: 6px;*/
-                        width: 1em;
-                        height: 1em;
-                        color: #0072cd;
-                        margin: auto;
-                            font-size: 1em;
-                            margin-right: 5px;
+        font-family: 'zk-centralenav-fontregular';
+        content: '\34';
+        display: inline;
+        /*// display: inline-block;*/
+        /*position: absolute;*/
+        /*right: 10px;*/
+        /*top: 6px;*/
+        width: 1em;
+        height: 1em;
+        color: #0072cd;
+        margin: auto;
+        font-size: 1em;
+        margin-right: 5px;
     }
     
 }
-
 
 /*svg:*/
 
