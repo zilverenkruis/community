@@ -242,7 +242,12 @@
 
 .lia-fa,
 .lia-fa.lia-fa-thread.lia-fa-tkb:before {
-    color:#279eda;
+    color:#fff;
+}
+
+.dropdown-menu .lia-list-tree-toggle:before,
+.dropdown-menu .lia-fa {
+    color: #279EDA;
 }
 
 .lia-quilt-row-zk-search .nav-link:hover {

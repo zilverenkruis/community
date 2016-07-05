@@ -43,6 +43,7 @@ var jsFiles = [
     sourceJS + 'community-create-bg.js',
     sourceJS + 'community-social.js',
     sourceJS + 'community-forum.js',
+    sourceJS + 'community-ideas.js',
     sourceJS + 'community-onload.js'
 ]
 

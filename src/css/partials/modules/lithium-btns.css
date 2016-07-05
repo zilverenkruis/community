@@ -59,6 +59,8 @@
 
 .lia-component-message_social {
     display: inline-block;
+    margin:0;
+
     .lia-panel-content {
         padding: 0;
         margin: 0;

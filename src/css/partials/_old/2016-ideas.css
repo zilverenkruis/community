@@ -513,10 +513,11 @@ display: none;
 
 #lia-body .lia-page .lia-content .lia-message-view .lia-quilt-row-footer  .lia-message-footer  .lia-message-tags + .lia-quilt-row {
 	width: 45%;
-    /*float: left;*/
-        position: absolute;
+    float: left;
+    /*position: absolute;*/
     bottom: 0;
 }
+
 #lia-body .lia-page .lia-content .lia-message-view .lia-quilt-row-footer .lia-message-comment-view {
     /*font-size: .8em;*/
     font-size: 12px;

@@ -16,6 +16,6 @@ LITHIUM.jQuery(function($) {
         ZK.scrollTo($);
         ZK.connectSocialButtons($);
         ZK.copyReactTo($)
-
+        ZK.adaptCommentLinks($);
 
 }(LITHIUM.jQuery));

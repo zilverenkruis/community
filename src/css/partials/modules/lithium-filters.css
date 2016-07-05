@@ -4,9 +4,7 @@
     position: relative;
     
     border-radius: 4px;
-    border-right: 1px solid $blueLightest2;
-    border-left: 1px solid $blueLightest2;
-    border-bottom: 1px solid $blueLightest2;
+    border: 1px solid $blue;
     overflow: hidden;
     transition: .25s max-height;
     
@@ -19,7 +17,7 @@
     background-color: transparent;
     color: $blueLighter;
     font-size: inherit;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
 }
 
@@ -50,12 +48,10 @@
     }
     
     .LabelsList, .lia-component-ideas-widget-statuses .MessageStatusesTaplet {
-        height: 3em;
+        /*height: 3em;*/
         border-radius: 4px;
         /*overflow: hidden;*/
-        
-        border-top: 1px solid $blueLightest2;
-        border-bottom: 1px solid $blueLightest2;        
+        color:#0068BD;
         
         &:hover {
             /*overflow: visible;*/
@@ -108,24 +104,24 @@
 }
 
 .lia-user-status-anonymous {
-    .LabelsList {
-        .label-count {
-            &:before {
-                content: '(';
-            }
-            &:after {
-                content: ')';
-            }
-        }
-    }
-    .lia-component-ideas-widget-statuses .MessageStatusesTaplet {
-        .count {
-            &:before {
-                content: '(';
-            }
-            &:after {
-                content: ')';
-            }
-        }        
-    }
+    /*.LabelsList {*/
+        /*.label-count {*/
+            /*&:before {*/
+                /*content: '(';*/
+            /*}*/
+            /*&:after {*/
+                /*content: ')';*/
+            /*}*/
+        /*}*/
+    /*}*/
+    /*.lia-component-ideas-widget-statuses .MessageStatusesTaplet {*/
+        /*.count {*/
+            /*&:before {*/
+                /*content: '(';*/
+            /*}*/
+            /*&:after {*/
+                /*content: ')';*/
+            /*}*/
+        /*}        */
+    /*}*/
 }

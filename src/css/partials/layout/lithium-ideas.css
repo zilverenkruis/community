@@ -1,7 +1,9 @@
 /*.IdeaPage {*/
 
-.lia-panel-message-content .lia-message-author-avatar + .lia-message-subject {
-    margin-left: 120px;
+@media screen and (min-width: 663px) {
+    .lia-panel-message-content .lia-message-author-avatar + .lia-message-subject {
+        margin-left: 120px;
+    }
 }
 
 .comment-status-bar {
@@ -61,15 +63,78 @@
 
 .IdeaExchangePage {
 
+    .ideas-filtering {
+        background-color: #fff;
+    }
+
+    .lia-component-menu-bar-without-options {
+
+        .lia-decoration-border-menu-bar-content {
+            margin-left: 0;
+            margin-right: 0;
+            text-align: right;
+            margin-bottom: 30px;
+            margin-top: -30px;
+        }
+    }
+
+    .lia-quilt-layout-idea-message {
+        position: relative;
+
+        .lia-quilt-row-footer {
+            .lia-quilt-column-footer {
+
+
+                @media screen and (min-width:500px) and (max-width: 663px) {
+                    .lia-message-labels:after, .lia-message-tags:after {
+                        display: none;
+                    }
+                }
+
+                @media screen and (max-width: 998px) {
+                    .lia-list-standard-inline > li {
+                        display: inline;
+                        float: left;                    }
+                }
+
+                @media screen and (min-width: 999px) {
+                    display: inline-block;
+                    width: 600px;
+                    float: right;
+                    position: absolute;
+                    margin-top: -40px;
+                    right: 0;
+                }
+
+                .lia-list-standard-inline ul {
+                    float:right;
+                }
+
+                .lia-quilt-column-left {
+                    margin-top: 0;
+                }
+
+                .LabelsForArticle .label-link {
+                    margin-bottom:0;
+                }
+
+            }
+        }
+    }
+
     .lia-decoration-border-menu-bar {
         position: relative;
 
-        .lia-menu-bar-buttons {
-            position: absolute;
-            right: 0;
-            bottom: -20px;
+        @media screen and (min-width: 663px) {
+            .lia-menu-bar-buttons {
+                position: absolute;
+                right: 0;
+                bottom: -20px;
+            }
         }
+
     }
+
 
     .lia-tabs-standard .lia-js-hidden {
         display: block !important;
@@ -89,7 +154,12 @@
 
     .lia-tabs-standard-wrapper .lia-tabs-standard {
         margin: -65px -20px 20px;
+
+        .lia-tabs-active {
+            background-color: #fff;
+        }
     }
+
 
     @media screen and (min-width: 662px) {
         .subtitle {
@@ -110,8 +180,13 @@
 
 
 .IdeaPage {
+
+    .lia-menu-bar .lia-menu-bar-buttons {
+        float: right;
+    }
+
     .default-menu-option:after, .lia-common-dropdown-toggle:after {
-        content: "... \f0d7";
+        content: "\f141";
     }
 }
 
@@ -170,7 +245,12 @@
     background-color: #fff;
 }
 a.label-link:hover, a.label-link:focus {
-    color: $blue;
+    color: #309FD8;
+
+    &:focus,
+    &:hover {
+        text-decoration : underline;
+    }
 }
 
 .lia-quilt-layout-idea-message .lia-quilt-column-footer .lia-quilt-column-left {
@@ -180,49 +260,69 @@ a.label-link:hover, a.label-link:focus {
     margin-top: 10px;
 
     a {
-        color: #279EDA;
+        color: #309FD8;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 16px;
 
         &:before {
             display: inline-block;
-            font: normal normal normal 16px/1 FontAwesome;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
             transform: translate(0, 0);
-            content: "\f075";
+            content: " ";
             position: absolute;
-            margin-left: -30px;
-            top: 0px;
-            font-size: 24px;
+            background-image: url("/html/assets/reaction.png");
+            background-size: contain;
+            margin-left: -28px;
+            top: 7px;
+            width: 21px;
+            height: 18px;
+            background-repeat: no-repeat;
         }
     }
 }
 
+
+.LabelsForArticle  .lia-list-standard-inline {
+    text-align: right;
+}
+
 .LabelsForArticle .label-link {
     background-color: transparent;
-    color: $blue;
-    border: 1px solid $blue;
+    color: #309FD8;
     padding: .1em 1em;
-    border-radius: 4px;
-    margin-bottom: .5em;
+    margin-bottom: 0;
     display: inline-block;
     font-weight: bold;
-    color: $blue;
-    font-size:11px;
-    line-height:28px;
+    font-size: 16px;
+    line-height:1;
+
+    &:before {
+         color: #309FD8;
+         content: "\f02b";
+         display: inline-block;
+         font: normal normal normal 16px/1 FontAwesome;
+         -moz-osx-font-smoothing: grayscale;
+         -webkit-font-smoothing: antialiased;
+         line-height: 1.71428571;
+         text-rendering: auto;
+         transform: scaleX(-1);
+         position: relative;
+         left: -5px;
+         top: 0;
+     }
 
     @media screen and (min-width: 663px) {
         font-size:16px;
     }
 
+
+
     &:hover, &.:focus {
         background-color: transparent;
-        color: $blue;
+        color: #309FD8;
         text-decoration: underline;
     }
 }
+
 .lia-message-labels + .lia-message-tags {
     display: none;
 }

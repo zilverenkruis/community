@@ -61,14 +61,24 @@
             }
         }
     }
-    
+
+
+
     .item-info {
-        width: 62%;
-        display: table-cell;        
+        width: 100%;
+        display: block;
+
+        @media screen and (min-width: 663px) {
+            width: 62%;
+            display: table-cell;
+        }
     }
     .item-meta-info {
-        display: table-cell;
-        vertical-align: middle;
+        @media screen and (min-width: 663px) {
+            display: table-cell;
+            vertical-align:bottom;
+        }
+
         text-align: right;
         color: $blueLighter;
         font-weight: bold;

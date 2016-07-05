@@ -21,8 +21,16 @@
 
 .ContestPage {
 
-    .lia-tabs-standard {
-        display: none;
+    .lia-tabs-standard-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        background-color: transparent;
+        margin-top: 0;
+
+        .lia-tabs-standard {
+            margin: 0;
+        }
     }
 
     .lia-quilt-contest-gallery-view {
@@ -65,6 +73,9 @@
     }
 
     .lia-image-contest.lia-component-submissions {
+
+        width:102%;
+        margin:0 -1%;
 
         .contest-gallery-card {
 
@@ -158,4 +169,22 @@
     height: 22px;
     font-size: 30px;
     left: auto;
+}
+
+.boardIconColumn .lia-fa-contest, .lia-message-discussion-style-icon .lia-fa-contest, .lia-nav-item-container .lia-fa-contest, .lia-notification-feed-icon .lia-fa-contest {
+    background-color: #279eda;
+}
+
+.BoardList tbody > tr > td:first-child {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ContestSubmissionPage {
+    .image-preview {
+        img {
+            max-width:100%;
+            width:100%;
+        }
+    }
 }

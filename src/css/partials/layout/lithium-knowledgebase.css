@@ -1,4 +1,13 @@
 .TkbArticlePage {
+
+    .lia-component-tkb-widget-labels-for-article {
+        h3 {
+            font-size: 12px;
+            line-height: 1;
+            margin-top: 0;
+        }
+    }
+
     .lia-message-subject-status {
         display: none;
     }
@@ -20,18 +29,6 @@
         font: 0/0 a;
         text-shadow: none;
         border: 0;
-
-        &:before {
-            color: #0068BD;
-            content: "\f141";
-            display: inline-block;
-            font: normal normal normal 16px/1 FontAwesome;
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
-            line-height: 1.71428571;
-            text-rendering: auto;
-            transform: translate(0, 0);
-        }
     }
 
     @media screen and (max-width: 767px) {

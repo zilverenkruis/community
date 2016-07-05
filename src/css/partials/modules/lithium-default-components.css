@@ -286,6 +286,12 @@ ul.defaultlist {
     }
 }
 
+.RecentPostsPage .lia-message-view-display .lia-message-discussion-style-icon,
+.RecentPostsPage .lia-note-view-display .lia-message-discussion-style-icon {
+    left: -50px;
+}
+
+
 .lia-message-view-display .lia-message-discussion-style-icon,
 .lia-note-view-display .lia-message-discussion-style-icon {
     left: 0;
@@ -308,7 +314,7 @@ ul.defaultlist {
 .lia-message-view-message-search-item,
 .lia-message-view-display.lia-message-view-recent-posts-item {
     padding-left:70px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     padding-right:40px;
 }
 
@@ -326,10 +332,42 @@ ul.defaultlist {
     margin-right: 0px;
 }
 
-.ViewProfilePage .lia-quilt-column-search-content {
-    border-top: 0px solid #fff;
-    top: 0px;
+.ViewProfilePage {
+
+    .lia-media-image-list.lia-media-image-list {
+        width:102%;
+        margin-left: -1%;
+    }
+
+    .lia-menu-bar .lia-menu-bar-buttons {
+        display: inline-block;
+    }
+
+    .default-menu-option:after, .lia-common-dropdown-toggle:after {
+        color: #279EDA;
+        content: "\f104";
+        transform: rotate(-90deg);
+        margin-left: 10px;
+        position: relative;
+        top: 3px;
+    }
+
+    #actionMenuDropDown {
+        margin-top:20px;
+
+        .lia-js-menu-opener {
+            background-color: transparent;
+            border:1px solid #279EDA;
+            color:#279EDA;
+        }
+    }
+
+    .lia-quilt-column-search-content {
+        border-top: 0px solid #fff;
+        top: 0px;
+    }
 }
+
 
 @media screen and (max-width: 999px) {
     .lia-decoration-border-menu-bar-content {
@@ -419,16 +457,10 @@ ul.defaultlist {
     }
 
     .lia-tabs-standard {
-        /*border-color: $blueLightest2;*/
         border: 0;
-        /*margin: -65px -20px 20px;*/
         margin: 0 0 0 -20px;
         overflow:hidden;
         border-bottom-width:0;
-
-        /*@media screen and (max-width: 999px) {*/
-            /*margin: -60px -20px 0;*/
-        /*}*/
 
         .lia-link-navigation {
             text-transform: capitalize;
@@ -449,15 +481,6 @@ ul.defaultlist {
                 border-bottom-color: transparent;
                 color:#E5F5F5;
             }
-
-            /*&:before {*/
-                 /*position: absolute;*/
-                 /*right: -50px;*/
-                 /*content: " ";*/
-                 /*display: block;*/
-                 /*border-bottom: 50px solid #279EDA;*/
-                 /*border-right: 50px solid rgba(0, 0, 0, 0);*/
-             /*}*/
         }
 
         .lia-tabs-active {
@@ -468,9 +491,6 @@ ul.defaultlist {
                 color:#002857;
             }
 
-            /*&:before {*/
-                 /*border-bottom-color: #fff;*/
-            /*}*/
         }
     }
 }
@@ -482,6 +502,14 @@ ul.defaultlist {
     margin: 0 auto 20px;
     max-width:980px;
 }
+
+
+form .lia-list-tree-toggle:before,
+form .lia-fa,
+form .lia-fa.lia-fa-thread.lia-fa-tkb:before {
+    color : #279EDA;
+}
+
 
 .boardIconColumn .lia-fa-forum,
 .lia-message-discussion-style-icon .lia-fa-forum,
@@ -698,12 +726,12 @@ only screen and (max-width: 760px),
 
 .lia-panel-message-content .lia-message-subject,
 .lia-message-tkb .lia-message-heading {
-    margin-bottom: 0 px;
+    margin-bottom: 0;
 }
 
 .contributing-user {
     float:left;
-    margin:0 30px 0 -20px;
+    margin:0 15px 0 -5px;
 
     .UserAvatar {
         display: none;
@@ -740,4 +768,88 @@ only screen and (max-width: 760px),
             }
         }
     }
+}
+
+.lia-component-quilt-user-profile-statistics .UserSingleStatistic.lia-statistic-net_overall_posts .lia-statistic-text,
+.lia-component-quilt-user-profile-statistics .UserSingleStatistic.lia-statistic-net_overall_posts .lia-statistic-icon:before,
+.lia-component-quilt-user-profile-statistics .UserSingleStatistic.lia-statistic-net_kudos_weight_received .lia-statistic-text,
+.lia-component-quilt-user-profile-statistics .UserSingleStatistic.lia-statistic-net_kudos_weight_received .lia-statistic-icon:before,
+.lia-component-quilt-user-profile-statistics .UserSingleStatistic.lia-statistic-net_accepted_solutions .lia-statistic-text,
+.lia-component-quilt-user-profile-statistics .UserSingleStatistic.lia-statistic-net_accepted_solutions .lia-statistic-icon:before {
+    color: #279EDA;
+}
+
+.boardIconColumn .lia-fa-idea,
+.lia-message-discussion-style-icon .lia-fa-idea,
+.lia-nav-item-container .lia-fa-idea,
+.lia-notification-feed-icon .lia-fa-idea,
+.boardIconColumn .lia-fa-tkb,
+.lia-message-discussion-style-icon .lia-fa-tkb,
+.lia-nav-item-container .lia-fa-tkb,
+.lia-notification-feed-icon .lia-fa-tkb
+.boardIconColumn .lia-fa-blog,
+.lia-message-discussion-style-icon .lia-fa-blog,
+.lia-nav-item-container .lia-fa-blog,
+.lia-notification-feed-icon .lia-fa-blog {
+    background-color: #279EDA;
+}
+
+.user-navigation-user-profile {
+    display: block;
+}
+
+.default-menu-option:after, .lia-common-dropdown-toggle:after {
+    content: "\f141";
+    color:#0068BD;
+    font-size: 18px;
+}
+
+.MyProfilePage {
+    .lia-tabs-standard-wrapper .lia-tabs-standard {
+        margin: -65px 0px 20px -20px;
+    }
+}
+
+.lia-component-quilt-search-page-thread-filters .lia-common-dropdown-toggle {
+    border: 1px solid #279EDA;
+    color:#279EDA;
+    padding: 5px 10px;
+}
+
+.lia-component-search-filter .default-menu-option:after, .lia-component-quilt-search-page-thread-filters .default-menu-option:after, .lia-component-search-filter .lia-common-dropdown-toggle:after, .lia-component-quilt-search-page-thread-filters .lia-common-dropdown-toggle:after {
+    color: #279EDA;
+    vertical-align: middle;
+}
+
+.default-menu-option, .lia-common-dropdown-toggle {
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 6px 12px;
+    color: #279EDA;
+    background-color: #fff;
+    border-color:#fff;
+}
+
+.default-menu-option:hover, .lia-common-dropdown-toggle:hover {
+    color: #279EDA;
+    background-color: #fff;
+    border-color:#279EDA;
+}
+
+.lia-search-filter-bread-crumb-item .lia-search-filter-bread-crumb-link {
+    background-color: #279EDA;
+    color: #fff;
+}
+
+.lia-search-filter-bread-crumb-item .lia-filter-delete-icon {
+    color: #fff;
+}
+
+
+.LabelsList .label {
+    color: $blue;
+}
+
+.lia-menu-dropdown-items .SearchToggleFieldFilter.disabled label, .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter.disabled label, .lia-menu-dropdown-items .SearchToggleFieldFilter.disabled .lia-fieldset-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter.disabled .lia-fieldset-title, .lia-menu-dropdown-items .SearchToggleFieldFilter.disabled .lia-component-tkb-article-editor-form .lia-form-compare-title, .lia-component-tkb-article-editor-form .lia-menu-dropdown-items .SearchToggleFieldFilter.disabled .lia-form-compare-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter.disabled .lia-component-tkb-article-editor-form .lia-form-compare-title, .lia-component-tkb-article-editor-form .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter.disabled .lia-form-compare-title, .lia-menu-dropdown-items .SearchToggleFieldFilter.disabled .lia-component-tkb-article-editor-form .lia-revision-info-title, .lia-component-tkb-article-editor-form .lia-menu-dropdown-items .SearchToggleFieldFilter.disabled .lia-revision-info-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter.disabled .lia-component-tkb-article-editor-form .lia-revision-info-title, .lia-component-tkb-article-editor-form .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter.disabled .lia-revision-info-title, .lia-menu-dropdown-items .SearchToggleFieldFilter.disabled .lia-component-tkb-article-editor-form .lia-related-messages-title, .lia-component-tkb-article-editor-form .lia-menu-dropdown-items .SearchToggleFieldFilter.disabled .lia-related-messages-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter.disabled .lia-component-tkb-article-editor-form .lia-related-messages-title, .lia-component-tkb-article-editor-form .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter.disabled .lia-related-messages-title, .lia-menu-dropdown-items .SearchToggleFieldFilter .disabled label, .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter .disabled label, .lia-menu-dropdown-items .SearchToggleFieldFilter .disabled .lia-fieldset-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter .disabled .lia-fieldset-title, .lia-menu-dropdown-items .SearchToggleFieldFilter .disabled .lia-component-tkb-article-editor-form .lia-form-compare-title, .lia-component-tkb-article-editor-form .lia-menu-dropdown-items .SearchToggleFieldFilter .disabled .lia-form-compare-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter .disabled .lia-component-tkb-article-editor-form .lia-form-compare-title, .lia-component-tkb-article-editor-form .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter .disabled .lia-form-compare-title, .lia-menu-dropdown-items .SearchToggleFieldFilter .disabled .lia-component-tkb-article-editor-form .lia-revision-info-title, .lia-component-tkb-article-editor-form .lia-menu-dropdown-items .SearchToggleFieldFilter .disabled .lia-revision-info-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter .disabled .lia-component-tkb-article-editor-form .lia-revision-info-title, .lia-component-tkb-article-editor-form .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter .disabled .lia-revision-info-title, .lia-menu-dropdown-items .SearchToggleFieldFilter .disabled .lia-component-tkb-article-editor-form .lia-related-messages-title, .lia-component-tkb-article-editor-form .lia-menu-dropdown-items .SearchToggleFieldFilter .disabled .lia-related-messages-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter .disabled .lia-component-tkb-article-editor-form .lia-related-messages-title, .lia-component-tkb-article-editor-form .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter .disabled .lia-related-messages-title, .lia-menu-dropdown-items .type-filter-alternative.disabled label, .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative.disabled label, .lia-menu-dropdown-items .type-filter-alternative.disabled .lia-fieldset-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative.disabled .lia-fieldset-title, .lia-menu-dropdown-items .type-filter-alternative.disabled .lia-component-tkb-article-editor-form .lia-form-compare-title, .lia-component-tkb-article-editor-form .lia-menu-dropdown-items .type-filter-alternative.disabled .lia-form-compare-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative.disabled .lia-component-tkb-article-editor-form .lia-form-compare-title, .lia-component-tkb-article-editor-form .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative.disabled .lia-form-compare-title, .lia-menu-dropdown-items .type-filter-alternative.disabled .lia-component-tkb-article-editor-form .lia-revision-info-title, .lia-component-tkb-article-editor-form .lia-menu-dropdown-items .type-filter-alternative.disabled .lia-revision-info-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative.disabled .lia-component-tkb-article-editor-form .lia-revision-info-title, .lia-component-tkb-article-editor-form .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative.disabled .lia-revision-info-title, .lia-menu-dropdown-items .type-filter-alternative.disabled .lia-component-tkb-article-editor-form .lia-related-messages-title, .lia-component-tkb-article-editor-form .lia-menu-dropdown-items .type-filter-alternative.disabled .lia-related-messages-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative.disabled .lia-component-tkb-article-editor-form .lia-related-messages-title, .lia-component-tkb-article-editor-form .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative.disabled .lia-related-messages-title, .lia-menu-dropdown-items .type-filter-alternative .disabled label, .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative .disabled label, .lia-menu-dropdown-items .type-filter-alternative .disabled .lia-fieldset-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative .disabled .lia-fieldset-title, .lia-menu-dropdown-items .type-filter-alternative .disabled .lia-component-tkb-article-editor-form .lia-form-compare-title, .lia-component-tkb-article-editor-form .lia-menu-dropdown-items .type-filter-alternative .disabled .lia-form-compare-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative .disabled .lia-component-tkb-article-editor-form .lia-form-compare-title, .lia-component-tkb-article-editor-form .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative .disabled .lia-form-compare-title, .lia-menu-dropdown-items .type-filter-alternative .disabled .lia-component-tkb-article-editor-form .lia-revision-info-title, .lia-component-tkb-article-editor-form .lia-menu-dropdown-items .type-filter-alternative .disabled .lia-revision-info-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative .disabled .lia-component-tkb-article-editor-form .lia-revision-info-title, .lia-component-tkb-article-editor-form .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative .disabled .lia-revision-info-title, .lia-menu-dropdown-items .type-filter-alternative .disabled .lia-component-tkb-article-editor-form .lia-related-messages-title, .lia-component-tkb-article-editor-form .lia-menu-dropdown-items .type-filter-alternative .disabled .lia-related-messages-title, .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative .disabled .lia-component-tkb-article-editor-form .lia-related-messages-title, .lia-component-tkb-article-editor-form .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative .disabled .lia-related-messages-title, .lia-common-dropdown-menu .SearchToggleFieldFilter.disabled label, .lia-common-dropdown-menu .SearchToggleFieldFilter.disabled .lia-fieldset-title, .lia-common-dropdown-menu .SearchToggleFieldFilter.disabled .lia-component-tkb-article-editor-form .lia-form-compare-title, .lia-component-tkb-article-editor-form .lia-common-dropdown-menu .SearchToggleFieldFilter.disabled .lia-form-compare-title, .lia-common-dropdown-menu .SearchToggleFieldFilter.disabled .lia-component-tkb-article-editor-form .lia-revision-info-title, .lia-component-tkb-article-editor-form .lia-common-dropdown-menu .SearchToggleFieldFilter.disabled .lia-revision-info-title, .lia-common-dropdown-menu .SearchToggleFieldFilter.disabled .lia-component-tkb-article-editor-form .lia-related-messages-title, .lia-component-tkb-article-editor-form .lia-common-dropdown-menu .SearchToggleFieldFilter.disabled .lia-related-messages-title, .lia-common-dropdown-menu .SearchToggleFieldFilter .disabled label, .lia-common-dropdown-menu .SearchToggleFieldFilter .disabled .lia-fieldset-title, .lia-common-dropdown-menu .SearchToggleFieldFilter .disabled .lia-component-tkb-article-editor-form .lia-form-compare-title, .lia-component-tkb-article-editor-form .lia-common-dropdown-menu .SearchToggleFieldFilter .disabled .lia-form-compare-title, .lia-common-dropdown-menu .SearchToggleFieldFilter .disabled .lia-component-tkb-article-editor-form .lia-revision-info-title, .lia-component-tkb-article-editor-form .lia-common-dropdown-menu .SearchToggleFieldFilter .disabled .lia-revision-info-title, .lia-common-dropdown-menu .SearchToggleFieldFilter .disabled .lia-component-tkb-article-editor-form .lia-related-messages-title, .lia-component-tkb-article-editor-form .lia-common-dropdown-menu .SearchToggleFieldFilter .disabled .lia-related-messages-title, .lia-common-dropdown-menu .type-filter-alternative.disabled label, .lia-common-dropdown-menu .type-filter-alternative.disabled .lia-fieldset-title, .lia-common-dropdown-menu .type-filter-alternative.disabled .lia-component-tkb-article-editor-form .lia-form-compare-title, .lia-component-tkb-article-editor-form .lia-common-dropdown-menu .type-filter-alternative.disabled .lia-form-compare-title, .lia-common-dropdown-menu .type-filter-alternative.disabled .lia-component-tkb-article-editor-form .lia-revision-info-title, .lia-component-tkb-article-editor-form .lia-common-dropdown-menu .type-filter-alternative.disabled .lia-revision-info-title, .lia-common-dropdown-menu .type-filter-alternative.disabled .lia-component-tkb-article-editor-form .lia-related-messages-title, .lia-component-tkb-article-editor-form .lia-common-dropdown-menu .type-filter-alternative.disabled .lia-related-messages-title, .lia-common-dropdown-menu .type-filter-alternative .disabled label, .lia-common-dropdown-menu .type-filter-alternative .disabled .lia-fieldset-title, .lia-common-dropdown-menu .type-filter-alternative .disabled .lia-component-tkb-article-editor-form .lia-form-compare-title, .lia-component-tkb-article-editor-form .lia-common-dropdown-menu .type-filter-alternative .disabled .lia-form-compare-title, .lia-common-dropdown-menu .type-filter-alternative .disabled .lia-component-tkb-article-editor-form .lia-revision-info-title, .lia-component-tkb-article-editor-form .lia-common-dropdown-menu .type-filter-alternative .disabled .lia-revision-info-title, .lia-common-dropdown-menu .type-filter-alternative .disabled .lia-component-tkb-article-editor-form .lia-related-messages-title, .lia-component-tkb-article-editor-form .lia-common-dropdown-menu .type-filter-alternative .disabled .lia-related-messages-title {
+    color:#eee;
 }

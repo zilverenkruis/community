@@ -66,8 +66,9 @@
     }
 }
 .lia-quilt-row-navigation ~ .lia-quilt-row:not(:last-child) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    /*padding-top: 40px;*/
+    /*padding-bottom: 40px;*/
+    padding: 40px 20px;
 }
 
 .lia-quilt-row-navigation ~ .lia-quilt-row:nth-child(odd):not(:last-child) {
