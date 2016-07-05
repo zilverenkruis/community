@@ -7,6 +7,10 @@
     &.section-btn {
         padding: 0;
     }
+
+    .lia-user-navigation-sign-in .user-navigation-user-profile {
+	    display: block;
+    }
 }
 /*.lia-content {*/
     .banner {

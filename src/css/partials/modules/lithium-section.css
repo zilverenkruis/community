@@ -62,7 +62,7 @@
                     width: 100%;
                     .btn {
                         display: block;
-                        max-width: $maxWidthMobile;
+                        max-width: $maxWidthMobileBig;
                         margin: auto;                        
                     }
                 }                

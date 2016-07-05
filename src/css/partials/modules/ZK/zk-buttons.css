@@ -117,6 +117,19 @@
 	border-color: #A0144C;
 }
 
+
+
+.linear-message-list + .reply-action-link {
+	@media screen and (max-width: $responsive) {
+		float: none;
+		margin: auto;
+		width: 50%;
+		display: block;
+		margin-top: 1.5em;
+	}
+}
+
+
 .btn-large,
 .lia-component-reply-list .reply-action-link,
 .lia-panel-message-root .lia-action-reply.reply-action-link.reply-action-link
