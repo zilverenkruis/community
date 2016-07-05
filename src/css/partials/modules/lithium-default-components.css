@@ -84,7 +84,10 @@
 
 
 .lia-message-signature {
-    margin-top: 1em;
+    font-size: .7em;
+    font-style: italic;
+    display: block;
+    margin-top: 1em !important;
 }
 
 
@@ -342,6 +345,12 @@ ul.defaultlist {
     }
 
 }
+.CategoryPage .lia-component-tkb-widget-recent-tkb-articles-taplet {
+    .lia-view-all-tkb-articles {
+        display: none;
+    }
+}
+
 
 /****************************/
 
