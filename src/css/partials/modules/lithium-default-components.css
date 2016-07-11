@@ -657,6 +657,7 @@ a.tab-link:focus {
     }
 }
 
+.ie,
 .ie9,
 .ie10 {
     #latest_blog_posts_list {

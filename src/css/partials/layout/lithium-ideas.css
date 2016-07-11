@@ -125,19 +125,12 @@
     .lia-decoration-border-menu-bar {
         position: relative;
 
-<<<<<<< HEAD
         @media screen and (min-width: 663px) {
             .lia-menu-bar-buttons {
                 position: absolute;
                 right: 0;
                 bottom: -20px;
             }
-=======
-        .lia-menu-bar-buttons {
-            position: absolute;
-            right: 0;
-            bottom: 0;
->>>>>>> origin/master
         }
 
     }
