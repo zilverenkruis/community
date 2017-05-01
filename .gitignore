@@ -1,6 +1,8 @@
 node_modules
 .idea/community.iml
 
+.idea/zk_community.iml
+
 .idea/dictionaries/leonardeshuis.xml
 
 .idea/encodings.xml
