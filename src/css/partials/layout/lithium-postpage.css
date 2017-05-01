@@ -407,7 +407,8 @@
         position: absolute;
         display: block;
         overflow:hidden;
-        top:-65px;
+        top: -50px;
+        left: 10px;
     }
 
     img {

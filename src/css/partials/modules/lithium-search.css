@@ -13,18 +13,25 @@
     .lia-component-common-widget-search-form {
         .SearchForm.lia-form-inline .search-input {
             height: 55px;
+            padding-right: 240px;
+            padding-left: 12px;
         }
         .lia-form-inline .lia-search-form-granularity {
             height: 55px;
-            
+            border-top: 0;
+            border-bottom: 0;
             color: $blueLighter;
             border-left: 1px solid;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
+            padding-right: 12px;
             &:focus {
                 box-shadow: none;            
             }       
-        }        
+        }
+        .lia-form-inline .lia-search-granularity-wrapper:before {
+            content: none;
+        }
     }
     
 
@@ -72,23 +79,33 @@
                 
     }
     
-    .SearchForm.lia-form-inline .lia-button-searchForm-action {
-        background-image: none;
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        /*position: static;        */
-        /*height: 100%;
-        width: 58px;
-        right: 0;
-        top: auto;
-        margin-top: 0px;  */
-    } 
+    .SearchForm.lia-form-inline {
+        position: relative;
+
+        .lia-search-granularity-wrapper {
+            position: absolute;
+            right: 58px;
+        }
+
+        .lia-button-searchForm-action {
+            background-image: none;
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            /*position: static;        */
+            /*height: 100%;
+            width: 58px;
+            right: 0;
+            top: auto;
+            margin-top: 0px;  */
+        }
+
+    }
 
 }
 
