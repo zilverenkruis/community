@@ -42,7 +42,7 @@
     }
 
 
-    .lia-search-input-wrapper > .search-input.lia-form-type-text {
+    .lia-search-input-wrapper .search-input.lia-form-type-text {
             @mixin border-radius $baseBorderRadius;
             background-color: #fff;
             box-shadow: none;
