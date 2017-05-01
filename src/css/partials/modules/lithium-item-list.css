@@ -15,7 +15,7 @@
             }
         }
     }
-  
+
 }
 
 .items-list {
@@ -199,7 +199,11 @@
     }
 }
 
-
+/* responsive fix 2017*/
+.lia-panel-content img {
+    height: auto;
+    max-width: 100%;
+}
 
 @media (max-width: 780px) {
     .items-list {

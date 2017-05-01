@@ -288,3 +288,13 @@
 .lia-message-view-display .lia-component-batch-processing-checkbox, .lia-note-view-display .lia-component-batch-processing-checkbox {
     margin-top: 9px;
 }
+
+/* responsive fix 2017 */
+.lia-component-common-widget-search-form .lia-search-input-wrapper {
+    position: relative;
+}
+
+
+.CommunityPage .lia-quilt-row-search, .CommunityPage .lia-quilt-row-sub-header {
+    display: none;
+}
