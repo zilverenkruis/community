@@ -27,12 +27,7 @@
     }
 
     .lia-slide-out-nav-menu-wrapper:before {
-        font-size: 26px;
-        left: 6px;
-    }
-
-    .lia-slide-out-nav-menu-wrapper:before {
-        color: #fff;
+        background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -2 20 20'%3E%3Cpath fill=' %23ffffff ' fill-rule='evenodd' d='M0 0h20v3H0zm0 7h20v3H0zm0 7h20v3H0z'/%3E%3C/svg%3E") center no-repeat;
     }
 
     .lia-nodes-community-title-text {
@@ -120,11 +115,11 @@
             display: none;
         }
 
-        .grid-item.last {
+        ul.inline-grid.main-nav-items .grid-item.last {
             display: block;
             position: absolute;
-            top: -35px;
-            right: 20px;
+            top: -40px !important;
+            right: 20px !important;
         }
 
     }
