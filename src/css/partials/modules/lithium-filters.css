@@ -48,10 +48,15 @@
     }
     
     .LabelsList, .lia-component-ideas-widget-statuses .MessageStatusesTaplet {
-        /*height: 3em;*/
-        border-radius: 4px;
-        /*overflow: hidden;*/
-        color:#0068BD;
+        position: absolute;
+        top: 36px;
+        left: 20px;
+        width: 92%;
+        z-index: 11;
+
+        @media screen and (max-width: 662px) {
+            position: static;
+        }
         
         &:hover {
             /*overflow: visible;*/

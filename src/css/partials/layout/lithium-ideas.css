@@ -65,6 +65,7 @@
 
     .ideas-filtering {
         background-color: #fff;
+        min-height: 100px;
     }
 
     .lia-component-menu-bar-without-options {
