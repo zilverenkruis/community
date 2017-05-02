@@ -1,28 +1,5 @@
 node_modules
-.idea/community.iml
 
-.idea/zk_community.iml
+.idea
 
-.idea/dictionaries/leonardeshuis.xml
-
-.idea/encodings.xml
-
-.idea/misc.xml
-
-.idea/modules.xml
-
-.idea/vcs.xml
-
-.idea/workspace.xml
-
-build/css/2016-lithium_ie10.css
-
-build/css/2016-lithium_ie9.css
-
-build/css/2016-lithium.css
-
-build/js/2016-zk-community.js
-
-.idea/jsLibraryMappings.xml
-
-.idea/libraries/community_node_modules.xml
+build
