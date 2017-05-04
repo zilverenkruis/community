@@ -361,7 +361,7 @@
     animation: none;
     opacity: 1;
     position: relative;
-    display: block;
+    display: inline-block;
 }
 
 .lia-quilt-view-profile-hero .lia-user-avatar, .lia-quilt-view-profile-hero .lia-media-top-image-contributors .lia-media-image-contributor-avatar-wrapper, .lia-media-top-image-contributors .lia-quilt-view-profile-hero .lia-media-image-contributor-avatar-wrapper {
