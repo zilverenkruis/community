@@ -194,6 +194,143 @@
 
 
 /*message footer btns*/
+.lia-content {
+    .lia-message-view-idea-message-item {
+        .lia-message-subject {
+            clear: both;
+            h2 .lia-message-read a {
+                color: $blueLight;
+                font-size: 24px;
+                font-size: 2.4rem;
+                font-weight: 600;
+            }
+        }
+        .KudosButton {
+            position: static;
+            float: left;
+            .lia-link-navigation.kudos-link {
+                min-width: 73px;
+                min-height: 40px;
+                border-radius: 4px;
+                margin-right: 10px;
+                &:before {
+                    color: $white;
+                    position: absolute;
+                    left: 10px;
+                    top: 12px;
+                }
+                &:after {
+                    content: 'Stem';
+                    color: $white;
+                    position: absolute;
+                    right: 10px;
+                }
+            }
+            .lia-button-image-kudos-count {
+                margin: 0;
+                .kudos-count-link {
+                    background-color: #D2E3F1;
+                    border-radius: 4px;
+                    &:hover {
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+        .lia-message-body-wrapper {
+            border-bottom: $grayLightest solid 2px;
+            margin-top: 16px;
+        }
+        .lia-message-comment-action {
+            float: right;
+        }
+        .lia-message-byline {
+            &:after {
+                content: none !important;
+            }
+            img.lia-user-rank-icon {
+                display: none;
+            }
+            .UserName.lia-user-name .login-bold {
+                font-weight: 400;
+            }
+        }
+        .lia-status {
+            &:before {
+                content: none;
+            }
+            &:after {
+                content: none !important;
+            }
+            visibility: collapse;
+            .message-status-link {
+                visibility: visible;
+                float: left;
+                border: 1px solid $pinkLight;
+                padding: 0 1em;
+                border-radius: 4px;
+                margin-bottom: .5em;
+                display: inline-block;
+                font-weight: 400;
+                color: $pinkLight;
+            }
+        }
+        .LabelsForArticle {
+            width: auto;
+            display: inline;
+            .LabelsList {
+                display: inline;
+                ul {
+                    display: inline;
+                    .label {
+                        display: inline;
+                        .label-link {
+                            display: inline;
+                            width: auto;
+                            float: none;
+                            color: $turquoiseDark;
+                            background-color: transparent;
+                            font-family: $sansFontFamily ;
+                            font-size: 16px;
+                            &:hover {
+                                color: $turquoiseDark;
+                            }
+                            &:before {
+                                font-family: $sansFontFamily ;
+                                content: 'in';
+                                transform: none;
+                                color: $turquoiseDark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .lia-truncate-with-message-link .lia-truncated-message-link {
+            font-weight: 600;
+            color: $blue;
+            padding-right: 20px;
+            &:after {
+                font-family: zk-centralenav-fontregular;
+                content: '\61';
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+                right: 0;
+                color: $pink;
+            }
+        }
+        .lia-component-comments-action-comments-link {
+            font-weight: 600;
+            &:before {
+                content: '\34';
+                color: $blue;
+                font-family: zk-centralenav-fontregular;
+            }
+        }
+    }
+}
+
 .IdeaPage .lia-button-image-kudos-wrapper .lia-button-image-kudos,
 .IdeaExchangePage .lia-button-image-kudos-wrapper .lia-button-image-kudos {
 	background-color: transparent;
@@ -213,7 +350,7 @@
 
 .IdeaPage .lia-button-image-kudos-wrapper .lia-button-image-kudos-count .kudos-count-link,
 .IdeaExchangePage .lia-button-image-kudos-wrapper .lia-button-image-kudos-count .kudos-count-link {
-	padding: 6px 12px;
+	padding: 7px 12px 5px;
     .lia-component-kudos-widget-message-kudos-count {
         padding-left: 0;
         padding-right: 0;
@@ -281,6 +418,9 @@ a.label-link:hover, a.label-link:focus {
     }
 }
 
+.lia-quilt-idea-message-item .lia-quilt-column-main-content {
+    padding-bottom: 60px;
+}
 
 .LabelsForArticle  .lia-list-standard-inline {
     text-align: right;
@@ -317,7 +457,7 @@ a.label-link:hover, a.label-link:focus {
 
 
 
-    &:hover, &.:focus {
+    &:hover, &:focus {
         background-color: transparent;
         color: #309FD8;
         text-decoration: underline;

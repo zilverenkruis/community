@@ -146,6 +146,7 @@
 
         .lia-button-image-kudos .kudos-link {
             border-color: $blue;
+            line-height: 28px;
         }
     
 
