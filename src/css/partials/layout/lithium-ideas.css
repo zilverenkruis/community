@@ -273,6 +273,7 @@
                 display: inline-block;
                 font-weight: 400;
                 color: $pinkLight;
+                margin-left: 0;
             }
         }
         .LabelsForArticle {
@@ -322,10 +323,17 @@
         }
         .lia-component-comments-action-comments-link {
             font-weight: 600;
-            &:before {
-                content: '\34';
-                color: $blue;
-                font-family: zk-centralenav-fontregular;
+            position: relative;
+            padding: 0 0 0 25px;
+
+            &:after {
+              font-family: zk-centralenav-fontregular;
+              content: '\34';
+              position: absolute;
+              top: 0;
+              left: 0;
+              transform: scale(-1, 1);
+              color: $blue;
             }
         }
     }
@@ -350,7 +358,7 @@
 
 .IdeaPage .lia-button-image-kudos-wrapper .lia-button-image-kudos-count .kudos-count-link,
 .IdeaExchangePage .lia-button-image-kudos-wrapper .lia-button-image-kudos-count .kudos-count-link {
-	padding: 7px 12px 5px;
+	padding: 7px 12px !important;
     .lia-component-kudos-widget-message-kudos-count {
         padding-left: 0;
         padding-right: 0;
@@ -416,10 +424,6 @@ a.label-link:hover, a.label-link:focus {
             background-repeat: no-repeat;
         }
     }
-}
-
-.lia-quilt-idea-message-item .lia-quilt-column-main-content {
-    padding-bottom: 60px;
 }
 
 .LabelsForArticle  .lia-list-standard-inline {

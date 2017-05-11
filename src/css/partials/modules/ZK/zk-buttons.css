@@ -8,10 +8,10 @@
 	text-decoration: none;
 	position: relative;
 	outline: 0;
-	display: inline-block;
+	display: block;
 	white-space: nowrap;
-	margin-bottom: 0; 
-
+	margin-bottom: 0;
+	line-height: 26px;
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;

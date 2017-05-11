@@ -16,7 +16,7 @@ ZK.adaptCommentLinks = function($) {
 };
 
 ZK.moveLabelBox = function($) {
-    var labelBox = jQuery('.lia-content .lia-message-view-idea-message-item .LabelsForArticle');
+    var labelBox = jQuery('.IdeaExchangePage .lia-content .lia-message-view-idea-message-item .LabelsForArticle');
     if (labelBox.length) {
         labelBox.each(function() {
             var jThis = jQuery(this);
@@ -30,7 +30,7 @@ ZK.moveLabelBox = function($) {
 };
 
 ZK.moveStatus = function($) {
-    var status = jQuery('.MessageStatus');
+    var status = jQuery('.IdeaExchangePage .MessageStatus');
     if (status.length) {
         status.each(function() {
             var jThis = jQuery(this);
@@ -43,7 +43,7 @@ ZK.moveStatus = function($) {
 };
 
 ZK.moveKudoButtons = function($) {
-    var kudos = jQuery('.lia-message-view-idea-message-item .KudosButton');
+    var kudos = jQuery('.IdeaExchangePage .lia-message-view-idea-message-item .KudosButton');
     if (kudos.length) {
         kudos.each(function() {
             var jThis = jQuery(this);
@@ -57,7 +57,7 @@ ZK.moveKudoButtons = function($) {
 };
 
 ZK.moveCommentAction = function($) {
-    var commentaction = jQuery('.lia-message-view-idea-message-item .lia-message-comment-action');
+    var commentaction = jQuery('.IdeaExchangePage .lia-message-view-idea-message-item .lia-message-comment-action');
     if (commentaction.length) {
         commentaction.each(function() {
             var jThis = jQuery(this);
