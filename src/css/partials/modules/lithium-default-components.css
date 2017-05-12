@@ -207,7 +207,6 @@ ul.defaultlist {
 }
 
 .CommunityPage {
-
     @media screen and (max-width: 992px) {
         .lia-quilt-row-navigation ~ .lia-quilt-row:nth-child(even) .banner {
             background-color: transparent;
@@ -233,6 +232,47 @@ ul.defaultlist {
             }
         }
     }
+}
+
+.CommunityPage {
+    .lia-quilt-row-feedback {
+        background-color: $moreBlueLightLithium;
+        .lia-panel-feedback-banner-note.InfoMessage {
+            background-color: $moreBlueLightLithium;
+        }
+    }
+}
+
+.lia-quilt-row-feedback {
+    background-color: $white;
+    .lia-panel-feedback-banner-note.InfoMessage {
+        background-color: $white;
+        .lia-text {
+            background-color: $turquoise;
+            border-radius: 4px;
+            font-weight: 600;
+            text-align: center;
+            padding: 12px 0;
+            p,
+            ul,
+            li {
+                display: inline;
+                a.lia-link-navigation.login-link {
+                    color: $white;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.lia-component-blog-article-options .default-menu-option:before,
+.lia-component-search-actions .default-menu-option:before,
+.lia-message-options .default-menu-option:before,
+.lia-tab-overflow .default-menu-option:before,
+.lia-quilt-column-sub-header-main .default-menu-option:before {
+    background: none;
+    content: '\f141';
 }
 
 .lia-common-slide-menu .lia-slide-menu-content {
@@ -493,7 +533,7 @@ ul.defaultlist {
         }
 
         .lia-tabs-active {
-            background-color: #eee;
+            background-color: $white;
             z-index:20;
 
             a {
@@ -654,6 +694,127 @@ a.tab-link:focus {
             float:left;
         }
 
+    }
+}
+
+.marker {
+    border-radius: 60px;
+    text-align: center;
+    font-size: .1rem;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: -30px;
+    color: $blue;
+    background-color: $blueLightest3;
+    cursor: pointer;
+    &:after {
+        font-family: 'zk-centralenav-fontregular';;
+        content: '\63';
+        font-style: normal;
+        font-weight: 400;
+        speak: none;
+        line-height: 1;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+        font-size: 22px;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+.lia-users-current-user-profile-card {
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 50px;
+    text-align: center;
+    display: block;
+
+    .UserAvatarProfile {
+        display: block;
+        margin: 0 auto;
+        width: auto;
+        margin-bottom: 40px;
+        & > img {
+            height: 64px;
+            width: 64px;
+        }
+    }
+
+    .lia-users-profile-card-avatar {
+        display: block;
+        margin: auto;
+    }
+
+    .lia-users-profile-card-login {
+        color: #0691c1;
+        font-size: 20px;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    .lia-users-profile-card-rank {
+        display: block;
+        color: $blueDarkest ;
+        font-size: 16px;
+        font-weight: 200;
+        padding-bottom: 40px;
+        text-transform: uppercase;
+    }
+}
+
+.lia-quilt-row-profile-stats {
+    border-bottom: 1px solid $grayLightest;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-bottom: 20px;
+    text-align: center;
+
+    .lia-users-stat-wrapper {
+        display: inline-block;
+        padding: 0 12px;
+    }
+
+    .lia-users-stat {
+        color: #5c6a6e;
+        font-size: 24px;
+        text-decoration: none;
+
+        &.lia-users-unread-notification-stat:before {
+            color: #777777;
+            content: "\f0a2";
+            display: inline-block;
+            font: normal normal normal 24px/1 FontAwesome;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            margin-right: 6px;
+            text-rendering: auto;
+            transform: translate(0, 0);
+        }
+
+        &.lia-users-private-messages-stat:before {
+            color: #777777;
+            content: "\f003";
+            display: inline-block;
+            font: normal normal normal 24px/1 FontAwesome;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            margin-right: 6px;
+            text-rendering: auto;
+            transform: translate(0, 0);
+        }
+
+        &.lia-users-posts-count-stat:before {
+            color: #777777;
+            content: "\f0e5";
+            display: inline-block;
+            font: normal normal normal 24px/1 FontAwesome;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            margin-right: 6px;
+            text-rendering: auto;
+            transform: translate(0, 0);
+        }
     }
 }
 

@@ -315,3 +315,13 @@
 .CommunityPage .lia-quilt-row-search, .CommunityPage .lia-quilt-row-sub-header {
     display: none;
 }
+
+.lia-quilt-user-search .lia-user-search-results-grid-container {
+    padding-bottom: 2rem;
+    .lia-quilt-column-user-search-result {
+        overflow: hidden;
+        .lia-summary-view-statistic-email {
+            white-space: nowrap;
+        }
+    }
+}

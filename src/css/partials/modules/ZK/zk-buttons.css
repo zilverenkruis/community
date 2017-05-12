@@ -8,7 +8,7 @@
 	text-decoration: none;
 	position: relative;
 	outline: 0;
-	display: block;
+	display: inline-block;
 	white-space: nowrap;
 	margin-bottom: 0;
 	line-height: 26px;

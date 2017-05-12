@@ -161,12 +161,11 @@
         }
     }
 
-
-    @media screen and (min-width: 662px) {
-        .subtitle {
-            display: none;
-        }
-    }
+    /*@media screen and (min-width: 662px) {*/
+        /*.subtitle {*/
+            /*display: none;*/
+        /*}*/
+    /*}*/
 }
 
 .lia-message-idea {

@@ -21,5 +21,6 @@ LITHIUM.jQuery(function($) {
     ZK.moveKudoButtons($);
     ZK.moveCommentAction($);
     ZK.moveLabelBox($);
+    ZK.setMarkerClick($);
 
 }(LITHIUM.jQuery));

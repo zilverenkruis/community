@@ -53,7 +53,7 @@
 .TkbPage,
 .ForumTopicPage {
     #actionMenuDropDown {
-        float:right;
+        right: 9px;
     }
 }
 
@@ -508,7 +508,7 @@
     }
 }
 
-.lia-quilt-column-user-search-result .lia-link-navigation,
+.lia-quilt-column-user-search-result .UserAvatar.lia-link-navigation,
 .UserProfileSummary .lia-user-avatar{
     position: relative;
     overflow:hidden;
