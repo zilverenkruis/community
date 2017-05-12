@@ -37,15 +37,17 @@
 
 @media screen and (max-width: 999px) {
     .lia-component-common-widget-slide-out-user-menu .lia-notifications-messages-aggregate {
-        right: 20px;
-        top:-5px;
+        right: -20px;
+        top: -16px;
+        display: block;
     }
 }
 
 @media screen and (min-width: 1000px) {
     .lia-component-common-widget-slide-out-user-menu .lia-notifications-messages-aggregate {
-        right: 0px;
-        top:-50px;
+        right: -3px;
+        top: -45px;
+        display: block;
     }
 }
 

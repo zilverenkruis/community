@@ -698,6 +698,11 @@ a.tab-link:focus {
 }
 
 .marker {
+    display: none;
+}
+
+.lia-quilt-row-navigation .marker {
+    display: block;
     border-radius: 60px;
     text-align: center;
     font-size: .1rem;
