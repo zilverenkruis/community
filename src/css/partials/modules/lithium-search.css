@@ -134,10 +134,47 @@
 
 .SearchPage {
 
+    .BreadCrumb,
+    .searchPageFormWrapper,
+    .lia-search-title.lia-component-search-title,
+    .lia-advanced-search-toggle.lia-component-search-widget-advanced-search-toggle {
+        display: none;
+    }
+
+    .lia-search-tab-bar .lia-component-search-tabs {
+        position: static;
+        #tabgroup.lia-tabs-standard-wrapper {
+            margin-top: 0;
+            padding: 0;
+            background-color: $moreBlueLightLithium;
+            .lia-tabs-standard {
+                background-color: $moreBlueLightLithium;
+                .lia-tabs {
+                    border-left: none;
+                    &.lia-tabs-inactive {
+                        background-color: $blueLightest2;
+                    }
+                    a {
+                        font-size: 18px;
+                        color: $blueDarkest;
+                        padding: 10px 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .search-result-sort-by-label {
+        font-weight: 600;
+        color: $blueDark;
+        display: inline;
+        padding: 10px;
+    }
 
     .lia-menu-action-search-result-sorting {
         .default-menu-option:after, .lia-common-dropdown-toggle:after {
-            display: none;
+            content: '\f0d7';
+            color: $blue;
         }
     }
 
@@ -157,8 +194,136 @@
     .lia-note-view-display .lia-message-discussion-style-icon {
         left: -60px;
         top:20px;
+        .lia-fa-forum{
+            background: transparent url('/html/assets/2016-icon-Forum.svg') no-repeat;
+            border-radius: 0px;
+            &:before {
+                content: none;
+            }
+        }
+        .lia-fa-idea {
+            background: transparent url('/html/assets/2016-icon-Denk-Mee.svg') no-repeat;
+            border-radius: 0px;
+            &:before {
+                content: none;
+            }
+        }
+        .lia-fa-tkb {
+            background: transparent url('/html/assets/2016-icon-Kennisbank.svg') no-repeat;
+            border-radius: 0px;
+            &:before {
+                content: none;
+            }
+        }
+        .lia-fa-blog {
+            background: transparent url('/html/assets/2016-icon-Blog.svg') no-repeat;
+            border-radius: 0px;
+            &:before {
+                content: none;
+            }
+        }
+
     }
 
+    .lia-component-quilt-search-page-thread-filters {
+        border-bottom: 10px solid $moreBlueLightLithium;
+        .search-result-filter-label {
+            display: inline;
+            font-weight: 600;
+            padding-right: 10px;
+        }
+        .lia-common-dropdown-toggle {
+            border: 1px solid $blue;
+            color:$blue;
+            padding: 0 10px;
+        }
+        .search-result-sorting {
+            float:right;
+            .lia-menu-action-search-result-sorting {
+                display: inline;
+            }
+        }
+        .lia-component-search-widget-location-filter,
+        .lia-component-search-widget-bling-filter,
+        .lia-component-search-widget-content-filter {
+            display: none;
+        }
+    }
+
+    .lia-message-view-display {
+
+        .lia-quilt-row-top {
+
+            .lia-message-byline {
+                visibility: collapse;
+                display: inline;
+                .lia-user-name {
+                    visibility: visible;
+                    float: left;
+                    &:before {
+                        content: 'door';
+                    }
+                    .login-bold {
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .lia-quilt-column-left-content .lia-message-item-metadata-main {
+                display: inline;
+                .MessageKudosCount {
+                    display: none;
+                }
+                .lia-message-post-date {
+                    visibility: visible;
+                    display: inline;
+                    float: left;
+                    &:before {
+                        content: 'op';
+                        font-family: $sansFontFamily;
+                        color: $blueDarkest;
+                        margin: 0 0 0 4px;
+                    }
+                }
+            }
+            .lia-quilt-column-right-content {
+                .lia-message-post-date {
+                    display: none;
+                }
+                .MessageKudosCount {
+                    font-weight: 600;
+                    a {
+                        color: $blueLighter;
+                    }
+                    &:before {
+                        color: $blueLighter;
+                        content: "\f087";
+                        display: inline-block;
+                        font-weight: 600;
+                        font-family: FontAwesome;
+                        font-size: 16px;
+                    }
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        .lia-quilt-row-contents {
+            display: none;
+        }
+    }
+    .lia-js-menu-opener.default-menu-option.lia-js-click-menu.lia-link-navigation {
+        border-color: $blue;
+        color: $blue;
+        font-weight: 300;
+        padding: 0 16px;
+    }
+    .lia-component-search-menubar .search-result-count {
+        font-size: 20px;
+        font-weight: 600;
+    }
 }
 
 .ViewProfilePage {
@@ -229,8 +394,6 @@
     .lia-message-view-display {
         .lia-message-subject-wrapper.lia-component-subject {
             margin-left: 0px;
-
-
         }
     }
 
