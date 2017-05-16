@@ -85,13 +85,6 @@
         .lia-quilt-row-footer {
             .lia-quilt-column-footer {
 
-
-                @media screen and (min-width:500px) and (max-width: 663px) {
-                    .lia-message-labels:after, .lia-message-tags:after {
-                        display: none;
-                    }
-                }
-
                 @media screen and (max-width: 998px) {
                     .lia-list-standard-inline > li {
                         display: inline;
@@ -335,6 +328,11 @@
               color: $blue;
             }
         }
+        .lia-quilt-column-side-content {
+            @media screen and (max-width: 991px) {
+                padding-bottom: 50px;
+            }
+        }
     }
 }
 
@@ -402,7 +400,6 @@ a.label-link:hover, a.label-link:focus {
     float: right;
     text-align: right;
     color: #279EDA;
-    margin-top: 10px;
 
     a {
         color: #309FD8;
@@ -498,9 +495,6 @@ a.label-link:hover, a.label-link:focus {
         display: none;
     }
 }
-
-
-
 
 @media screen and (max-width: 662px) {
 

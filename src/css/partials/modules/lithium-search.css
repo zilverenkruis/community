@@ -174,9 +174,13 @@
     }
 
     .lia-menu-action-search-result-sorting {
-        .default-menu-option:after, .lia-common-dropdown-toggle:after {
-            content: '\f0d7';
-            color: $blue;
+        display: inline;
+        .lia-menu-navigation-wrapper {
+            float: none;
+            .default-menu-option:after, .lia-common-dropdown-toggle:after {
+                content: '\f0d7';
+                color: $blue;
+            }
         }
     }
 
@@ -483,11 +487,13 @@
 }
 
 .lia-quilt-user-search .lia-user-search-results-grid-container {
-    padding-bottom: 2rem;
-    .lia-quilt-column-user-search-result {
-        overflow: hidden;
-        .lia-summary-view-statistic-email {
-            white-space: nowrap;
+    .lia-quilt-user-search-item {
+        margin-bottom: 2rem;
+        .lia-quilt-column-user-search-result {
+            overflow: hidden;
+            .lia-summary-view-statistic-email {
+                white-space: nowrap;
+            }
         }
     }
 }

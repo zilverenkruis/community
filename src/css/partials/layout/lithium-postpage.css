@@ -87,16 +87,18 @@
         #actionMenuDropDown {
             /*width: 100%;*/
             /*text-align: right;   */
-
-
-
-            .lia-js-menu-opener {
+            .lia-js-menu-opener.default-menu-option,
+            .lia-js-menu-opener.default-menu-option:hover,
+            .lia-js-menu-opener.default-menu-option:active {
+                color: $blue;
+                font-weight: 300;
+                padding: 0 16px;
                 background-color: transparent;
-                border: 1px solid transparent;
-                /*padding: 0;*/
-                /*margin: 0;*/
-                line-height: 2;
-                /*color: $blueLight;*/
+                border: 1px solid $blue;
+
+            }
+            &.lia-component-search-actions .lia-js-menu-opener.default-menu-option {
+                border: none;
             }
         }
         

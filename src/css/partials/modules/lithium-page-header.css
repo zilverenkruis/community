@@ -169,7 +169,7 @@
             padding: 0 8px;
             display: inline-block;
             color: #279EDA;
-
+            margin-top: 1rem;
             &:after {
                 font-family: zk-centralenav-fontregular;
                 content: '\61';
@@ -193,7 +193,7 @@
             padding: 0 8px;
             display: inline-block;
             color: #C93A83;
-
+            margin-top: 1rem;
             &:after {
                 font-family: zk-centralenav-fontregular;
                 content: '\61';
