@@ -129,6 +129,13 @@
             top: auto;
             left: auto;
             right: auto;
+            @media screen and (max-width: 767px) {
+                position: absolute;
+                top: 0px !important;
+                left: initial !important;
+                right: 6px !important;
+                z-index: 10;
+            }
         }        
         .lia-quilt-column-message-options .lia-quilt-column-alley-right {
             text-align: right;

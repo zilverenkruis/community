@@ -491,3 +491,7 @@
         }
     }
 }
+
+.lia-search-match-lithium {
+    background-color: $blueLightLithium;
+}
