@@ -7,8 +7,16 @@ ZK.moveSortSpan = function($) {
             var filterlabel = "<div class='search-result-filter-label'>Filter op: </div>";
             if (filters.length) {
                 filters.prepend(jThis);
-                filters.prepend(filterlabel);
+                if (filters.find('.search-result-filter-label').length === 0) {
+                    filters.prepend(filterlabel);
+                }
             }
         });
     }
+}
+
+ZK.refreshPageAfterFilterClick = function($) {
+    jQuery("body").on('DOMSubtreeModified', '.lia-content .lia-ajax-loader-feedback', function(e) {
+        setTimeout(function(){ZK.moveSortSpan($)}, 1000);
+    });
 }

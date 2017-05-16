@@ -23,5 +23,6 @@ LITHIUM.jQuery(function($) {
     ZK.moveLabelBox($);
     ZK.setMarkerClick($);
     ZK.moveSortSpan($);
+    ZK.refreshPageAfterFilterClick($)
 
 }(LITHIUM.jQuery));
