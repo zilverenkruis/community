@@ -79,7 +79,7 @@
         font-weight: 300;
         padding: 0 16px;
         background-color: transparent;
-        border: 1px solid $blue;
+        border: none;
 
     }
     &.lia-component-search-actions .lia-js-menu-opener.default-menu-option {
@@ -89,9 +89,9 @@
 
 .lia-panel-message-content .lia-menu-navigation-wrapper {
     position: relative;
-    top: auto;
+    top: -10px !important;
     left: auto;
-    right: auto;
+    right: 10px !important;
     @media screen and (max-width: 767px) {
         position: absolute;
         top: 0px !important;

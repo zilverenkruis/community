@@ -1001,7 +1001,7 @@ only screen and (max-width: 760px),
 .default-menu-option, .lia-common-dropdown-toggle,
 .default-menu-option, .lia-common-dropdown-toggle:active,
 .default-menu-option, .lia-common-dropdown-toggle:hover {
-    border-color: $blue;
+    border: none;
     color: $blue;
     font-weight: 300;
     padding: 0 16px;
