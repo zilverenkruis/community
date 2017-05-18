@@ -101,7 +101,8 @@
         .kudos {
             margin-right: 8px;
             &:before {            
-                content: '\2a';
+                content: "\f164";
+                font-family: FontAwesome;
             }
         }
         .replies {
