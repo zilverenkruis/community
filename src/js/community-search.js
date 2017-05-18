@@ -1,4 +1,4 @@
-ZK.moveSortSpan = function($) {
+ZK.loadSearchPage = function($) {
     var sortDivs = jQuery('.SearchPage .search-result-sorting');
     if (sortDivs.length) {
         sortDivs.each(function() {
@@ -15,8 +15,12 @@ ZK.moveSortSpan = function($) {
     }
 }
 
-ZK.refreshPageAfterFilterClick = function($) {
-    jQuery("body").on('DOMSubtreeModified', '.lia-content .lia-ajax-loader-feedback', function(e) {
-        setTimeout(function(){ZK.moveSortSpan($)}, 1000);
-    });
+ZK.onHideLoaderFeedback = function($) {
+    var loaders = jQuery('.lia-content .lia-ajax-loader-feedback');
+    if (loaders.length) {
+        loaders.on('hide', function () {
+            ZK.loadSearchPage($);
+        });
+    }
 }
+

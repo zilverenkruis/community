@@ -1,5 +1,13 @@
 LITHIUM.jQuery(function($) {
 
+    $.each(['show', 'hide'], function (i, ev) {
+        var el = $.fn[ev];
+        $.fn[ev] = function () {
+            this.trigger(ev);
+            return el.apply(this, arguments);
+        };
+    });
+
     ZK.restructureHTML($);
     ZK.removeEmptyRows($);
     ZK.removeEmptyStatus($);
@@ -22,7 +30,7 @@ LITHIUM.jQuery(function($) {
     ZK.moveCommentAction($);
     ZK.moveLabelBox($);
     ZK.setMarkerClick($);
-    ZK.moveSortSpan($);
-    ZK.refreshPageAfterFilterClick($)
+    ZK.loadSearchPage($);
+    ZK.onHideLoaderFeedback($)
 
 }(LITHIUM.jQuery));
