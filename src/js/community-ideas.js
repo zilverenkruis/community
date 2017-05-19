@@ -48,7 +48,6 @@ ZK.moveKudoButtons = function($) {
         kudos.each(function() {
             var jThis = jQuery(this);
             var body = jThis.siblings('.lia-message-body-wrapper ');
-            console.log(body.length);
             if (body.length) {
                 jThis.insertAfter(body);
             }
@@ -65,6 +64,35 @@ ZK.moveCommentAction = function($) {
             if (kudos.length) {
                 jThis.insertBefore(kudos);
             }
+        });
+    }
+};
+
+ZK.getAvatarsByApiCall = function($) {
+    var avatarwrappers = jQuery('div.author-avatar.author-avatarbyapicall-wrapper[data-userlogin]');
+    if (avatarwrappers.length) {
+        avatarwrappers.each(function() {
+            var jThis = jQuery(this);
+            var userlogin = jThis.data('userlogin');
+            var userid = jThis.data('userid');
+            jQuery.ajax({
+                url: "/restapi/vc/users/login/" + userlogin + "/profiles/avatar/size/profile",
+                cache: true,
+                dataType: "xml"
+            }).done(function(data) {
+                jQuery(data).find('url').each(function() {
+                    var profilelink = document.createElement('A')
+                    profilelink.href = '/t5/user/viewprofilepage/user-id/' + userid;
+                    profilelink.classList.add('lia-user-profile');
+
+                    var image = document.createElement('IMG');
+                    image.src = jQuery(this).text();
+                    image.classList.add('lia-user-avatar');
+
+                    profilelink.prepend(image);
+                    jThis.prepend(profilelink);
+                });
+            });
         });
     }
 }

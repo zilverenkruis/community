@@ -11,7 +11,6 @@ LITHIUM.jQuery(function($) {
     ZK.restructureHTML($);
     ZK.removeEmptyRows($);
     ZK.removeEmptyStatus($);
-    ZK.svgCorner();
     // ZK.shortenMessage($,400);
     // ZK.filterDropdown($);
     // ZK.commentCount($);
@@ -23,14 +22,16 @@ LITHIUM.jQuery(function($) {
     // ZK.createFullwidthBG($);
     ZK.scrollTo($);
     ZK.connectSocialButtons($);
-    ZK.copyReactTo($)
+    ZK.copyReactTo($);
     ZK.adaptCommentLinks($);
     ZK.moveStatus($);
     ZK.moveKudoButtons($);
     ZK.moveCommentAction($);
+    ZK.getAvatarsByApiCall($);
     ZK.moveLabelBox($);
     ZK.setMarkerClick($);
     ZK.loadSearchPage($);
     ZK.onHideLoaderFeedback($)
+    ZK.svgCorner();
 
 }(LITHIUM.jQuery));

@@ -334,6 +334,18 @@
             }
         }
     }
+
+    .author-avatar.author-avatarbyapicall-wrapper {
+        position: absolute;
+        left: 1.5rem;
+        .lia-user-profile {
+            display: block;
+            .lia-user-avatar {
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
 }
 
 .IdeaPage .lia-button-image-kudos-wrapper .lia-button-image-kudos,
