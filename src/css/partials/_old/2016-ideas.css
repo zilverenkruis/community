@@ -674,10 +674,8 @@ display: none;
 
 #lia-body.lia-idea .lia-content .article-comments, 
 #lia-body.lia-idea .CommentEditorForm { 
-/*#lia-body.lia-idea .CommentEditorForm {*/
-    margin-left: 0; 
+    margin-left: 0;
 }
-
 
 #lia-body .lia-content .lia-form fieldset {
     border: 0;

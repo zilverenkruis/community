@@ -508,6 +508,12 @@ a.label-link:hover, a.label-link:focus {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .lia-idea.lia-primary-rating-type-kudos .lia-quilt-idea-message-item .lia-quilt-column-main-content {
+        padding-left: 93px;
+    }
+}
+
 @media screen and (max-width: 662px) {
 
     .lia-body {

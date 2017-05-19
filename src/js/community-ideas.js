@@ -69,7 +69,7 @@ ZK.moveCommentAction = function($) {
 };
 
 ZK.getAvatarsByApiCall = function($) {
-    var avatarwrappers = jQuery('div.author-avatar.author-avatarbyapicall-wrapper[data-userlogin]');
+    var avatarwrappers = jQuery('div.author-avatar.author-avatarbyapicall-wrapper[data-userlogin][data-userid]');
     if (avatarwrappers.length) {
         avatarwrappers.each(function() {
             var jThis = jQuery(this);
