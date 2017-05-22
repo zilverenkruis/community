@@ -336,109 +336,29 @@
                                             <!-- START CONTENT -->
                                             <!-- ************* -->
 
-
                                             <table class="fullWidth" border="0" cellpadding="0" cellspacing="0">
-                                                            <tr>
-                                                                <td align="left" valign="top" class="articleText" style="font-size: 14px; line-height: 24px; color: #002857; font-family: Arial, Helvetica, sans-serif; width: 545px; max-width: 545px; padding-bottom: 14px;">
-                                                                    ${mailActions.nativeReplyDemarcationText} Beste ${notification.recipient.login},
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td align="left" valign="top" class="articleText" style="font-size: 14px; line-height: 24px; color: #002857; font-family: Arial, Helvetica, sans-serif; width: 545px; max-width: 545px; padding-bottom: 14px;">
-                                                                    #set ( $eventUser = "")
-                                                                    #set ( $eventUserRanking = "")
-                                                                    #set ( $eventText = "")
-                                                                    #set ( $eventDetails = "")
+                                                <tr>
+                                                    <td align="left" valign="top" class="articleText" style="font-size: 14px; line-height: 24px; color: #002857; font-family: Arial, Helvetica, sans-serif; width: 545px; max-width: 545px; padding-bottom: 14px;">
+                                                        <p>Beste $user.login,</p>
 
-                                                                    #if($notification.message.editRequestSave)
-                                                                        #set ( $eventDetails = "en heeft een review aangevraagd")
-                                                                    #elseif($notification.message.publishRequestSave)
-                                                                        #set ( $eventDetails = "en heeft de mogelijkheid om te publiceren aangevraagd")
-                                                                    #end
+                                                        <p>
+                                                            <strong>Je hebt een privébericht ontvangen in de $community.title.</strong><br>
+                                                            Onderwerp: ${note.getSubject()}<br>
+                                                            Van: ${note.getFromUser().getLogin()}<br>
+                                                            Datum: ${note.getSentDate()}<br>
+                                                        </p>
 
-                                                                    #if ($notification.newlyVisible || !$notification.message.edited)
-                                                                        #set ( $eventUser = "${notification.message.author.login}")
-                                                                        #set ( $eventUserRanking = "${notification.message.author.ranking.name}")
-                                                                        #if ($notification.moved)
-                                                                            #if ($notification.merged)
-                                                                                #set ($eventText = "bundelde een")
-                                                                            #else
-                                                                                #set ($eventText = "verplaatste een")
-                                                                            #end
-                                                                        #else
-                                                                            #set ( $eventText = "plaatste een nieuw")
-                                                                        #end
-                                                                    #else
-                                                                        #set ( $eventUser = "${notification.message.lastEditUser.login}")
-                                                                        #set ( $eventUserRanking = "${notification.message.lastEditUser.ranking.name}")
-                                                                        #if ("${notification.message.board.discussionStyle}" == "tkb")
-                                                                            #set ( $eventText = "bewerkte een")
-                                                                        #else
-                                                                            #set ( $eventText = "bewerkte een")
-                                                                        #end
-                                                                    #end
+                                                        <p>${note.getBody()}</p>
 
-                                                                    ${eventUser} (${eventUserRanking}) ${eventText} ${notification.message.localizedObjectType}
-                                                                    in ${notification.message.board.title}
-                                                                    op ${notification.formattedDateForMessageEdit}
-                                                                    in de ${community.title} ${eventDetails}:
-                                                                </td>
-                                                            </tr>
-                                                                    #if (${notification.emailContentFormat.name} == "subject_and_body")
-                                                            <tr>
-                                                                <td align="left" valign="top" class="articleText" style="font-size: 14px; line-height: 24px; color: #002857; font-family: Arial, Helvetica, sans-serif; width: 545px; max-width: 545px; padding-bottom: 14px;">
-                                                                        ${notification.message.webUi.url}
-                                                                        Onderwerp:
+                                                        <p>Om jouw opties voor privéberichten te beheren, klikt je
+                                                            ${emailUrls.getTapestryUrl("/user/myprofilepage/tab/user-preferences%3Aprivate-messenger")}.</p>
 
-                                                                        #if ($notification.message.subject)
-                                                                            ${tools.unescapeHtml($notification.message.subject)}
-                                                                        #else
-                                                                            ${notification.message.subject}
-                                                                        #end
+                                                        <p>Fijn dat je een ${community.title}lid wilt zijn.</p>
 
-                                                                    <p>${notification.plainTextBody}</p>
-
-                                                                        #if (${notification.displayPlainTextSignature})
-                                                                    <p>${notification.authorPlainTextSignature}</p>
-                                                                        #end
-
-                                                                        #if ($mailActions.canReplyByEmail)
-                                                                    <p>Je kan reageren op ${notification.message.localizedObjectType} op deze pagina:
-                                                                            ${mailActions.replyByEmailUrl}</p>
-                                                                        #end
-
-                                                                        #if ($mailActions.canMarkAsSolution)
-                                                                    <p>Je kan de reactie als oplossing markeren op ${notification.message.localizedObjectType} op deze pagina:
-                                                                            ${mailActions.markAsSolutionUrl}</p>
-                                                                        #end
-
-                                                                        #if ($mailActions.canGiveKudos)
-                                                                    <p>Je kan een Like geven aan het ${notification.message.localizedObjectType} op deze pagina:
-                                                                            ${mailActions.giveKudosUrl}</p>
-                                                                        #end
-                                                                </td>
-                                                            </tr>
-                                                                    #else
-                                                            <tr>
-                                                                <td align="left" valign="top" class="articleText" style="font-size: 14px; line-height: 24px; color: #002857; font-family: Arial, Helvetica, sans-serif; width: 545px; max-width: 545px; padding-bottom: 14px;">
-                                                                        Onderwerp:
-
-                                                                        #if ($notification.message.subject)
-                                                                            ${tools.unescapeHtml($notification.message.subject)}
-                                                                        #else
-                                                                            ${notification.message.subject}
-                                                                        #end
-
-                                                                    <p>Je kan de volledige tekst van het ${notification.message.localizedObjectType} lezen op deze pagina:
-                                                                        ${notification.message.webUi.url}</p>
-                                                                </td>
-                                                            </tr>
-                                                                    #end
-                                                            <tr>
-                                                                <td align="left" valign="top" class="articleText" style="font-size: 14px; line-height: 24px; color: #002857; font-family: Arial, Helvetica, sans-serif; width: 545px; max-width: 545px; padding-bottom: 14px;">Hartelijke groet, <br>Het Zilveren Kruis Community team</br>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
+                                                        <p>Het ${community.title}-team</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
 
                                             <!-- *********** -->
                                             <!-- END CONTENT -->
