@@ -65,7 +65,33 @@
 
     .ideas-filtering {
         background-color: #fff;
-        min-height: 100px;
+        min-height: 70px;
+        margin-bottom: 1rem;
+        + .FilteredByMessageStatus {
+            margin-top: -1rem;
+            margin-bottom: 1rem;
+        }
+        .filters-label {
+            float: right;
+            width: 70px;
+            margin: 2.4rem 1rem 0 0;
+            font-weight: 600;
+            font-size: 15px;
+            color: $blue;
+        }
+        ul li.default-option {
+            &:after {
+                content: '\f0d7';
+                color: $blueLight;
+                font: normal normal normal 16px/1 FontAwesome;
+                position: absolute;
+                right: 1rem;
+                top: 0.7rem;
+            }
+        }
+        @media screen and (max-width: 662px) {
+            display: none;
+        }
     }
 
     .lia-component-menu-bar-without-options {
@@ -201,18 +227,15 @@
             position: static;
             float: left;
             .lia-link-navigation.kudos-link {
-                min-width: 73px;
+                min-width: 90px;
                 min-height: 40px;
                 border-radius: 4px;
                 margin-right: 10px;
                 &:before {
-                    color: $white;
-                    position: absolute;
-                    left: 10px;
-                    top: 12px;
+                    content: none;
                 }
                 &:after {
-                    content: 'Stem';
+                    content: 'Goed idee';
                     color: $white;
                     position: absolute;
                     right: 10px;
@@ -226,7 +249,38 @@
                     &:hover {
                         border-bottom: 0;
                     }
+                    &:after {
+                        display: inline-block;
+                        font: normal normal normal 16px/1 FontAwesome;
+                        font-size: inherit;
+                        color: $blue ;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        transform: translate(0, 0);
+                        content: "\f087";
+                    }
+                    .lia-component-kudos-widget-kudos-count-label {
+                        display: none;
+                    }
+                    &:hover {
+                        &:after {
+                            color: $blueDarkest;
+                        }
+                    }
                 }
+                .kudos-count-link.kudos-count-link.lia-link-disabled {
+                    color: $blueDarkest;
+                    &:after {
+                        color: $blueDarkest;
+                    }
+                    &:hover {
+                        &:after {
+                            color: $blueDarkest;
+                        }
+                    }
+                }
+
             }
         }
         .lia-message-body-wrapper {

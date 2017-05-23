@@ -23,10 +23,11 @@ LITHIUM.jQuery(function($) {
     ZK.scrollTo($);
     ZK.connectSocialButtons($);
     ZK.copyReactTo($);
-    ZK.adaptCommentLinks($);
+    //ZK.adaptCommentLinks($);
     ZK.moveStatus($);
     ZK.moveKudoButtons($);
     ZK.moveCommentAction($);
+    ZK.prepareFilters($);
     ZK.getAvatarsByApiCall($);
     ZK.moveLabelBox($);
     ZK.setMarkerClick($);

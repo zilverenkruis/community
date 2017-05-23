@@ -1,19 +1,19 @@
-ZK.adaptCommentLinks = function($) {
-    //
-    // var targets = jQuery("[id^='commentsLink']");
-    // var currentTarget,
-    //     tempStr;
-    //
-    // jQuery.each(targets,function( index, value ) {
-    //
-    //     currentTarget = $(targets[index]);
-    //     tempStr = currentTarget.html();
-    //     if(tempStr.length>0){
-    //         tempStr = tempStr.split("(");
-    //         currentTarget.html(tempStr[0]);
-    //     }
-    // });
-};
+// ZK.adaptCommentLinks = function($) {
+//
+//     var targets = jQuery("[id^='commentsLink']");
+//     var currentTarget,
+//         tempStr;
+//
+//     jQuery.each(targets,function( index, value ) {
+//
+//         currentTarget = $(targets[index]);
+//         tempStr = currentTarget.html();
+//         if(tempStr.length>0){
+//             tempStr = tempStr.split("(");
+//             currentTarget.html(tempStr[0]);
+//         }
+//     });
+// };
 
 ZK.moveLabelBox = function($) {
     var labelBox = jQuery('.IdeaExchangePage .lia-content .lia-message-view-idea-message-item .LabelsForArticle');
@@ -65,6 +65,36 @@ ZK.moveCommentAction = function($) {
                 jThis.insertBefore(kudos);
             }
         });
+    }
+};
+
+ZK.prepareFilters = function($) {
+    var filters = jQuery('.IdeaExchangePage .ideas-filtering.filter-section > div');
+    if (filters.length) {
+        filters.each(function() {
+            var jThis = jQuery(this);
+            var optionlist = jThis.find('ul.lia-list-standard');
+            var label = jThis.find('span.lia-panel-heading-bar-title').html();
+            if (label.length && optionlist.length) {
+                var defaultitem = document.createElement('LI');
+                if (optionlist.parent().hasClass('MessageStatusesTaplet')) {
+                    defaultitem.classList.add('message-status');
+                    defaultitem.classList.add('lia-status');
+
+                } else {
+                    defaultitem.classList.add('label');
+                    defaultitem.classList.add('odd-row');
+                }
+                defaultitem.classList.add('default-option');
+                defaultitem.innerHTML = label;
+                optionlist.prepend(defaultitem);
+                if (jThis.next().length === 0) {
+                    jThis.insertBefore(jThis.prev());
+                };
+            }
+        });
+        console.log(filters.parent('.ideas-filtering.filter-section').length);
+        filters.parent('.ideas-filtering.filter-section').append('<div class="filters-label">Filter op: </div>')
     }
 };
 
