@@ -487,3 +487,41 @@
 .KudosUserPage .UserListBlock .UserProfileSummary {
     overflow: hidden;
 }
+
+.KudosMessagePage {
+    .lia-page-header {
+        background-color: $moreBlueLightLithium;
+        h1 span {
+            color: $blueDark;
+        }
+    }
+
+    .lia-page-header .lia-component-common-widget-page-title,
+    .lia-quilt-row-main .lia-quilt-column-main-content .lia-quilt-column-alley-single {
+        max-width: 980px;
+        margin: auto;
+        display: block;
+        padding: 0;
+        background-color: $moreBlueLightLithium;
+    }
+
+    .lia-quilt-row-main {
+        background-color: $moreBlueLightLithium;
+        #tabgroup.lia-tabs-standard-wrapper {
+            margin-top: 70px;
+            .lia-tabs-standard {
+                margin: -65px 0px 20px -20px;
+            }
+            .lia-user-leaderboard-rank {
+                display: none;
+            }
+        }
+    }
+    .lia-quilt-row-footer {
+        background-color: transparent;
+    }
+
+    .UserListBlock {
+        border: none;
+    }
+}
