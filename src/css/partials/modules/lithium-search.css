@@ -200,35 +200,6 @@
     .lia-note-view-display .lia-message-discussion-style-icon {
         left: -60px;
         top:20px;
-        .lia-fa-forum{
-            background: transparent url('/html/assets/2016-icon-Forum.svg') no-repeat;
-            border-radius: 0px;
-            &:before {
-                content: none;
-            }
-        }
-        .lia-fa-idea {
-            background: transparent url('/html/assets/2016-icon-Denk-Mee.svg') no-repeat;
-            border-radius: 0px;
-            &:before {
-                content: none;
-            }
-        }
-        .lia-fa-tkb {
-            background: transparent url('/html/assets/2016-icon-Kennisbank.svg') no-repeat;
-            border-radius: 0px;
-            &:before {
-                content: none;
-            }
-        }
-        .lia-fa-blog {
-            background: transparent url('/html/assets/2016-icon-Blog.svg') no-repeat;
-            border-radius: 0px;
-            &:before {
-                content: none;
-            }
-        }
-
     }
 
     .lia-component-quilt-search-page-thread-filters {
