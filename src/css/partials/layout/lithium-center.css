@@ -35,10 +35,17 @@ $maxwidth : 980px;
             max-width: $maxwidth;
         }        
     }
+    > .lia-quilt-row-footer {
+        background-color: $white;
+        border: none;
+    }
 
 }
 /*top row navigation*/
 .ReplyPage {
+    .lia-page-header{
+        display: none;
+    }
 
     .lia-quilt-row-main {
         > .lia-quilt-column > .lia-quilt-column-alley {
