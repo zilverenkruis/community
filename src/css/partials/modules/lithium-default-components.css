@@ -405,14 +405,25 @@ ul.defaultlist {
 
         .lia-js-menu-opener {
             background-color: transparent;
-            border:1px solid #279EDA;
-            color:#279EDA;
+            border:1px solid $blueLighter;
+            color: $blueLighter;
+            &:hover {
+                border:1px solid $blueLighter;
+            }
         }
     }
 
     .lia-quilt-column-search-content {
         border-top: 0px solid #fff;
         top: 0px;
+    }
+
+    .lia-quilt-column-right {
+        .lia-quilt-column-alley-right {
+            .lia-component-send-message-button {
+                display: none;
+            }
+        }
     }
 }
 
@@ -1030,6 +1041,43 @@ only screen and (max-width: 760px),
 
 .lia-message-state-indicator {
     display: none;
+}
+
+.lia-message-discussion-style-icon {
+    left: -60px;
+    top:20px;
+    .lia-fa-forum{
+        background: transparent url('/html/assets/2016-icon-Forum.svg') no-repeat;
+        border-radius: 0px;
+        &:before {
+            content: none !important;
+            background: none;
+        }
+    }
+    .lia-fa-idea {
+        background: transparent url('/html/assets/2016-icon-Denk-Mee.svg') no-repeat;
+        border-radius: 0px;
+        &:before {
+            content: none !important;
+            background: none;
+        }
+    }
+    .lia-fa-tkb {
+        background: transparent url('/html/assets/2016-icon-Kennisbank.svg') no-repeat;
+        border-radius: 0px;
+        &:before {
+            content: none !important;
+            background: none;
+        }
+    }
+    .lia-fa-blog {
+        background: transparent url('/html/assets/2016-icon-Blog.svg') no-repeat;
+        border-radius: 0px;
+        &:before {
+            content: none !important;
+            background: none;
+        }
+    }
 }
 
 .lia-cancel-search {
