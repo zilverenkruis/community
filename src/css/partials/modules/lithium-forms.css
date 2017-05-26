@@ -1,6 +1,7 @@
 .ReplyPage {
     form {
-        .lia-form-subject-entry {
+        .lia-form-subject-entry,
+        .MessageEditor .lia-form-label-wrapper {
             display: none;
         }
     }
