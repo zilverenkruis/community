@@ -145,7 +145,7 @@
         width: 100px;
         height: 100px;
         position:relative;
-        /*background-color: $blueLighter;            */
+        overflow: hidden;
         > img {
             border-radius: 4px;
             height: auto;
@@ -488,8 +488,10 @@
     overflow: hidden;
 }
 
-.KudosMessagePage {
-    .lia-page-header {
+.KudosMessagePage,
+.ForumsFilteredByLabelPage {
+    .lia-page-header,
+    .lia-content {
         background-color: $moreBlueLightLithium;
         h1 span {
             color: $blueDark;
@@ -497,14 +499,20 @@
     }
 
     .lia-page-header .lia-component-common-widget-page-title,
-    .lia-quilt-row-main .lia-quilt-column-main-content .lia-quilt-column-alley-single {
+    .lia-quilt-row-main .lia-quilt-column-main-content .lia-quilt-column-alley-single,
+    .lia-quilt-row-main {
         max-width: 980px;
         margin: auto;
         display: block;
         padding: 0;
         background-color: $moreBlueLightLithium;
+
     }
 
+    .lia-component-common-widget-core-node-icon,
+    .lia-quilt-row-sub-header {
+        display: none;
+    }
     .lia-quilt-row-main {
         background-color: $moreBlueLightLithium;
         #tabgroup.lia-tabs-standard-wrapper {
@@ -521,7 +529,29 @@
         background-color: transparent;
     }
 
-    .UserListBlock {
+    .UserListBlock,
+    .lia-list-wide {
         border: none;
+    }
+
+    @media screen and (min-width: 992px) {
+        .lia-top-quilt > .lia-quilt-row-main {
+            > .lia-quilt-column-left,
+            > .lia-quilt-column:first-child {
+                padding-left: 0;
+            }
+            > .lia-quilt-column-right,
+            > .lia-quilt-column:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+      .lia-page-header,
+      .lia-quilt-row-main {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
 }
