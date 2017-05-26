@@ -66,10 +66,10 @@
     .ideas-filtering {
         background-color: #fff;
         min-height: 70px;
-        margin-bottom: 1rem;
+        margin-bottom: 0.3rem;
         + .FilteredByMessageStatus {
-            margin-top: -1rem;
-            margin-bottom: 1rem;
+            margin-top: -0.3rem;
+            margin-bottom: 0.3rem;
         }
         .filters-label {
             float: right;
