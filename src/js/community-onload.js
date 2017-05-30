@@ -32,7 +32,8 @@ LITHIUM.jQuery(function($) {
     ZK.moveLabelBox($);
     ZK.setMarkerClick($);
     ZK.loadSearchPage($);
-    ZK.onHideLoaderFeedback($)
+    ZK.onHideLoaderFeedback($);
+    ZK.addCornersToNavLink($);
     ZK.svgCorner();
 
 }(LITHIUM.jQuery));

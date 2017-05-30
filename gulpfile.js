@@ -45,6 +45,7 @@ var jsFiles = [
     sourceJS + 'community-search.js',
     sourceJS + 'community-forum.js',
     sourceJS + 'community-ideas.js',
+    sourceJS + 'community-home.js',
     sourceJS + 'community-onload.js'
 ]
 

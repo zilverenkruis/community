@@ -44,3 +44,7 @@
 	top: 50%;
 	transform: translateY(-50%);
 }
+
+.no-background-image {
+    background-image: none !important;
+}

@@ -1,7 +1,16 @@
 .zk-search-bar {
     background-color: $lithium-blue-light;
     padding: 1em 0;
+    &.layout2017 {
+        &.home {
+            background-color: $blueLightest2;
+            padding-top: 0;
+        }
 
+    }
+    .lia-quilt-vitality {
+        background-color: $blueLightest2;
+    }
     .lia-button-wrapper-searchForm-action::before {
         display: none;
     }
