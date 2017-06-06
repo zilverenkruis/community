@@ -38,7 +38,7 @@
                 </div>
                 <div class="nav-text">
                   <h3 class="nav-title">Service &amp; beleid</h3>
-                  <div>9 subthema's</div>
+                  <div>5 subthema's</div>
                 </div>
               </div>
               <div class="clear-float"></div>
@@ -50,10 +50,6 @@
                 <li class="nav-board"><a href="/t5/Huisarts/bd-p/Huisarts" title="Huisarts">Huisarts&nbsp;(27)</a></li>
                 <li class="nav-board"><a href="/t5/Hulpmiddelen/bd-p/Hulpmiddelen" title="Hulpmiddelen">Hulpmiddelen&nbsp;(134)</a></li>
                 <li class="nav-board"><a href="/t5/Medicijnen/bd-p/Medicijnen" title="Medicijnen">Medicijnen&nbsp;(80)</a></li>
-                <li class="nav-board"><a href="/t5/Mondzorg/bd-p/Mondzorg" title="Mondzorg">Mondzorg&nbsp;(98)</a></li>
-                <li class="nav-board"><a href="/t5/Persoonsgebonden-budget-PGB/bd-p/PGB" title="Persoonsgebonden budget (PGB)">Persoonsgebonden budget (PGB)&nbsp;(11)</a></li>
-                <li class="nav-board"><a href="/t5/Ziekenhuiszorg-MSZ/bd-p/Ziekenhuis" title="Ziekenhuiszorg (MSZ)">Ziekenhuiszorg (MSZ)&nbsp;(66)</a></li>
-                <li class="nav-board"><a href="/t5/Overige-vergoedingen/bd-p/Overig" title="Overige vergoedingen">Overige vergoedingen&nbsp;(158)</a></li>
               </ul>
             </div>
           </li>
