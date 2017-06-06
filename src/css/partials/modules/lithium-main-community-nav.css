@@ -375,7 +375,7 @@
                 margin-right: 0;
                 position: relative;
                 .main-community-subnav-2017 {
-                    height: 250px;
+                    height: 310px;
                 }
             }
         }
@@ -414,6 +414,7 @@
         transition: all 700ms;
         visibility: visible;
         opacity: 1;
+        z-index: 2;
     }
 }
 
