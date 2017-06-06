@@ -18,7 +18,7 @@
             </a>
             <div class="main-community-subnav-2017">
               <ul class="nav-boards">
-                <li class="nav-board"><a href="/t5/Alternatieve-geneeswijzen/bd-p/alternatief" title="Alternatieve geneeswijzen">Alternatieve geneeswijzen&nbsp;(30)</a></li>
+                <li class="nav-board"><a href="/t5/Alternatieve-geneeswijzen/bd-p/Alternatief" title="Alternatieve geneeswijzen">Alternatieve geneeswijzen&nbsp;(30)</a></li>
                 <li class="nav-board"><a href="/t5/Fysiotherapie/bd-p/Fysio" title="Fysiotherapie">Fysiotherapie&nbsp;(51)</a></li>
                 <li class="nav-board"><a href="/t5/Huisarts/bd-p/Huisarts" title="Huisarts">Huisarts&nbsp;(27)</a></li>
                 <li class="nav-board"><a href="/t5/Hulpmiddelen/bd-p/Hulpmiddelen" title="Hulpmiddelen">Hulpmiddelen&nbsp;(134)</a></li>
@@ -45,11 +45,11 @@
             </a>
             <div class="main-community-subnav-2017">
               <ul class="nav-boards">
-                <li class="nav-board"><a href="/t5/Alternatieve-geneeswijzen/bd-p/alternatief" title="Alternatieve geneeswijzen">Alternatieve geneeswijzen&nbsp;(30)</a></li>
-                <li class="nav-board"><a href="/t5/Fysiotherapie/bd-p/Fysio" title="Fysiotherapie">Fysiotherapie&nbsp;(51)</a></li>
-                <li class="nav-board"><a href="/t5/Huisarts/bd-p/Huisarts" title="Huisarts">Huisarts&nbsp;(27)</a></li>
-                <li class="nav-board"><a href="/t5/Hulpmiddelen/bd-p/Hulpmiddelen" title="Hulpmiddelen">Hulpmiddelen&nbsp;(134)</a></li>
-                <li class="nav-board"><a href="/t5/Medicijnen/bd-p/Medicijnen" title="Medicijnen">Medicijnen&nbsp;(80)</a></li>
+                <li class="nav-board"><a href="/t5/Beleid-polis-en-regelgeving/bd-p/Beleid" title="Beleid, polis en regelgeving">Beleid, polis en regelgeving&nbsp;(3)</a></li>
+                <li class="nav-board"><a href="/t5/Collectiviteit/bd-p/Collectiviteit" title="Collectiviteit">Collectiviteit&nbsp;(2)</a></li>
+                <li class="nav-board"><a href="/t5/Eigen-risico-en-premie/bd-p/Premie" title="Eigen risico en premie">Eigen risico en premie&nbsp;(3)</a></li>
+                <li class="nav-board"><a href="/t5/Klantcontact/bd-p/klantcontact" title="Klantcontact">Klantcontact&nbsp;(0)</a></li>
+                <li class="nav-board"><a href="/t5/Zilveren-Kruis-Online/bd-p/Online" title="Zilveren Kruis Online">Zilveren Kruis Online&nbsp;(3)</a></li>
               </ul>
             </div>
           </li>
