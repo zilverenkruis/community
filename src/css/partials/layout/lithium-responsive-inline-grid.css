@@ -33,8 +33,10 @@
 
     &.desktop-one-half {
         .grid-item {
-            width: 48%;
-            margin-right:2%;
+            width: 49%;
+            &:nth-child(odd) {
+                margin-right: 2%;
+            }
         }
     }
 }

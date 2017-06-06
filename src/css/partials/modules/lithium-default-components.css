@@ -94,7 +94,40 @@
     margin-top: 1em !important;
 }
 
+.lia-link-arrow {
+    color: $blue;
+    font-weight: 600;
+    padding-right: 2.0rem;
+    position: relative;
+    &:after {
+        font-family: zk-centralenav-fontregular;
+        content: '\61';
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: absolute;
+        right: 0;
+        color: $pink;
+    }
+}
 
+.section-heading + .lia-link-arrow-wrapper {
+    margin-top: -3.5rem;
+}
+
+.section-join {
+    padding-bottom: 55px;
+    position: relative;
+    &:after {
+        content: ' ';
+        background: transparent url('/html/assets/join-us.png') center 10px no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 203px;
+        left: 0;
+        bottom: -183px;
+    }
+}
 
 .lia-breadcrumb {
 

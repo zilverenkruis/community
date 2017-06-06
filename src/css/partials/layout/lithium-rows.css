@@ -52,7 +52,7 @@
         height: 264px;
         position: absolute;
         bottom: -80px;
-        background: transparent url('/html/assets/headerHome-people-big-2017.png');
+        background: transparent url('/html/assets/headerHome-people-big-2017.png') center center no-repeat;
     }
 }
 
