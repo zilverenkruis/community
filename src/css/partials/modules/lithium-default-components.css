@@ -315,6 +315,9 @@ ul.defaultlist {
 
 .lia-common-slide-menu .lia-slide-menu-content {
     background: #fff;
+    .lia-quilt-row-profile-links {
+        margin-bottom: 100%;
+    }
 }
 
 .lia-common-slide-menu .lia-slide-menu-overlay.lia-slide-menu-overlay-open {
