@@ -43,10 +43,6 @@ $maxwidth : 980px;
 }
 /*top row navigation*/
 .ReplyPage {
-    .lia-page-header{
-        display: none;
-    }
-
     .lia-quilt-row-main {
         > .lia-quilt-column > .lia-quilt-column-alley {
             margin: auto;
