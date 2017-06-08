@@ -41,7 +41,9 @@
 /* (forum postpage) */
 
 .PostPage,
-.UserLoginPage {
+.UserLoginPage,
+.ReplyPage,
+.UserRegistrationPage {
     .lia-page-header {
         width: 980px;
         margin: 0 auto;
