@@ -35,6 +35,10 @@
     }
 }
 
+.UserNavigation.lia-list-standard-inline li {
+    padding-top: 1.0rem !important;
+}
+
 @media screen and (max-width: 999px) {
     .lia-component-common-widget-slide-out-user-menu .lia-notifications-messages-aggregate {
         right: -20px;
@@ -45,14 +49,16 @@
 
 @media screen and (min-width: 1000px) {
     .lia-component-common-widget-slide-out-user-menu .lia-notifications-messages-aggregate {
-        right: -3px;
-        top: -45px;
+        right: 38px;
+        top: -15px;
         display: block;
     }
 }
 
 .user-navigation-user-profile {
     padding-right: 0;
+    float: right;
+    padding-left: 0.2rem;
 }
 
 .main-community-nav {
@@ -283,7 +289,7 @@
             top: 120px;
             left: 0;
             width: 100%;
-            height: 150px;
+            height: 230px;
             background-color: $white;
             border-radius: 4px;
             padding: 1rem 2rem;
@@ -375,7 +381,10 @@
                 margin-right: 0;
                 position: relative;
                 .main-community-subnav-2017 {
-                    height: 310px;
+                    height: auto;
+                    .nav-boards {
+                        display: block;
+                    }
                 }
             }
         }
@@ -391,12 +400,6 @@
                         width: 100%;
                         text-align: center;
                         float: none;
-                    }
-                }
-                .main-community-subnav-2017 {
-                    height: auto;
-                    .nav-boards {
-                        display: block;
                     }
                 }
             }
