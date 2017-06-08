@@ -16,3 +16,24 @@ ZK.scrollTo = function($) {
     });
         
 };
+
+ZK.setMarkerClick = function($) {
+    "use strict";
+
+    var markers = jQuery('.marker');
+    if (markers.length) {
+        markers.each(function() {
+            var jThis = jQuery(this);
+            jThis.on("click", function(e) {
+                var target = jQuery(e.target);
+                if (target.length) {
+                    jQuery('html,body').animate({
+                        scrollTop: target.offset().top - 10
+                    }, 500);
+                    return false;
+                }
+            });
+        });
+
+    }
+};

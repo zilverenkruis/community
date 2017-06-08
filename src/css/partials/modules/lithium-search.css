@@ -1,7 +1,16 @@
 .zk-search-bar {
     background-color: $lithium-blue-light;
     padding: 1em 0;
+    &.layout2017 {
+        &.home {
+            background-color: $blueLightest2;
+            padding-top: 0;
+        }
 
+    }
+    .lia-quilt-vitality {
+        background-color: $blueLightest2;
+    }
     .lia-button-wrapper-searchForm-action::before {
         display: none;
     }
@@ -13,18 +22,26 @@
     .lia-component-common-widget-search-form {
         .SearchForm.lia-form-inline .search-input {
             height: 55px;
+            padding-right: 240px;
+            padding-left: 12px;
         }
         .lia-form-inline .lia-search-form-granularity {
             height: 55px;
-            
-            color: $blueLighter;
+            border-top: 0;
+            border-bottom: 0;
+            color: $white;
             border-left: 1px solid;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
+            padding-right: 12px;
+            background-color: $blueLighter;
             &:focus {
                 box-shadow: none;            
             }       
-        }        
+        }
+        .lia-form-inline .lia-search-granularity-wrapper:before {
+            content: none;
+        }
     }
     
 
@@ -42,7 +59,7 @@
     }
 
 
-    .lia-search-input-wrapper > .search-input.lia-form-type-text {
+    .lia-search-input-wrapper .search-input.lia-form-type-text {
             @mixin border-radius $baseBorderRadius;
             background-color: #fff;
             box-shadow: none;
@@ -58,7 +75,7 @@
         /*border: 1px solid;*/
         width: 58px;
         height: 100%;
-        background-color: $blueLighter;
+        background-color: $blueLight;
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;        
         &:after {
@@ -72,23 +89,33 @@
                 
     }
     
-    .SearchForm.lia-form-inline .lia-button-searchForm-action {
-        background-image: none;
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        /*position: static;        */
-        /*height: 100%;
-        width: 58px;
-        right: 0;
-        top: auto;
-        margin-top: 0px;  */
-    } 
+    .SearchForm.lia-form-inline {
+        position: relative;
+
+        .lia-search-granularity-wrapper {
+            position: absolute;
+            right: 58px;
+        }
+
+        .lia-button-searchForm-action {
+            background-image: none;
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            /*position: static;        */
+            /*height: 100%;
+            width: 58px;
+            right: 0;
+            top: auto;
+            margin-top: 0px;  */
+        }
+
+    }
 
 }
 
@@ -117,10 +144,52 @@
 
 .SearchPage {
 
+    .BreadCrumb,
+    .searchPageFormWrapper,
+    .lia-search-title.lia-component-search-title,
+    .lia-advanced-search-toggle.lia-component-search-widget-advanced-search-toggle {
+        display: none;
+    }
+
+    .lia-search-tab-bar .lia-component-search-tabs {
+        position: static;
+        #tabgroup.lia-tabs-standard-wrapper,
+        .lia-tabs-standard-wrapper {
+            margin-top: 0;
+            padding: 0;
+            background-color: $moreBlueLightLithium;
+            .lia-tabs-standard {
+                background-color: $moreBlueLightLithium;
+                .lia-tabs {
+                    border-left: none;
+                    &.lia-tabs-inactive {
+                        background-color: $blueLightest2;
+                    }
+                    a {
+                        font-size: 18px;
+                        color: $blueDarkest;
+                        padding: 10px 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .search-result-sort-by-label {
+        font-weight: 600;
+        color: $blueDark;
+        display: inline;
+        padding: 10px;
+    }
 
     .lia-menu-action-search-result-sorting {
-        .default-menu-option:after, .lia-common-dropdown-toggle:after {
-            display: none;
+        display: inline;
+        .lia-menu-navigation-wrapper {
+            float: none;
+            .default-menu-option:after, .lia-common-dropdown-toggle:after {
+                content: '\f0d7';
+                color: $blue;
+            }
         }
     }
 
@@ -142,6 +211,115 @@
         top:20px;
     }
 
+    .lia-component-quilt-search-page-thread-filters {
+        border-bottom: 10px solid $moreBlueLightLithium;
+        .search-result-filter-label {
+            display: inline;
+            font-weight: 600;
+            padding-right: 10px;
+        }
+        .lia-common-dropdown-toggle {
+            border: 1px solid $blue;
+            color:$blue;
+            padding: 0 10px;
+        }
+        .search-result-sorting {
+            float:right;
+            .lia-menu-action-search-result-sorting {
+                display: inline;
+            }
+        }
+        .lia-component-search-widget-location-filter,
+        .lia-component-search-widget-bling-filter,
+        .lia-component-search-widget-content-filter {
+            display: none;
+        }
+    }
+
+    .lia-message-view-display {
+
+        .lia-quilt-row-top {
+
+            .lia-message-byline {
+                visibility: collapse;
+                display: inline;
+                .lia-user-name {
+                    visibility: visible;
+                    float: left;
+                    &:before {
+                        content: 'door';
+                    }
+                    .login-bold {
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .lia-quilt-column-left-content .lia-message-item-metadata-main {
+                display: inline;
+                .MessageKudosCount {
+                    display: none;
+                }
+                .lia-message-post-date {
+                    visibility: visible;
+                    display: inline;
+                    float: left;
+                    &:before {
+                        content: 'op';
+                        font-family: $sansFontFamily;
+                        color: $blueDarkest;
+                        margin: 0 0 0 4px;
+                    }
+                }
+            }
+            .lia-quilt-column-right-content {
+                .lia-message-post-date {
+                    display: none;
+                }
+                .MessageKudosCount {
+                    font-weight: 600;
+                    a {
+                        color: $blueLighter;
+                    }
+                    &:before {
+                        color: $blueLighter;
+                        content: "\f087";
+                        display: inline-block;
+                        font-weight: 600;
+                        font-family: FontAwesome;
+                        font-size: 16px;
+                    }
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        .lia-quilt-row-contents {
+            display: none;
+        }
+    }
+
+    .lia-quilt-search-page-thread-filters .lia-js-menu-opener.default-menu-option.lia-js-click-menu.lia-link-navigation {
+        border-color: $blue;
+        color: $blue;
+        font-weight: 300;
+        padding: 0 16px;
+    }
+    .lia-component-search-menubar .search-result-count {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    #actionMenuDropDown {
+        .lia-js-menu-opener.default-menu-option,
+        .lia-js-menu-opener.default-menu-option:hover,
+        .lia-js-menu-opener.default-menu-option:active {
+            border: 1px solid $blue;
+        }
+    }
 }
 
 .ViewProfilePage {
@@ -196,7 +374,7 @@
         display:block;
         width:100%;
         text-align:center;
-
+        float: none;
         @media screen and (max-width: 991px) {
             padding-left: 20px;
             padding-right: 20px;
@@ -212,8 +390,6 @@
     .lia-message-view-display {
         .lia-message-subject-wrapper.lia-component-subject {
             margin-left: 0px;
-
-
         }
     }
 
@@ -287,4 +463,30 @@
 
 .lia-message-view-display .lia-component-batch-processing-checkbox, .lia-note-view-display .lia-component-batch-processing-checkbox {
     margin-top: 9px;
+}
+
+/* responsive fix 2017 */
+.lia-component-common-widget-search-form .lia-search-input-wrapper {
+    position: relative;
+}
+
+
+.CommunityPage .lia-quilt-row-search, .CommunityPage .lia-quilt-row-sub-header {
+    display: none;
+}
+
+.lia-quilt-user-search .lia-user-search-results-grid-container {
+    .lia-quilt-user-search-item {
+        margin-bottom: 2rem;
+        .lia-quilt-column-user-search-result {
+            overflow: hidden;
+            .lia-summary-view-statistic-email {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.lia-search-match-lithium {
+    background-color: $blueLightLithium;
 }

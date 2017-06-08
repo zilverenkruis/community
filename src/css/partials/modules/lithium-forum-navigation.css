@@ -19,18 +19,17 @@
     /*float: left;*/
     flex: 2;               
 }
-.forum-boards {
+.forum-boards,
+.nav-boards {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
     max-width:100%;
 }
-.nav-column {
-   
-}
 
-.forum-board {
+.forum-board,
+.nav-board {
     margin: .5em 1em .5em 0;
 }
 

@@ -7,6 +7,7 @@
         width: 15%;
         text-align: left;
         position: relative;
+        padding-right: 1.5rem;
         > a {
             display: inline-block;
             max-width: 80px;
@@ -15,7 +16,7 @@
             }
         }
     }
-  
+
 }
 
 .items-list {
@@ -83,12 +84,14 @@
         color: $blueLighter;
         font-weight: bold;
         font-size: .95em;
+        a {
+            color: $blueLighter;
+        }
+
         .wrapper {
             display: inline-block;
         }
-        /*position: relative;
-        top: 50%;
-        transform: translateY(-50%);            */
+
         .kudos, .replies, .views {
             display: inline;
             &:before {
@@ -101,7 +104,8 @@
         .kudos {
             margin-right: 8px;
             &:before {            
-                content: '\2a';
+                content: "\f164";
+                font-family: FontAwesome;
             }
         }
         .replies {
@@ -199,7 +203,11 @@
     }
 }
 
-
+/* responsive fix 2017*/
+.lia-panel-content img {
+    height: auto;
+    max-width: 100%;
+}
 
 @media (max-width: 780px) {
     .items-list {

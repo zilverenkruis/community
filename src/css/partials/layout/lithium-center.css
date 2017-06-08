@@ -35,10 +35,17 @@ $maxwidth : 980px;
             max-width: $maxwidth;
         }        
     }
+    > .lia-quilt-row-footer {
+        background-color: $white;
+        border: none;
+    }
 
 }
 /*top row navigation*/
 .ReplyPage {
+    .lia-page-header{
+        display: none;
+    }
 
     .lia-quilt-row-main {
         > .lia-quilt-column > .lia-quilt-column-alley {
@@ -66,12 +73,12 @@ $maxwidth : 980px;
     .lia-component-kudos {
         position: relative;
         z-index: 20;
-        left: 90px;
+        left: 80px;
     }
 
     #message_social {
         position: relative;
-        top: -66px;
+        top: -76px;
         z-index: 10;
         display: inline-block;
 
@@ -81,7 +88,7 @@ $maxwidth : 980px;
         }
 
         @media screen and (max-width: 662px) {
-            top: -121px;
+            top: -132px;
         }
     }
 

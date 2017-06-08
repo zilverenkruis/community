@@ -54,6 +54,7 @@
             margin-bottom: 0;
             color: $blue;
         }
+
         .description {
             color: $blue;
             max-width: 90%;
@@ -64,18 +65,19 @@
             background: url('/html/assets/headerHome-people-big.png')  transparent center bottom no-repeat;
             background-size: contain;
         }
+
     }
     
 }
-
 
 .lia-quilt-row > .full-width-header {
     margin-top: -40px;
     margin-bottom: -40px;
 }
 
-
-
+.lia-quilt-row-sub-header {
+    border: 0;
+}
 
 #lia-body .lia-page .lia-content .lia-quilt-row-header .full-width-bg {
 /*.full-width-bg {*/
@@ -83,16 +85,16 @@
     background: url('/html/assets/2016-denkmee-header.jpg') #0068BD top right no-repeat;
     @media screen and (max-width: 662px) {
         background: none !important;
-        display: none;            
-    }          
+        display: none;
+    }
 }
 /*.BlogPage,.IdeaExchangePage .lia-quilt-category-page-tkb2016 {
     .full-width-bg {
         @media screen and (max-width: 662px) {
             background: none;
-            display: none;            
-        }          
-    }    
+            display: none;
+        }
+    }
 }*/
 
 .full-width-header .header-image {
@@ -119,7 +121,7 @@
     float: left;
     width: 15%;
     margin-left: -1px;
-}       
+}
 
 
 
@@ -133,9 +135,9 @@
         background-color: transparent;
         .lia-panel-content {
             padding: 0;
-        }        
-    } 
-    
+        }
+    }
+
 }*/
 
 
@@ -169,7 +171,7 @@
             padding: 0 8px;
             display: inline-block;
             color: #279EDA;
-
+            margin-top: 1rem;
             &:after {
                 font-family: zk-centralenav-fontregular;
                 content: '\61';
@@ -193,7 +195,7 @@
             padding: 0 8px;
             display: inline-block;
             color: #C93A83;
-
+            margin-top: 1rem;
             &:after {
                 font-family: zk-centralenav-fontregular;
                 content: '\61';
@@ -222,6 +224,52 @@
             background-repeat: no-repeat;
             min-height: 314px;
         }
+        &.layout2017 {
+            height: 277px;
+            background: transparent url('/html/assets/header-home-2017.png') right 33px no-repeat;
+            .header-text {
+                padding-bottom: 30px;
+                min-height: 100px;
+                text-align: left;
+                width: 64%;
+                .title {
+                    color: $blueDark;
+                    font-size: 4.2rem;
+                    font-weight: 600;
+                    line-height: 4.5rem;
+                }
+                br {
+                    clear: left;
+                }
+                p.description {
+                    display: block;
+                    float: left;
+                    margin: 1em 0;
+                }
+            }
+        }
+        @media screen and (max-width: 992px) {
+            &.layout2017 {
+                padding: 2.0rem 2.0rem 50.0rem 2.0rem;
+                background-position: right bottom;
+                .header-text {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.lia-quilt-community-page-comm-home2017 {
+    .lia-quilt-row-zk-custom-header,
+    .lia-quilt-vitality {
+        background-color: $blueLightest2;
+    }
+    .lia-quilt-row-main-one {
+        margin-bottom: 40px;
+    }
+    .lia-quilt-row-navigation {
+        background: $moreBlueLightLithium;
     }
 }
 

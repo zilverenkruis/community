@@ -10,8 +10,8 @@
 	outline: 0;
 	display: inline-block;
 	white-space: nowrap;
-	margin-bottom: 0; 
-
+	margin-bottom: 0;
+	line-height: 26px;
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
@@ -239,9 +239,7 @@ input[type="button"] {
 .btn-white,
 .btn-radio,
 .lia-button-image-kudos-horizontal .kudos-link,
-
-.lia-panel-message-root .lia-action-reply.reply-action-link.reply-action-link,
- {
+.lia-panel-message-root .lia-action-reply.reply-action-link.reply-action-link {
 	&.active,
 	&:active {
 		border-width: 2px 0 0 0;
@@ -754,4 +752,25 @@ a.btn-link:focus {
 	line-height: 25px;
 	font-size: 16px;
 	float: right;
+}
+
+.lia-button-Cancel-action.lia-button-Cancel-action,
+.lia-button-Cancel-action.lia-button-Cancel-action:hover,
+.lia-button-CancelCrop-action.lia-button-CancelCrop-action,
+.lia-button-CancelCrop-action.lia-button-CancelCrop-action:hover,
+.lia-button-confirmation-cancel-action.lia-button-confirmation-cancel-action,
+.lia-button-confirmation-cancel-action.lia-button-confirmation-cancel-action:hover,
+.lia-button-Reset-action.lia-button-Reset-action,
+.lia-button-Reset-action.lia-button-Reset-action:hover,
+.lia-button-secondary.lia-button-content-finder-done,
+.lia-button-secondary.lia-button-content-finder-done:hover {
+	border-radius: 4px;
+	color: $pink;
+	background: $white;
+	border: 1px solid $pink;
+}
+
+.lia-button-image-kudos-horizontal .kudos-link.lia-link-disabled,
+.lia-button-image-kudos-horizontal .kudos-link.lia-link-disabled:hover {
+	border-bottom: 2px solid $blueDark;
 }

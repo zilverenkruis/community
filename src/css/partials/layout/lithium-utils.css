@@ -24,7 +24,7 @@
     }
     &.four-third {
         &:before {
-            padding-top: 75%;
+            padding-top: 67%;
         }        
     }    
 }
@@ -43,4 +43,8 @@
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+.no-background-image {
+    background-image: none !important;
 }

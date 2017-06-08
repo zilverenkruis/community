@@ -27,7 +27,7 @@
     position: absolute; 
     left: 0; width: 100%; 
     height: 100%; 
-    z-index: -1; 
+    /*z-index: -1; */
     /*background-color: #d6eff0; */
     /*background-color: $blueLightLithium; */
     background-color: $moreBlueLightLithium; 
@@ -42,6 +42,18 @@
         background-color: #fff;
     }
 
+}
+.background-people {
+    height: 184px;
+    position: relative;
+    &:after {
+        content: ' ';
+        width: 100%;
+        height: 264px;
+        position: absolute;
+        bottom: -80px;
+        background: transparent url('/html/assets/headerHome-people-big-2017.png') center center no-repeat;
+    }
 }
 
 /*@media screen and (max-width: 1200px) {*/

@@ -42,8 +42,10 @@ var jsFiles = [
     // sourceJS + 'community-correct-bg-height.js',
     sourceJS + 'community-create-bg.js',
     sourceJS + 'community-social.js',
+    sourceJS + 'community-search.js',
     sourceJS + 'community-forum.js',
     sourceJS + 'community-ideas.js',
+    sourceJS + 'community-home.js',
     sourceJS + 'community-onload.js'
 ]
 

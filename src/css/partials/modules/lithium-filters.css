@@ -11,27 +11,33 @@
 }
 
 @define-extend filter-item-label {
-    padding: .8em;
+    padding: 0.3rem 0.8rem;
 }
 @define-extend filter-item-link {
     background-color: transparent;
     color: $blueLighter;
     font-size: inherit;
-    font-weight: bold;
+    font-weight: 300;
     padding: 0;
 }
 
 .filter-section {
-    display: flex;
+
     > div {
-        flex: 1;
+        display: inline-block;
+        width: 200px;
+        float: right;
+        margin: 2rem 2rem 0 0;
+        .lia-panel-heading-bar-title {
+            visibility: collapse;
+        }
     }
     .lia-panel-heading-bar {
         border-bottom: 0;
         padding-bottom: 0;
     }
     .lia-panel-content {
-        padding-top: 0;
+        padding: 0;
     }
     .lia-panel-heading-bar-title{
         font-size: .9em;
@@ -47,11 +53,17 @@
         border-top-right-radius: 4px;        
     }
     
-    .LabelsList, .lia-component-ideas-widget-statuses .MessageStatusesTaplet {
-        /*height: 3em;*/
-        border-radius: 4px;
-        /*overflow: hidden;*/
-        color:#0068BD;
+    .LabelsList,
+    .lia-component-ideas-widget-statuses .MessageStatusesTaplet {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 200px;
+        z-index: 11;
+
+        @media screen and (max-width: 662px) {
+            position: static;
+        }
         
         &:hover {
             /*overflow: visible;*/
@@ -62,7 +74,7 @@
         }
         .lia-list-standard {
             @extend filter-item;
-            max-height: 3em;
+            max-height: 3.3rem;
         }
     }    
     
@@ -81,6 +93,7 @@
 .LabelsList {
     .lia-list-standard {
         .label  {
+            color: $blueLighter;
             @extend filter-item-label;
         }
         .label-link {
@@ -90,7 +103,9 @@
 }
 
 .lia-component-ideas-widget-statuses .MessageStatusesTaplet {
-
+    li {
+        color: $blueLighter;
+    }
     .message-status {
         @extend filter-item-label;
         &:before {
