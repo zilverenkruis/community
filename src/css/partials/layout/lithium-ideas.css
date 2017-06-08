@@ -207,6 +207,10 @@
     .default-menu-option:after, .lia-common-dropdown-toggle:after {
         content: "\f141";
     }
+
+    .lia-message-options .lia-menu-navigation .default-menu-option:before {
+        content: '\f141' !important;
+    }
 }
 
 
