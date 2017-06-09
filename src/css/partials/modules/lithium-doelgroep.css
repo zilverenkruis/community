@@ -1,0 +1,62 @@
+.lia-quilt-category-page-doelgroepen2017 {
+  .lia-quilt-row-header {
+    background-color: $blueLightest2;
+    .lia-quilt-header {
+      background-color: $blueLightest2;
+    }
+  }
+  .lia-quilt-row-zk-custom-header {
+    background-color: $blueLightest2;
+    margin-bottom: 80px;
+    .doelgroep-heading {
+      position: relative;
+      height: 366px;
+      .doelgroep-heading {
+      }
+      .section-content {
+        position: absolute;
+        top: 95px;
+        left: 0;
+        .doelgroep-heading-visual {
+          float: left;
+          width: 65%;
+          overflow: hidden;
+          margin-right: 2.3rem;
+          border-radius: 4px;
+          img {
+            border-radius: 4px;
+          }
+          .icon-svg-corner {
+            fill: $blueLightest2;
+          }
+        }
+        .subtitle {
+          position: relative;
+          h3 {
+            color: $white;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 0;
+          }
+          a.btn {
+            position: absolute;
+            bottom: 2.0rem;
+            right: 2.0rem;
+          }
+          float: right;
+          width: 32%;
+          background-color: $blueLight;
+          border-radius: 4px;
+          padding: 2.0rem;
+          color: $white;
+          height: 321px;
+        }
+      }
+    }
+  }
+  .lia-quilt-row-navigation {
+    ul.inline-grid {
+      margin: 5rem 0 8rem;
+    }
+  }
+}

@@ -34,6 +34,7 @@ LITHIUM.jQuery(function($) {
     ZK.loadSearchPage($);
     ZK.onHideLoaderFeedback($);
     ZK.addCornersToNavLink($);
+    ZK.addCornersToHeaderImage($)
     ZK.mainNavItemsSetClick($);
     ZK.svgCorner();
 
