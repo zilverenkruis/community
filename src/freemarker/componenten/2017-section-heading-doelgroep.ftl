@@ -1,5 +1,5 @@
 <#attempt>
-    <#assign titel = coreNode.shortTitle!"" />
+    <#assign titel = coreNode.title!"" />
     <#assign imgpath = "/html/assets/doelgroep-heading-" + titel + ".jpg" />
     <#recover>
 </#attempt>

@@ -121,14 +121,12 @@
     
 }
 
-
-
-
-
-
-
-
 .lia-quilt-column-alley-right {
+    .doelgroep-item-list {
+        .item-meta-info {
+            display: block !important;
+        }
+    }
     .items-list {
         .item-img-wrapper, .item-meta-info, .item-author, .message-board {
             display: none;
