@@ -1,14 +1,11 @@
 <#include "common-functions.ftl">
 <#assign type = coreNode.nodeType />
 <#assign nodeId = coreNode.id />
+<#assign label = coreNode.title />
 <#assign dateFormat = settings.name.get("layout.format_pattern_date")  />
 <#assign timeFormat = settings.name.get("layout.format_pattern_time")  />
-<#assign interaction = "blog" />
 
-<#attempt>
-    <#assign label = coreNode.title!"" />
-    <#recover>
-</#attempt>
+<#assign interaction = "blog" />
 
 <#attempt>
     <#assign numRows = env.context.component.getParameter("rows")!"3" />

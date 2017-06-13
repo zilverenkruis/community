@@ -129,6 +129,22 @@
     }
 }
 
+@media screen and (max-width: 991px) {
+    .section-join {
+        &:after {
+            background-size: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 662px) {
+    .section-join {
+        &:after {
+            background-size: 100%;
+        }
+    }
+}
+
 .lia-breadcrumb {
 
     > .lia-list-standard-inline > li + li:before {

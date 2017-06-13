@@ -56,6 +56,25 @@
     }
 }
 
+@media screen and (max-width: 870px) {
+    .background-people {
+        height: 120px;
+        &:after {
+            background-size: 100%;
+            bottom: -90px;
+        }
+    }
+}
+
+@media screen and (max-width: 662px) {
+    .background-people {
+        height: 90px;
+        &:after {
+            bottom: -120px;
+        }
+    }
+}
+
 /*@media screen and (max-width: 1200px) {*/
     /*.lia-panel-content .full-width-bg {*/
         /*background-position: right -120px top !important;*/

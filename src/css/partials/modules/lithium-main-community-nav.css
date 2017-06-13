@@ -373,10 +373,11 @@
     @media screen and (max-width: 870px) {
         .inline-grid.desktop-one-half {
             .nav-row {
-                height: 250px;
+                height: auto;
                 position: static;
             }
             .grid-item {
+                text-align: center;
                 width: 100%;
                 margin-right: 0;
                 position: relative;

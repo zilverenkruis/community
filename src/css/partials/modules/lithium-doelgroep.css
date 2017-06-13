@@ -5,6 +5,7 @@
       background-color: $blueLightest2;
     }
   }
+
   .lia-quilt-row-zk-custom-header {
     background-color: $blueLightest2;
     margin-bottom: 80px;
@@ -54,11 +55,19 @@
       }
     }
   }
+
   .lia-quilt-row-navigation {
     ul.inline-grid {
       margin: 5rem 0 8rem;
     }
   }
+
+  .section-heading-2017.small h2 {
+    font-size: 28px;
+    font-size: 2.8rem;
+    font-weight: 300;
+  }
+
   .lia-component-custom-latest-post-category-idea {
     .lia-decoration-border-content {
       margin-bottom: 10.0rem;
@@ -83,6 +92,7 @@
       }
     }
   }
+
   .lia-component-custom-latest-post-category-blog {
     background-color: transparent;
     .lia-panel-content {
@@ -128,6 +138,7 @@
       }
     }
   }
+
   .header-latest-ideas-wrapper,
   .header-latest-blogs-wrapper {
     background-color: $white;
@@ -144,6 +155,7 @@
       margin: 0
     }
   }
+
   .header-latest-ideas-wrapper {
     &:before {
       content: ' ';
@@ -155,6 +167,7 @@
       left: 39px;
     }
   }
+
   .header-latest-blogs-wrapper {
     &:before {
       content: ' ';
