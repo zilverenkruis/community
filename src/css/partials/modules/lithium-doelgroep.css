@@ -59,4 +59,111 @@
       margin: 5rem 0 8rem;
     }
   }
+  .lia-component-custom-latest-post-category-idea {
+    .lia-decoration-border-content {
+      margin-bottom: 10.0rem;
+      .doelgroep-item-list {
+        .item-title {
+          color: $blueDarkest;
+          font-size: 16px;
+          margin-bottom: 1.0rem;
+        }
+        .item-meta-info {
+          text-align: left;
+        }
+        .btn.btn-large {
+          width: 100%;
+          margin-top: 2.0rem;
+        }
+      }
+      .view-all-link-wrapper {
+        position: absolute;
+        bottom: -4rem;
+        right: 0;
+      }
+    }
+  }
+  .lia-component-custom-latest-post-category-blog {
+    background-color: transparent;
+    .lia-panel-content {
+      padding: 0;
+      .items-list .list-item {
+        background-color: $white;
+        border-radius: 4px;
+        padding-top: 0;
+        border-bottom: none;
+        margin-bottom: 2.0rem;
+        .blogitem-img-wrapper {
+          position: relative;
+          .icon-svg-corner {
+            fill: $moreBlueLightLithium;
+          }
+          img {
+            border-radius: 4px 4px 0 0;
+          }
+        }
+        .item-text-wrapper {
+          padding: 2.0rem 2.0rem 0 2.0rem;
+          .item-info {
+            color: $blue;
+            font-size: 14px;
+            font-size: 1.4rem;
+            padding-bottom: 1.0rem;
+          }
+          h3 a {
+            color: $blueDarkest;
+            font-size: 18px;
+            font-weight: 600;
+            &:after {
+              content: none;
+            }
+          }
+          .item-meta-info {
+            text-align: left;
+          }
+        }
+      }
+      .view-all-link-wrapper {
+        text-align: right;
+      }
+    }
+  }
+  .header-latest-ideas-wrapper,
+  .header-latest-blogs-wrapper {
+    background-color: $white;
+    border-radius: 4px;
+    margin-bottom: 1.0rem;
+    text-align: center;
+    position: relative;
+    margin-top: 175px;
+    h2 {
+      font-size: 22px;
+      font-size: 2.2rem;
+      color: $blueDarkest;
+      font-weight: 600;
+      margin: 0
+    }
+  }
+  .header-latest-ideas-wrapper {
+    &:before {
+      content: ' ';
+      background: transparent url("/html/assets/header-latest-ideas-doelgroep.png") no-repeat;
+      height: 174px;
+      width: 152px;
+      position: absolute;
+      top: -174px;
+      left: 39px;
+    }
+  }
+  .header-latest-blogs-wrapper {
+    &:before {
+      content: ' ';
+      background: transparent url("/html/assets/header-latest-blogs-doelgroep.png") no-repeat;
+      height: 95px;
+      width: 91px;
+      position: absolute;
+      top: -86px;
+      left: 26px;
+    }
+  }
 }

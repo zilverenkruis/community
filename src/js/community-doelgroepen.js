@@ -10,14 +10,18 @@ ZK.addCornersToHeaderImage = function() {
 
 ZK.displayBlogImages = function() {
     var teasers = jQuery('.hidden.blog-teaser');
+
     teasers.each(function() {
         var spans = jQuery(this).find('span');
         spans.each(function(index) {
-            if (index === 1 && this.style.width == '365px') {
+            if (index === 1) {
                 var jThis = jQuery(this);
                 var img = new Image;
                 img.src = jThis.find('img').attr('src');
-                jThis.closest('.item-wrapper.clear-float').find('.blogitem-img-wrapper').append(img);
+                var wrapper = jThis.closest('.item-wrapper.clear-float').find('.blogitem-img-wrapper');
+                wrapper.append(img);
+                svgCorner = ZK.svgCorner().cloneNode(true);
+                wrapper.append(svgCorner);
             }
         });
     });

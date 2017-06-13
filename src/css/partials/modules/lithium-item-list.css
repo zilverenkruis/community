@@ -23,7 +23,7 @@
     .list-item {
         padding: 1em 0;
         &:not(:last-child) {
-            border-bottom: 1px solid $blueLightest;
+            border-bottom: 1px solid $blueLightest2;
         }        
     }
     .item-text-wrapper {
