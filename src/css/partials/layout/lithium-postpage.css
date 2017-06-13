@@ -43,7 +43,8 @@
 .PostPage,
 .UserLoginPage,
 .ReplyPage,
-.UserRegistrationPage {
+.UserRegistrationPage,
+.MoveMessagesPage {
     .lia-page-header {
         width: 980px;
         margin: 0 auto;

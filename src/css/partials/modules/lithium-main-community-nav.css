@@ -226,14 +226,16 @@
 .main-community-nav-2017 {
     padding: 3.0rem 0;
     position: relative;
-    &.forum-navigation .section-heading h2.title{
+    &.forum-navigation .section-heading h2.title {
+        display: inline-block;
+        position: relative;
         &:before {
             content: ' ';
-            background: transparent url(/html/assets/arm-roze.png) center -30px no-repeat;
+            background: transparent url(/html/assets/arm-roze.png) center -40px no-repeat;
             position: absolute;
-            width: 131px;
-            height: 151px;
-            left: 60px;
+            width: 135px;
+            height: 140px;
+            left: -140px;
             top: -102px;
         }
     }
@@ -371,6 +373,11 @@
         }
     }
     @media screen and (max-width: 870px) {
+        &.forum-navigation .section-heading h2.title {
+            &:before {
+                content: none;
+            }
+        }
         .inline-grid.desktop-one-half {
             .nav-row {
                 height: auto;

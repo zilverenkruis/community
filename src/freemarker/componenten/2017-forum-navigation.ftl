@@ -1,4 +1,4 @@
-<div class="main-community-nav-2017">
+<div class="main-community-nav-2017 forum-navigation">
     <div class="wrapper center-content">
     <@component id="2016-section-heading" titel="Stel vragen of deel je ervaringen" subtitel="Op een van onze forum-boards" />
         <ul class="inline-grid desktop-one-half mobile-one-second">
