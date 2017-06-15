@@ -270,6 +270,9 @@
       .lia-panel-content {
         .items-list .list-item {
           width: 100%;
+          .item-text-wrapper {
+            height: auto;
+          }
         }
       }
     }
