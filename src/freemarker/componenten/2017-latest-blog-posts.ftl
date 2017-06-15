@@ -53,7 +53,6 @@
         <div class="${interaction}item-img-wrapper"></div>
 
         <div class="item-text-wrapper">
-
             <div class="item-info">
                 ${postDate}
                 <h3 class="item-title">
@@ -61,12 +60,12 @@
                        alt="${message.subject?html}">${message.subject?html}</a>
                 </h3>
             </div>
-            <div class="item-meta-info">
-                <div class="wrapper">
-                    <div class="kudos">
-                        <span class="unit-count">${message.kudos.sum.weight}&nbsp;</span>
-                        <span class="unit">${text.format("message.message-view.kudos-count.label", message.kudos.sum.weight)}
-                    </div>
+        </div>
+        <div class="item-meta-info">
+            <div class="wrapper">
+                <div class="kudos">
+                    <span class="unit-count">${message.kudos.sum.weight}&nbsp;</span>
+                    <span class="unit">${text.format("message.message-view.kudos-count.label", message.kudos.sum.weight)}
                 </div>
             </div>
         </div>
