@@ -166,7 +166,8 @@
 }
 
 .lia-panel-message {
-    .lia-component-author-rank-name {
+    .lia-component-author-rank-name,
+    .lia-component-author-rank {
         display: inline-block;
     }
 }
@@ -204,9 +205,8 @@
 .lia-message-author-username, /*forum message*/
 .lia-component-author, /*denk mee message*/
 .lia-message-author-avatar + .lia-component-author,
-.lia-message-author-avatar + .lia-message-author-username
-{
-    /*margin-left: 120px;*/
+.lia-message-author-avatar + .lia-message-author-username,
+.lia-message-author-avatar + .lia-message-author-with-avatar {
     width: auto;
     display: block;
 }
@@ -216,7 +216,9 @@
 }
 
 .lia-component-reply-list {
-    .lia-component-reply-button {
+    .lia-component-reply-button,
+    .lia-component-quick-reply-button,
+    .lia-component-accepted-solutions-button {
         display: none;
     }
 }
@@ -240,7 +242,8 @@
         .lia-quilt-column + .lia-quilt-column {
             display: none;
         }
-        .lia-quilt-column:first-child {
+        .lia-quilt-column:first-child,
+        .lia-quilt-column:last-child {
             width: 100%;
         } 
     }

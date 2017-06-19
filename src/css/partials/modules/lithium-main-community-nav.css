@@ -285,6 +285,20 @@
         a.nav-2017-link {
             display: block;
             position: relative;
+            height: 97px;
+            z-index: 2;
+            &:focus .nav-text{
+                text-decoration: none;
+                .nav-nrofmessages {
+                    text-decoration: none;
+                }
+            }
+            &:hover .nav-text{
+                text-decoration: underline;
+                .nav-nrofmessages {
+                    text-decoration: underline;
+                }
+            }
         }
         .main-community-subnav-2017 {
             position: absolute;
@@ -327,7 +341,7 @@
             }
             .nav-text {
                 float: left;
-                padding: 2.5rem 2.0rem;
+                padding: 2.5rem 1.0rem 2.5rem 2.0rem;
                 text-align: left;
                 h3.nav-title {
                     margin-top: 0;

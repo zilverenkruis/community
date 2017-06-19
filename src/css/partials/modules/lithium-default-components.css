@@ -423,13 +423,28 @@ ul.defaultlist {
     display: inline-block;
 }
 
-.lia-content h2.message-subject {
-    line-height:1.2;
-}
-
 .lia-message-view-message-search-item .lia-message-item-metadata-side,
 .lia-message-view-display .lia-message-item-metadata-side {
     margin-right: 0px;
+}
+
+.lia-message-view-display {
+    .lia-menu-navigation-wrapper {
+        right: 10px;
+        top: -20px;
+        .default-menu-option:before {
+            content: '\f141';
+            background: none;
+            color: $blue;
+        }
+    }
+    &.lia-message-view-forum-message {
+        .lia-quilt-row-header {
+            .lia-message-post-date {
+                display: block;
+            }
+        }
+    }
 }
 
 .ViewProfilePage {
@@ -764,11 +779,8 @@ a.tab-link:focus {
     }
 }
 
-.marker {
-    display: none;
-}
 
-.lia-quilt-row-navigation .marker {
+.marker {
     display: block;
     border-radius: 60px;
     text-align: center;
@@ -799,6 +811,7 @@ a.tab-link:focus {
         bottom: -86px;
     }
 }
+
 
 .lia-users-current-user-profile-card {
     font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1129,6 +1142,15 @@ only screen and (max-width: 760px),
             content: none !important;
             background: none;
         }
+    }
+}
+
+.overflown {
+    position: relative;
+    &:after {
+        content: " \f141";
+        font: normal normal normal 16px/1 FontAwesome;
+        position: absolute;
     }
 }
 

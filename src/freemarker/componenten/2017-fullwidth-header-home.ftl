@@ -39,4 +39,5 @@
     </#if>
 
 </#if>
+    <div class="marker">&nbsp;</div>
 </header>

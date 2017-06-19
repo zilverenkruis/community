@@ -132,10 +132,8 @@
 
 .btn-large,
 .lia-component-reply-list .reply-action-link,
-.lia-panel-message-root .lia-action-reply.reply-action-link.reply-action-link
-{
-	padding: 6px 16px;1
-	/*font-size: 18px;*/
+.lia-panel-message .lia-action-reply.reply-action-link.reply-action-link {
+	padding: 6px 16px;
 	font-size: inherit;
 	@mixin border-radius $borderRadiusLarge;
 
@@ -249,7 +247,7 @@ input[type="button"] {
 /*.lia-button-primary.lia-button-primary??? bad cssik */
 .btn-primary, 
 .lia-button-primary.lia-button-primary,
-.lia-panel-message-root .lia-action-reply.reply-action-link.reply-action-link {
+.lia-panel-message .lia-action-reply.reply-action-link.reply-action-link {
 	background: $btnPrimaryBackground;
 	color: $white;
 	border-color: $btnPrimaryBorder;

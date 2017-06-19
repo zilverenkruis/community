@@ -12,7 +12,7 @@
                         </div>
                     </div>
                     <div class="item-header">Topic door <strong>Gijsbertus</strong></div>
-                    <div class="item-footer">Eigen risico bij erfelijkheidsonderzoek</div>
+                    <div class="item-footer chipped-content">Eigen risico bij erfelijkheidsonderzoek</div>
                 </div>
             </a>
         </li>
@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="item-header">Idee door <strong>Janniedegroot</strong></div>
-                    <div class="item-footer">Diabetes dienst met gratis koolhydraatteller</div>
+                    <div class="item-footer chipped-content">Diabetes dienst met gratis koolhydraatteller</div>
                 </div>
             </a>
         </li>
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="item-header">Blog door <strong>Gijsbertus</strong></div>
-                    <div class="item-footer">Zelf crackers en vruchtensapjes kunnen leiden</div>
+                    <div class="item-footer chipped-content">Zelf crackers en vruchtensapjes kunnen leiden tot overgewicht</div>
                 </div>
             </a>
         </li>

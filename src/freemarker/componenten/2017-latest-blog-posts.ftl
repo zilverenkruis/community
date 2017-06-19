@@ -52,7 +52,7 @@
         <div class="hidden ${interaction}-teaser">${message.teaser}</div>
         <div class="${interaction}item-img-wrapper"></div>
 
-        <div class="item-text-wrapper">
+        <div class="item-text-wrapper chipped-content">
             <div class="item-info">
                 ${postDate}
                 <h3 class="item-title">

@@ -24,6 +24,7 @@
           overflow: hidden;
           margin-right: 2.3rem;
           border-radius: 4px;
+          position: relative;
           img {
             border-radius: 4px;
           }
@@ -102,6 +103,7 @@
                 position: absolute;
                 right: 0rem;
                 top: -1.2rem;
+                z-index: 2;
                 img {
                   max-width: 70px;
                   max-height: 70px;
@@ -118,6 +120,15 @@
               font-weight: 600;
               height: 83px;
               overflow: hidden;
+              &.overflown {
+                &:after {
+                  right: 0;
+                  bottom: 0.5rem;
+                  padding-left: 0.5rem;
+                  padding-right: 0.5rem;
+                  background-color: $moreBlueLightLithium;
+                }
+              }
             }
           }
         }

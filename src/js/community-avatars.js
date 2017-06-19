@@ -21,7 +21,7 @@ ZK.avatars = function($) {
     
     
     //add corner to avatars
-    var avatars = $('.author-avatar, .item-img-wrapper a, .lia-message-view .UserAvatar');
+    var avatars = $('.author-avatar, .item-img-wrapper a, .lia-message-view .UserAvatar, .lia-message-view-wrapper .UserAvatar, .lia-component-message-view-widget-author-avatar.UserAvatar');
 
     $(avatars).each(function(){
         svgCorner = ZK.svgCorner().cloneNode(true);

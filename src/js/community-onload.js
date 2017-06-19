@@ -12,6 +12,7 @@ LITHIUM.jQuery(function($) {
     ZK.removeEmptyRows($);
     ZK.removeEmptyStatus($);
     // ZK.shortenMessage($,400);
+    ZK.displayDotsOnOverflow($);
     // ZK.filterDropdown($);
     // ZK.commentCount($);
     ZK.accordion($);

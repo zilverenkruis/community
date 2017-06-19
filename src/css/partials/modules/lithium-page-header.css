@@ -269,6 +269,9 @@
   .lia-quilt-vitality {
     background-color: $blueLightest2;
   }
+  .lia-quilt-vitality {
+    padding-bottom: 50px;
+  }
   .lia-quilt-row-main-one {
     margin-bottom: 40px;
   }

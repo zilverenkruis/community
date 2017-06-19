@@ -31,7 +31,9 @@
     }
     
 
-    .lia-message-kudos {
+    .lia-message-kudos,
+    .KudosButton {
+        display: inline-block;
 
         .kudos-link {
             &:before {

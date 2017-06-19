@@ -100,10 +100,16 @@
     /*padding-top: 40px;*/
     /*padding-bottom: 40px;*/
     padding: 40px 20px;
+    .marker {
+        bottom: -70px;
+    }
 }
 
 .lia-quilt-row-navigation ~ .lia-quilt-row:nth-child(odd):not(:last-child) {
     background-color: $moreBlueLightLithium;
+    .marker {
+        background-color: $white;
+    }
 }
 
 
