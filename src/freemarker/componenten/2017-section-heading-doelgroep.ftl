@@ -1,6 +1,7 @@
 <#attempt>
     <#assign titel = coreNode.title!"" />
-    <#assign imgpath = "/html/assets/doelgroep-heading-" + titel + ".jpg" />
+    <#assign id = coreNode.id!"" />
+    <#assign imgpath = "/html/assets/doelgroep-heading-" + id + ".jpg" />
     <#recover>
 </#attempt>
 

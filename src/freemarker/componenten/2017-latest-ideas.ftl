@@ -1,6 +1,5 @@
 <#include "common-functions.ftl">
 <#assign type = coreNode.nodeType />
-<#assign nodeId = coreNode.id />
 <#assign dateFormat = settings.name.get("layout.format_pattern_date")  />
 <#assign timeFormat = settings.name.get("layout.format_pattern_time")  />
 

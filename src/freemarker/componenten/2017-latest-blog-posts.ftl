@@ -1,6 +1,5 @@
 <#include "common-functions.ftl">
 <#assign type = coreNode.nodeType />
-<#assign nodeId = coreNode.id />
 <#assign label = coreNode.title />
 <#assign dateFormat = settings.name.get("layout.format_pattern_date")  />
 <#assign timeFormat = settings.name.get("layout.format_pattern_time")  />
@@ -18,9 +17,7 @@
 </#attempt>
 
 <#assign interactionQ = " AND conversation.style='${interaction}'" />
-
 <#assign messagesQ = "SELECT id, teaser, subject, kudos.sum(weight), conversation.last_post_time, post_time, post_time_friendly, view_href FROM messages WHERE depth=0 ${labelQuery} ${interactionQ} ORDER BY conversation.last_post_time DESC LIMIT ${numRows}" />
-
 <#assign messages = rest("2.0", "/search?q=${messagesQ?url}") />
 
 <#if messages?? && messages.data?? && messages.data.items?? && messages.data.items?size gt 0>
