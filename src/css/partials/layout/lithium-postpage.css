@@ -84,6 +84,17 @@
     }
 }
 
+.PostPage {
+    .lia-component-editor {
+        .lia-quilt-column-18.lia-input-edit-form-column,
+        .lia-quilt-column-06.lia-input-edit-form-column {
+            width: 100%;
+            float: left;
+        }
+
+    }
+}
+
 .TkbPage,
 .ForumTopicPage {
     #actionMenuDropDown {
