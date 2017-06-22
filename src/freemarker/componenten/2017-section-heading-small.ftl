@@ -24,11 +24,13 @@
 
 <div class="section-heading-2017 small clear-float">
     <div class="column">
-        <h2 class="title vertical-bottom">${titel}</h2>
+        <h2 class="title">${titel}</h2>
     </div>
     <div class="column">
     <#if btnlink?length gt 0 && btntitel?length gt 0>
         <a class="btn btn-primary btn-large " href="${btnlink}">${btntitel}</a>
+    <#else >
+        <br>
     </#if>
     </div>
 </div>

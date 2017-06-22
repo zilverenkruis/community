@@ -138,7 +138,7 @@
             &.overflown {
                 &:after {
                     right: 0;
-                    bottom: 0.5rem;
+                    bottom: 0;
                     padding-left: 0.5rem;
                     padding-right: 0.5rem;
                     background-color: $white;

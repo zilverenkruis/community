@@ -86,11 +86,14 @@
     margin-top: -40px;    
 }
 
+.lia-quilt-row-zk-search {
+    @media screen and (max-width: 991px) {
+        .marker {
+            bottom: -30px;
+        }
+    }
+}
 
-/*test:*/
-/*.full-width-bg {
-    display: none;
-}*/
 .lia-quilt-row-navigation ~ .lia-quilt-row {
     .full-width-bg {
         display: none;

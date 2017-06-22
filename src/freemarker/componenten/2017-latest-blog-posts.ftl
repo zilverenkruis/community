@@ -61,7 +61,6 @@
         <div class="item-meta-info">
             <div class="wrapper">
                 <div class="kudos">
-                    <span class="unit-count">${message.kudos.sum.weight}&nbsp;</span>
                     <span class="unit">${text.format("message.message-view.kudos-count.label", message.kudos.sum.weight)}
                 </div>
             </div>

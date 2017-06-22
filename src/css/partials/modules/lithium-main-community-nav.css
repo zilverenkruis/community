@@ -266,6 +266,7 @@
         border-radius: 4px;
         border-bottom: 3px solid $borderGray;
         transition: all 700ms;
+        height: 100px;
         &.has-subnav {
             a.nav-2017-link:after {
                 font-family: zk-centralenav-fontregular;

@@ -1,7 +1,7 @@
 <#assign label = coreNode.title />
 
 <div class="wrapper center-content">
-    <h2>Nieuwe berichten in ${label}</h2>
+    <h2>Uitgelichte berichten in ${label}</h2>
     <ul class="inline-grid desktop-one-third mobile-one-second">
         <li class="grid-item doelgroep-nav-item">
             <a href="/t5/Forum/ct-p/healthy_living">
