@@ -85,13 +85,101 @@
 }
 
 .PostPage {
+    .lia-quilt-row-header {
+        background-color: $blueLightest2;
+        .lia-page-header {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            background: url("/html/assets/header-postpage-idea.png") no-repeat right bottom;
+        }
+    }
+    .lia-quilt-row-main {
+        padding-top: 50px;
+        background-color: $moreBlueLightLithium;
+    }
     .lia-component-editor {
         .lia-quilt-column-18.lia-input-edit-form-column,
         .lia-quilt-column-06.lia-input-edit-form-column {
+            background-color: $moreBlueLightLithium;
             width: 100%;
             float: left;
+            padding-left: 0;
+            padding-top: 2.0rem;
+        }
+    }
+    .lia-form-labels-fieldset-toggle {
+        .predefined-labels {
+            height: 210px;
+            padding: 2.0rem 2.0rem 1.0rem 2.0rem;
+            background-color: $white;
+            border-radius: 4px;
+            > span {
+                display: none;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 100%;
+                max-width: 100%;
+                li {
+                    padding-bottom: 1.0rem;
+                    input {
+                        margin-right: 1.0rem;
+                    }
+                }
+            }
+        }
+    }
+    .lia-form-attachments-fieldset-toggle {
+        margin-bottom: 3.0rem;
+        float: none;
+    }
+    .MultipleAttachments .lia-new-attachments-field {
+        &:before {
+            content: 'Kies bestand';
+            position: absolute;
+            left: 1.0rem;
+            font-size: 18px;
+            font-size: 1.8rem;
+            font-weight: 600;
         }
 
+        input {
+            opacity: 0;
+            width: 150px;
+        }
+    }
+    .infospan {
+         vertical-align: sub;
+    }
+    #tabgroup.lia-tabs-standard-wrapper {
+        margin-top: 1.0rem;
+        padding: 0;
+        background-color: $moreBlueLightLithium;
+        .lia-tabs-standard {
+            background-color: $moreBlueLightLithium;
+            margin: 0 0 8px 0;
+            .lia-tabs {
+                border-left: none;
+                &.lia-tabs-inactive {
+                    background-color: $blueLightest2;
+                }
+                a {
+                    font-size: 18px;
+                    color: $blueDarkest;
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+    .message-body-editor {
+        margin-top: -8px;
+        padding: 2.0rem;
+        background-color: $white;
+        .mce-panel.mce-toolbar-grp {
+            background-color: $white;
+        }
     }
 }
 

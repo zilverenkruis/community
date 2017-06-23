@@ -28,7 +28,9 @@ LITHIUM.jQuery(function($) {
     ZK.moveStatus($);
     ZK.moveKudoButtons($);
     ZK.moveCommentAction($);
-    ZK.movePostPageButtons($);
+    ZK.reorderFormElements($);
+    ZK.setCheckBoxesForLabels($);
+    ZK.styleFileInput($);
     ZK.prepareFilters($);
     ZK.getAvatarsByApiCall($);
     ZK.moveLabelBox($);
