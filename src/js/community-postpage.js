@@ -10,8 +10,6 @@ ZK.reorderFormElements = function($) {
             }
         });
     }
-    console.log(jQuery('.lia-form-attachments-fieldset-toggle'));
-    console.log(jQuery('.lia-form-labels-fieldset-toggle'));
     jQuery('.lia-form-labels-fieldset-toggle').before(jQuery('.lia-form-attachments-fieldset-toggle'));
 };
 
@@ -28,6 +26,11 @@ ZK.setCheckBoxesForLabels = function($) {
         jQuery(checkbox).on('click', jQuery.proxy(function() {
             labellink.click();
         }));
+        labellink.toggle(function() {
+            checkbox.checked = true;
+        }, function() {
+            checkbox.checked = false;
+        });
     });
     jQuery('#lia-labels').css('height', '1px').css('padding', '0').css('visibility', 'collapse');
 };
