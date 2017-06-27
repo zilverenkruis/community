@@ -35,10 +35,6 @@
     }
 }
 
-.UserNavigation.lia-list-standard-inline li {
-    padding-top: 1.0rem !important;
-}
-
 @media screen and (max-width: 999px) {
     .lia-component-common-widget-slide-out-user-menu .lia-notifications-messages-aggregate {
         right: -20px;
@@ -49,8 +45,8 @@
 
 @media screen and (min-width: 1000px) {
     .lia-component-common-widget-slide-out-user-menu .lia-notifications-messages-aggregate {
-        right: 38px;
-        top: -15px;
+        right: -4px;
+        top: -45px;
         display: block;
     }
 }
@@ -231,12 +227,12 @@
         position: relative;
         &:before {
             content: ' ';
-            background: transparent url(/html/assets/arm-roze.png) center -40px no-repeat;
+            background: transparent url(/html/assets/arm-roze.png) center -20px no-repeat;
             position: absolute;
             width: 135px;
-            height: 140px;
+            height: 170px;
             left: -140px;
-            top: -102px;
+            top: -115px;
         }
     }
     .wrapper {

@@ -452,6 +452,18 @@ ul.defaultlist {
             }
         }
     }
+    &.lia-list-row-thread-readonly:before {
+        content: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .lia-message-view-forum-message.lia-message-view-display {
+        padding: 2.0rem;
+        .lia-quilt-row-main .lia-message-post-date {
+            display: none;
+        }
+    }
 }
 
 .ViewProfilePage {

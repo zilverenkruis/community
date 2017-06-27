@@ -225,7 +225,6 @@
         .lia-component-message-view-widget-author-username {
             display: block;
             float: left;
-            margin-left: 2.0rem;
         }
         .lia-component-message-view-widget-body {
             clear: both;
@@ -239,6 +238,11 @@
             font-weight: 300;
             font-size: 42px;
             font-size: 4.2rem;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .lia-quilt-row-navigation {
+            padding: 2.0rem;
         }
     }
 }
@@ -564,15 +568,6 @@ a.label-link:hover, a.label-link:focus {
             text-decoration: underline;
         }
     }
-
-    .CommentList,
-    .lia-component-solution-list,
-    .lia-component-reply-list {
-        .lia-menu-navigation-wrapper {
-            display: none;
-        }
-    }
-
 }
 
 .lia-message-labels + .lia-message-tags {

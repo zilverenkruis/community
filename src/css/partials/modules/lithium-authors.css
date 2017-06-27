@@ -67,6 +67,21 @@
     }
 }
 
+.lia-quilt-view-profile-hero .lia-profile-hero-avatar-wrapper {
+    border-radius: 4px;
+    .lia-user-avatar {
+        border-radius: 10px;
+        .UserAvatar {
+            border-radius: 4px;
+            > img {
+                border-radius: 4px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 663px) {
     .top-authors .top-author:nth-child(n+3){
         display: none;

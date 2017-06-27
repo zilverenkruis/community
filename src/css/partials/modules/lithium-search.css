@@ -133,10 +133,14 @@
 }
 
 
-.CategoryPage {
+.CategoryPage,
+.CommunityPage {
     .items-list .item-img-wrapper > a {
         display: inline-block;
         max-width: 120px;
+        max-height: 120px;
+        overflow: hidden;
+        border-radius: 4px;
     }
 
     .lia-quilt-category-page-forum2016 .lia-component-custom-latest-post-category-all {

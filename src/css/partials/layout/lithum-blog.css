@@ -83,14 +83,27 @@
     }    
 }
 
-
-
-
 .BlogArticlePage {
     .lia-component-blog-banner {
         .lia-panel-content {
             padding: 0;
         }
+    }
+    .lia-quilt-row-main {
+        padding-top: 0;
+        .lia-message-body-wrapper {
+            margin-top: 0;
+        }
+    }
+    .lia-component-blog-banner-2017 {
+        margin-bottom: 0;
+        .blog-banner-2017 {
+            margin: 0 auto;
+            max-width: 738px;
+        }
+    }
+    .lia-top-quilt .lia-quilt-row-navigation  ~ .lia-quilt-row .lia-quilt-column-alley {
+        max-width: 738px;
     }
     .lia-message-labels {
         border-bottom: 0;
@@ -106,6 +119,7 @@
     
     .lia-panel-message-root .lia-quilt-row-footer {
         border-top: 0;
+        position: relative;
     }
 
     .lia-blog-article-page-article-subject {
@@ -113,8 +127,99 @@
         font-weight: 100;
         line-height: 1.25;
         color: $blueDark;
+        padding-right: 5.0rem;
+        position: relative;
+        .lia-quilt-row-header {
+            height: 1px;
+            .lia-quilt-column-header-right {
+                position: static;
+                .lia-menu-navigation-wrapper {
+                    position: static;
+                    .lia-menu-navigation {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        a.lia-js-menu-opener:after {
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
+    .lia-panel-message .lia-component-post-date {
+        margin-left: 0;
+    }
+    .KudosButton {
+        min-width: 171px;
+    }
+
+    .lia-quilt-blog-topic-message > .lia-quilt-row-header,
+    .lia-quilt-blog-topic-message > .lia-quilt-row-footer {
+        border: none;
+        padding: 0;
+        .KudosButton {
+            position: absolute;
+            top: 127px;
+            left: 81px;
+            z-index: 2;
+        }
+    }
+    #commentOnThis {
+        position: absolute;
+        top: 127px;
+        z-index: 2;
+        right: 0;
+    }
+    .lia-quilt-blog-topic-message > .lia-quilt-row-header .lia-quilt-column-header-left .lia-message-post-date {
+        display: block;
+    }
+    .lia-quilt-row-footer {
+        padding: 0;
+    }
+    @media screen and (max-width: 991px) {
+        .lia-quilt-column-footer-left {
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (max-width: 783px) {
+        .lia-quilt-row-main .lia-message-body-wrapper {
+            padding: 2.0rem;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .lia-quilt-blog-topic-message .lia-quilt-row-footer {
+            padding: 2.0rem 2.0rem 0 2.0rem;
+            .lia-message-author-avatar {
+                position: static;
+                left: auto;
+            }
+        }
+        .lia-component-message_social {
+            padding: 0 2.0rem;
+        }
+    }
+    @media screen and (max-width: 662px) {
+        .lia-quilt-blog-topic-message > .lia-quilt-row-footer {
+            .KudosButton {
+                top: 88px;
+            }
+            > .lia-quilt-column-footer-right {
+                float: none;
+                width: 100%;
+                clear: left;
+            }
+        }
+        .lia-component-message_social {
+            padding: 0 2.0rem 5rem 2.0rem;
+        }
+        #commentOnThis {
+            top: 64px;
+            left: 0;
+            right: auto;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {

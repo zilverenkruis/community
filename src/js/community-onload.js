@@ -9,8 +9,10 @@ LITHIUM.jQuery(function($) {
     });
 
     ZK.restructureHTML($);
+    ZK.removeEmptyParagraphs($);
     ZK.removeEmptyRows($);
     ZK.removeEmptyStatus($);
+    ZK.moveBlogOptionMenu($);
     // ZK.shortenMessage($,400);
     ZK.displayDotsOnOverflow($);
     // ZK.filterDropdown($);

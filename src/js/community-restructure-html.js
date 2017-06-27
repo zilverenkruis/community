@@ -7,3 +7,24 @@ ZK.restructureHTML = function($) {
         });
     }
 }
+
+ZK.removeEmptyParagraphs = function($) {
+    var paragraphs = jQuery('p');
+    paragraphs.each(function() {
+        var jThis = jQuery(this);
+        if (jThis.html() == '&nbsp;') {
+            jThis.remove();
+        }
+    });
+}
+
+ZK.moveBlogOptionMenu = function($) {
+    var optionmenu = jQuery('.BlogArticlePage .lia-message-view-blog-topic-message .lia-quilt-row-header');
+    optionmenu.each(function() {
+        var jThis = jQuery(this);
+        var header = jThis.closest('.lia-quilt-blog-article-page').find('.lia-quilt-row-header .lia-blog-article-page-article-subject');
+        header.each(function() {
+            header.append(jThis);
+        });
+    });
+}

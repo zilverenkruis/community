@@ -14,7 +14,7 @@ ZK.reorderFormElements = function($) {
 };
 
 ZK.setCheckBoxesForLabels = function($) {
-    var labels = jQuery('.PostPage .lia-form-labels-fieldset-toggle .predefined-labels ul li');
+    var labels = jQuery('.PostPage .lia-form-labels-fieldset-toggle .predefined-labels ul li, .EditPage .lia-form-labels-fieldset-toggle .predefined-labels ul li');
     labels.each(function() {
         var jThis = jQuery(this);
         var checkbox = document.createElement('input');
@@ -36,7 +36,7 @@ ZK.setCheckBoxesForLabels = function($) {
 };
 
 ZK.styleFileInput = function($) {
-    var inputwrapper = jQuery('.PostPage .lia-new-attachments-field');
+    var inputwrapper = jQuery('.PostPage .lia-new-attachments-field, .EditPage .lia-new-attachments-field');
     inputwrapper.each(function() {
         var jThis = jQuery(this);
         jThis.addClass('btn btn-normal btn-large');
