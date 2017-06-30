@@ -233,6 +233,7 @@
             height: 170px;
             left: -140px;
             top: -115px;
+            background-size:contain;
         }
     }
     .wrapper {

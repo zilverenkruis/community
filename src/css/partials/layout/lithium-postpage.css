@@ -40,19 +40,57 @@
 
 /* (forum postpage) */
 
+.lia-page-header {
+    width: 980px;
+    margin: 0 auto;
+    h1 span.lia-link-navigation {
+        color: $blueDark;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 991px) {
+    .lia-page-header {
+        width: 100%;
+        padding: 0 2.0rem !important;
+        h1.PageTitle {
+            padding: 2.0rem 0;
+        }
+    }
+}
+
+.MessageEditorForm .lia-form-buttons-empty-left-column {
+    .lia-quilt-column-16 {
+        .lia-form-submit.lia-button-group {
+            width: 130%
+        }
+    }
+}
+
 .PostPage,
 .EditPage,
 .UserLoginPage,
 .ReplyPage,
 .UserRegistrationPage,
-.MoveMessagesPage {
-    .lia-page-header {
-        width: 980px;
-        margin: 0 auto;
-        h1 span.lia-link-navigation {
-            color: $blueDark;
-            font-weight: 600;
+.MoveMessagesPage,
+.lia-quilt-notes-compose-page {
+    background-color: $moreBlueLightLithium;
+    .lia-quilt-row-header {
+        background-color: $white;
+    }
+    .discussion-link {
+        display: block;
+        padding: 1.0rem 1.0rem 1.0rem 2.0rem;
+    }
+    .MessageView {
+        .lia-quilt-row-main {
+            background-color: $white;
         }
+    }
+    .MessageEditorForm,
+    .NoteEditorForm,
+    .lia-quilt-row-main,
+    .CommentEditorForm {
+        background-color: $moreBlueLightLithium;
     }
     .lia-quilt-column-main-content {
         margin: 0 auto;
@@ -66,21 +104,49 @@
             float: right;
         }
     }
-    .MessageEditorForm .lia-form-buttons-empty-left-column {
-        .lia-quilt-column-16 {
-            .lia-form-submit.lia-button-group {
-                width: 130%
+    .lia-quilt-row-footer {
+        margin: 0 auto;
+        width: 980px;
+    }
+    .lia-quilt-row .lia-quilt-row-footer {
+        width: auto;
+        margin: 0;
+    }
+
+    #tabgroup.lia-tabs-standard-wrapper {
+        margin-top: 1.0rem;
+        padding: 0;
+        background-color: $moreBlueLightLithium;
+        .lia-tabs-standard {
+            background-color: $moreBlueLightLithium;
+            margin: 0 0 8px 0;
+            .lia-tabs {
+                border-left: none;
+                &.lia-tabs-inactive {
+                    background-color: $blueLightest2;
+                }
+                a {
+                    font-size: 18px;
+                    color: $blueDarkest;
+                    padding: 10px 30px;
+                }
             }
         }
     }
+
+    .message-body-editor {
+        margin-top: -8px;
+        padding: 2.0rem;
+        background-color: $white;
+        .mce-panel.mce-toolbar-grp {
+            background-color: $white;
+        }
+    }
+
     @media screen and (max-width: 991px) {
-        .lia-page-header,
         .lia-quilt-column-main-content {
             width: 100%;
             padding: 0 2.0rem !important;
-            h1.PageTitle {
-                padding: 2.0rem 0;
-            }
         }
     }
 }
@@ -102,41 +168,13 @@
         }
     }
     .lia-quilt-row-main {
-        padding-top: 30px;
+        padding-top: 1.0rem;
         background-color: $moreBlueLightLithium;
     }
     .MessageEditorForm {
         .lia-quilt-column-18.lia-input-edit-form-column,
         .lia-quilt-column-06.lia-input-edit-form-column {
             background-color: $moreBlueLightLithium;
-        }
-    }
-    #tabgroup.lia-tabs-standard-wrapper {
-        margin-top: 1.0rem;
-        padding: 0;
-        background-color: $moreBlueLightLithium;
-        .lia-tabs-standard {
-            background-color: $moreBlueLightLithium;
-            margin: 0 0 8px 0;
-            .lia-tabs {
-                border-left: none;
-                &.lia-tabs-inactive {
-                    background-color: $blueLightest2;
-                }
-                a {
-                    font-size: 18px;
-                    color: $blueDarkest;
-                    padding: 10px 30px;
-                }
-            }
-        }
-    }
-    .message-body-editor {
-        margin-top: -8px;
-        padding: 2.0rem;
-        background-color: $white;
-        .mce-panel.mce-toolbar-grp {
-            background-color: $white;
         }
     }
 

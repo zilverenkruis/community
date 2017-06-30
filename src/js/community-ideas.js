@@ -110,6 +110,7 @@ ZK.getAvatarsByApiCall = function($) {
                 cache: true,
                 dataType: "xml"
             }).done(function(data) {
+                console.log(data);
                 jQuery(data).find('url').each(function() {
                     var profilelink = document.createElement('A')
                     profilelink.href = '/t5/user/viewprofilepage/user-id/' + userid;
@@ -125,4 +126,14 @@ ZK.getAvatarsByApiCall = function($) {
             });
         });
     }
-}
+};
+
+ZK.removeCommentForm = function($) {
+    var mainnav = jQuery('.IdeaPage .main-community-nav');
+    if (mainnav.length && mainnav.hasClass('isAdmin')) {
+        var commentform = jQuery('.IdeaPage #commenteditorform ');
+        if (commentform.length) {
+            commentform.remove();
+        }
+    }
+};

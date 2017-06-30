@@ -133,8 +133,7 @@
 }
 
 
-.CategoryPage,
-.CommunityPage {
+.CategoryPage {
     .items-list .item-img-wrapper > a {
         display: inline-block;
         max-width: 120px;

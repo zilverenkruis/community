@@ -35,6 +35,7 @@ LITHIUM.jQuery(function($) {
     ZK.styleFileInput($);
     ZK.prepareFilters($);
     ZK.getAvatarsByApiCall($);
+    ZK.removeCommentForm($);
     ZK.moveLabelBox($);
     ZK.setMarkerClick($);
     ZK.loadSearchPage($);

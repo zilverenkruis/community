@@ -11,6 +11,9 @@
         > a {
             display: inline-block;
             max-width: 80px;
+            max-height: 80px;
+            overflow: hidden;
+            border-radius: 4px;
             img {
                 @mixin border-radius $baseBorderRadius;
             }

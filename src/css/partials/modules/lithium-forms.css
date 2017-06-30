@@ -6,3 +6,10 @@
         }
     }
 }
+
+.lia-form {
+    padding: 2.0rem;
+    &.SearchForm {
+        padding: 0;
+    }
+}

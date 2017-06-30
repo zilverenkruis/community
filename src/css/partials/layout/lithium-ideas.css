@@ -198,7 +198,135 @@
 
 
 
-.IdeaPage {
+.IdeaPage,
+.lia-idea.EditPage {
+    .LabelsForArticle {
+        margin-bottom: 2.0rem;
+    }
+
+    .lia-idea-message-wrapper-2017,
+    .lia-component-editor {
+        .MessageView {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            .author-avatar.author-avatarbyapicall-wrapper {
+                position: static;
+                float: left;
+                .lia-user-profile .lia-user-avatar {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .lia-byline-wrapper {
+                display: block;
+                float: none;
+                margin-left: 120px;
+                .MessageStatus:after {
+                    content: none;
+                }
+                .lia-message-byline {
+                    display: block;
+                    .lia-byline-text.lia-text-date-on:before {
+                        content: '';
+                        display: block;
+                    }
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+            .lia-component-message_social {
+                display: block;
+                clear: left;
+                max-width: 80px;
+                float: left;
+                margin: 2.0rem 1.0rem 1.0rem 0;
+            }
+            .KudosButton {
+                position: static;
+                float: left;
+                margin: 2.0rem 0 1.0rem 0;
+                .lia-button-image-kudos {
+                    background-color: transparent;
+                }
+                .lia-button-image-kudos-horizontal > .lia-button-image-kudos-give {
+                    width: 90px;
+                    margin: 0;
+                    .kudos-link {
+                        display: block;
+                        border-radius: 4px;
+                        &:before {
+                            content: none;
+                        }
+                        &:after {
+                            content: 'Goed idee';
+                            color: $white;
+                        }
+                    }
+                }
+                .lia-button-image-kudos-count {
+                    margin: 0 0 0 1.0rem;
+                    border: none;
+                    .kudos-count-link {
+                        background-color: $lithium-blue-light;
+                        border-radius: 4px;
+                        padding: 7px 12px !important;
+                        &:before {
+                            display: inline-block;
+                            font: normal normal normal 16px/1 FontAwesome;
+                            font-size: inherit;
+                            text-rendering: auto;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                            transform: translate(0, 0);
+                            content: "\f087";
+                            color: $blue;
+                        }
+                        .lia-component-kudos-widget-message-kudos-count {
+                            padding: 0;
+                        }
+                        .lia-component-kudos-widget-kudos-count-label {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .CommentEditorForm,
+    .MessageStatusForm {
+        background-color: $moreBlueLightLithium;
+        border: none;
+        .lia-tabs-standard-wrapper {
+            margin-top: 1.0rem !important;
+            padding: 0 !important;
+            background-color: $moreBlueLightLithium;
+            .lia-tabs-standard {
+                background-color: $moreBlueLightLithium;
+                margin: 0 0 8px 0;
+                .lia-tabs {
+                    border-left: none;
+                    &.lia-tabs-inactive {
+                        background-color: $blueLightest2;
+                    }
+                    a {
+                        font-size: 18px;
+                        color: $blueDarkest;
+                        padding: 10px 30px;
+                    }
+                }
+            }
+        }
+        .message-body-editor {
+            margin-top: -8px;
+            padding: 2.0rem;
+            background-color: $white;
+            .mce-panel.mce-toolbar-grp {
+                background-color: $white;
+            }
+        }
+    }
 
     .lia-menu-bar .lia-menu-bar-buttons {
         float: right;

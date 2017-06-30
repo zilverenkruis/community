@@ -15,24 +15,39 @@ ZK.reorderFormElements = function($) {
 
 ZK.setCheckBoxesForLabels = function($) {
     var labels = jQuery('.PostPage .lia-form-labels-fieldset-toggle .predefined-labels ul li, .EditPage .lia-form-labels-fieldset-toggle .predefined-labels ul li');
+    var labelinput = jQuery('input#lia-labels');
+    var labelinputvalue = labelinput.val();
     labels.each(function() {
         var jThis = jQuery(this);
         var checkbox = document.createElement('input');
         var labellink = jThis.find('a.lia-js-predefined-label');
+        var labelname = labellink.attr('name').trim();
         checkbox.type = 'checkbox';
         checkbox.name = 'labelcheckbox';
-        checkbox.value = labellink.attr('name');
+        checkbox.value = labelname;
+        if (labelinputvalue.indexOf(labelname) > -1) {
+            checkbox.checked = true;
+        }
         jThis.prepend(checkbox);
         jQuery(checkbox).on('click', jQuery.proxy(function() {
             labellink.click();
+            if (checkbox.checked) {
+                checkbox.checked = false;
+            } else {
+                checkbox.checked = true;
+            }
         }));
-        labellink.toggle(function() {
-            checkbox.checked = true;
-        }, function() {
-            checkbox.checked = false;
+        labellink.click(function() {
+            if (checkbox.checked) {
+                checkbox.checked = false;
+            } else {
+                checkbox.checked = true;
+            }
         });
     });
-    jQuery('#lia-labels').css('height', '1px').css('padding', '0').css('visibility', 'collapse');
+    if (!jQuery('.main-community-nav').hasClass('isAdmin')) {
+        jQuery('#lia-labels').css('height', '1px').css('padding', '0').css('visibility', 'collapse');
+    }
 };
 
 ZK.styleFileInput = function($) {
