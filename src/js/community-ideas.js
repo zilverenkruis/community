@@ -93,7 +93,7 @@ ZK.prepareFilters = function($) {
                 };
             }
         });
-        console.log(filters.parent('.ideas-filtering.filter-section').length);
+        //console.log(filters.parent('.ideas-filtering.filter-section').length);
         filters.parent('.ideas-filtering.filter-section').append('<div class="filters-label">Filter op: </div>')
     }
 };
@@ -110,17 +110,20 @@ ZK.getAvatarsByApiCall = function($) {
                 cache: true,
                 dataType: "xml"
             }).done(function(data) {
-                console.log(data);
                 jQuery(data).find('url').each(function() {
                     var profilelink = document.createElement('A')
                     profilelink.href = '/t5/user/viewprofilepage/user-id/' + userid;
                     profilelink.classList.add('lia-user-profile');
 
                     var image = document.createElement('IMG');
-                    image.src = jQuery(this).text();
+                    var src = jQuery(this).text();
+                    if (src.indexOf('http://') > -1) {
+                        src = src.replace('http://', 'https://');
+                    }
+                    image.src = src;
                     image.classList.add('lia-user-avatar');
 
-                    profilelink.prepend(image);
+                    jQuery(profilelink).prepend(image);
                     jThis.prepend(profilelink);
                 });
             });
