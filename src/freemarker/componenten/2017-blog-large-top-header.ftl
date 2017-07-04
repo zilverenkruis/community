@@ -22,7 +22,7 @@
                  srcset="${bigImgUrl} 1900w,
 	${mobileImgUrl} 900w"
 
-                 src="bigImgUrl">
+                 src="${bigImgUrl}">
 
 
             </@util.wrapComponent>
