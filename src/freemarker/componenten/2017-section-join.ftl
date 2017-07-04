@@ -13,7 +13,7 @@
                    href="/t5/user/userloginpage?dest_url=https%3A%2F%2Fforum.zilverenkruis.nl">Inloggen</a>
             </div>
         <#else>
-            <@component id="2016-section-heading" titel="Zelf een vraag stellen?" subtitel="Start een discussie, stel een vraag of deel je ervaringen met andere leden" btnlink="/t5/forums/postpage/choose-node/true" btntitel="Plaats een nieuw topic"/>
+            <@component id="2016-section-heading" titel="Zelf een vraag stellen?" subtitel="Start een discussie, stel een vraag of deel je ervaringen met andere leden" btnlink="/t5/forums/postpage/choose-node/true" btntitel="Start een discussie"/>
         </#if>
     </#if>
     </div>
