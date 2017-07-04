@@ -26,6 +26,8 @@ LITHIUM.jQuery(function($) {
     ZK.scrollTo($);
     ZK.connectSocialButtons($);
     ZK.copyReactTo($);
+    ZK.constructReplyButton($);
+    ZK.removeBreadCrumbBoardLink($);
     //ZK.adaptCommentLinks($);
     ZK.moveStatus($);
     ZK.moveKudoButtons($);
