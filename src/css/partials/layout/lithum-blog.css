@@ -2,6 +2,9 @@
     .lia-menu-bar-top {
         display: none;
     }
+    .zk-search-bar {
+        background-color: transparent;
+    }
 }
 
 .blog-overview {

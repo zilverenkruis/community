@@ -91,12 +91,18 @@
     .lia-quilt-row-main,
     .CommentEditorForm {
         background-color: $moreBlueLightLithium;
+        .lia-quilt-row-main {
+            background-color: $white;
+        }
     }
     .lia-quilt-column-main-content {
         margin: 0 auto;
         width: 980px;
         float: none;
         padding: 0;
+        .lia-quilt-column-main-content {
+            width: auto;
+        }
         > .lia-quilt-column-alley-single {
             padding: 0 !important;
         }
@@ -183,6 +189,11 @@
             padding-top: 70px !important;
             padding-bottom: 70px !important;
         }
+        .MessageEditorForm {
+            .lia-form-labels-fieldset-toggle .predefined-labels {
+                height: 520px;
+            }
+        }
     }
 
     @media screen and (max-width: 767px) {
@@ -200,11 +211,19 @@
             .message-body-editor {
                 margin-top: 0.5rem;
             }
-            .lia-form-labels-fieldset-toggle .predefined-labels {
-                height: 520px;
+        }
+    }
+
+    &.lia-board {
+        @media screen and (max-width: 767px) {
+            .MessageEditorForm {
+                .lia-form-labels-fieldset-toggle .predefined-labels {
+                    height: 800px;
+                }
             }
         }
     }
+
     @media screen and (max-width: 500px) {
         .lia-page-header {
             padding-top: 1.0rem !important;
@@ -252,24 +271,6 @@
     .lia-form-attachments-fieldset-toggle {
         margin-bottom: 3.0rem;
         float: none;
-    }
-    .MultipleAttachments .lia-new-attachments-field {
-        &:before {
-            content: 'Kies bestand';
-            position: absolute;
-            left: 1.0rem;
-            font-size: 18px;
-            font-size: 1.8rem;
-            font-weight: 600;
-        }
-
-        input {
-            opacity: 0;
-            width: 150px;
-        }
-    }
-    .infospan {
-        vertical-align: sub;
     }
 }
 

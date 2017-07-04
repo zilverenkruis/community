@@ -62,6 +62,9 @@
 }
 
 .IdeaExchangePage {
+    .zk-search-bar {
+        background-color: transparent;
+    }
 
     .ideas-filtering {
         background-color: #fff;
@@ -381,7 +384,6 @@
 .lia-content {
     .lia-message-view-idea-message-item {
         .lia-message-subject {
-            clear: both;
             h2 .lia-message-read a,
             h2 .lia-message-unread a {
                 color: $blueLight;
@@ -476,9 +478,11 @@
                 content: none !important;
             }
             visibility: collapse;
+            float: right;
+            padding-top: 1rem;
             .message-status-link {
                 visibility: visible;
-                float: left;
+                float: right;
                 border: 1px solid $pinkLight;
                 padding: 0 1em;
                 border-radius: 4px;

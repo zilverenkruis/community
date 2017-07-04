@@ -99,8 +99,20 @@
           text-decoration: none;
           text-align: left;
           .item-content {
+            position: relative;
             border-radius: 4px;
             border-bottom: 3px solid $blueLightest2;
+            &:after {
+              font-family: zk-centralenav-fontregular;
+              content: '\61';
+              position: relative;
+              bottom: 16px;
+              right: 1.0rem;
+              -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+              position: absolute;
+              color: $pink;
+            }
             .avatar-wrapper {
               position: relative;
               float: right;
@@ -125,7 +137,7 @@
               background-color: $moreBlueLightLithium;
               border-radius: 4px;
               border: 1.5rem solid $moreBlueLightLithium;
-              border-right: 5.5rem solid $moreBlueLightLithium;
+              border-right: 8.0rem solid $moreBlueLightLithium;
               color: $blueDark;
               font-size: 1.8rem;
               font-weight: 600;
@@ -161,6 +173,9 @@
                     right: 43px;
                   }
                 }
+              }
+              .item-footer {
+                border-right: 6.0rem solid $moreBlueLightLithium;
               }
             }
           }
@@ -316,6 +331,63 @@
           }
         }
       }
+    }
+  }
+
+  .custom-latest-post-category-forum {
+    .item-wrapper {
+      .avatar-wrapper {
+        display: table-cell;
+        vertical-align: top;
+        padding-right: 2.0rem;
+        .author-avatar {
+          position: relative;
+          img {
+            max-width: 70px;
+            max-height: 70px;
+            border-radius: 4px;
+          }
+        }
+      }
+      h3.item-title {
+        color: $blueDarkest;
+        font-size: 20px;
+        font-size: 2.0rem;
+        font-weight: 600;
+      }
+      .lia-message-byline {
+        color: $blue;
+        font-size: 14px;
+        font-size: 1.4rem;
+      }
+      .item-info {
+        display: table-cell;
+        vertical-align: top;
+        width: 100%;
+      }
+      .item-meta-info {
+        display: table-cell;
+        vertical-align: top;
+        white-space: nowrap;
+        text-align: right;
+        padding-left: 2.0rem;
+        .unit {
+          display: inline;
+        }
+      }
+    }
+    .view-all-link-wrapper {
+      padding-top: 2.0rem;
+      .btn-primary {
+        float: right;
+      }
+    }
+    @media (max-width: 780px) {
+        .item-meta-info {
+          .unit {
+            display: inline;
+          }
+        }
     }
   }
 

@@ -316,15 +316,6 @@
         font-size: 20px;
         font-weight: 600;
     }
-
-
-    #actionMenuDropDown {
-        .lia-js-menu-opener.default-menu-option,
-        .lia-js-menu-opener.default-menu-option:hover,
-        .lia-js-menu-opener.default-menu-option:active {
-            border: 1px solid $blue;
-        }
-    }
 }
 
 .ViewProfilePage {
