@@ -51,7 +51,7 @@ ZK.setCheckBoxesForLabels = function($) {
 };
 
 ZK.styleFileInput = function($) {
-    var inputwrapper = jQuery('.PostPage .lia-new-attachments-field, .EditPage .lia-new-attachments-field');
+    var inputwrapper = jQuery('.MultipleAttachments .lia-new-attachments-field');
     inputwrapper.each(function() {
         var jThis = jQuery(this);
         jThis.addClass('btn btn-normal btn-large');
