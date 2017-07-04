@@ -33,7 +33,7 @@ LITHIUM.jQuery(function($){
         	var messAvatar = this;
             var messageRoot  = LITHIUM.jQuery(messAvatar).closest('.lia-panel-message-root');
 
-        	console.log(LITHIUM.jQuery(this).find('.lia-user-avatar-message'));
+        	//console.log(LITHIUM.jQuery(this).find('.lia-user-avatar-message'));
             var img = LITHIUM.jQuery(this).find('.lia-user-avatar-message');
 
             LITHIUM.jQuery(img).attr('src', LITHIUM.jQuery(img).attr('src').replace(/\d\dx\d\d/g, '102x102')); 
