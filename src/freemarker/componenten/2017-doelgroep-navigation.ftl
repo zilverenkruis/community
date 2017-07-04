@@ -88,7 +88,7 @@
                 <img src="${asset.get("/html/assets/nav-doelgroep-Senioren.jpg")}" alt="Senioren">
               </div>
               <div class="nav-text">
-                <h3 class="nav-title">Senioren</h3>
+                <h3 class="nav-title">Ouder worden</h3>
                 <#if seniorenCount gt 0 >
                   <div class="nav-nrofmessages">${seniorenCount?c} discussies</div>
                 </#if>
