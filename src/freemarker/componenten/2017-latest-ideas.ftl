@@ -39,7 +39,7 @@
         </ul>
     </div>
     <div class="view-all-link-wrapper">
-        <a href="/t5/Ideeënbus/idb-p/IdeaExchange" class="btn btn-link strong" data-icon="a">Bekijk alle ideeën</a>
+        <a href="/t5/Ideeënbus/idb-p/IdeaExchange/label-name/${label}" class="btn btn-link strong" data-icon="a">Bekijk alle ideeën</a>
     </div>
     </@wrapComponent>
 </#if>
