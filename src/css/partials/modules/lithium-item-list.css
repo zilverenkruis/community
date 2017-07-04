@@ -11,6 +11,9 @@
         > a {
             display: inline-block;
             max-width: 80px;
+            max-height: 80px;
+            overflow: hidden;
+            border-radius: 4px;
             img {
                 @mixin border-radius $baseBorderRadius;
             }
@@ -23,7 +26,7 @@
     .list-item {
         padding: 1em 0;
         &:not(:last-child) {
-            border-bottom: 1px solid $blueLightest;
+            border-bottom: 1px solid $blueLightest2;
         }        
     }
     .item-text-wrapper {
@@ -121,14 +124,12 @@
     
 }
 
-
-
-
-
-
-
-
 .lia-quilt-column-alley-right {
+    .doelgroep-item-list {
+        .item-meta-info {
+            display: block !important;
+        }
+    }
     .items-list {
         .item-img-wrapper, .item-meta-info, .item-author, .message-board {
             display: none;
@@ -137,6 +138,15 @@
             float: none;
             display: block;
             width: auto;
+            &.overflown {
+                &:after {
+                    right: 0;
+                    bottom: 0;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    background-color: $white;
+                }
+            }
         }
         .item-info {
             display: block;

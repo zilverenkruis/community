@@ -62,6 +62,9 @@
 }
 
 .IdeaExchangePage {
+    .zk-search-bar {
+        background-color: transparent;
+    }
 
     .ideas-filtering {
         background-color: #fff;
@@ -198,7 +201,135 @@
 
 
 
-.IdeaPage {
+.IdeaPage,
+.lia-idea.EditPage {
+    .LabelsForArticle {
+        margin-bottom: 2.0rem;
+    }
+
+    .lia-idea-message-wrapper-2017,
+    .lia-component-editor {
+        .MessageView {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            .author-avatar.author-avatarbyapicall-wrapper {
+                position: static;
+                float: left;
+                .lia-user-profile .lia-user-avatar {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .lia-byline-wrapper {
+                display: block;
+                float: none;
+                margin-left: 120px;
+                .MessageStatus:after {
+                    content: none;
+                }
+                .lia-message-byline {
+                    display: block;
+                    .lia-byline-text.lia-text-date-on:before {
+                        content: '';
+                        display: block;
+                    }
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+            .lia-component-message_social {
+                display: block;
+                clear: left;
+                max-width: 80px;
+                float: left;
+                margin: 2.0rem 1.0rem 1.0rem 0;
+            }
+            .KudosButton {
+                position: static;
+                float: left;
+                margin: 2.0rem 0 1.0rem 0;
+                .lia-button-image-kudos {
+                    background-color: transparent;
+                }
+                .lia-button-image-kudos-horizontal > .lia-button-image-kudos-give {
+                    width: 90px;
+                    margin: 0;
+                    .kudos-link {
+                        display: block;
+                        border-radius: 4px;
+                        &:before {
+                            content: none;
+                        }
+                        &:after {
+                            content: 'Goed idee';
+                            color: $white;
+                        }
+                    }
+                }
+                .lia-button-image-kudos-count {
+                    margin: 0 0 0 1.0rem;
+                    border: none;
+                    .kudos-count-link {
+                        background-color: $lithium-blue-light;
+                        border-radius: 4px;
+                        padding: 7px 12px !important;
+                        &:before {
+                            display: inline-block;
+                            font: normal normal normal 16px/1 FontAwesome;
+                            font-size: inherit;
+                            text-rendering: auto;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                            transform: translate(0, 0);
+                            content: "\f087";
+                            color: $blue;
+                        }
+                        .lia-component-kudos-widget-message-kudos-count {
+                            padding: 0;
+                        }
+                        .lia-component-kudos-widget-kudos-count-label {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .CommentEditorForm,
+    .MessageStatusForm {
+        background-color: $moreBlueLightLithium;
+        border: none;
+        .lia-tabs-standard-wrapper {
+            margin-top: 1.0rem !important;
+            padding: 0 !important;
+            background-color: $moreBlueLightLithium;
+            .lia-tabs-standard {
+                background-color: $moreBlueLightLithium;
+                margin: 0 0 8px 0;
+                .lia-tabs {
+                    border-left: none;
+                    &.lia-tabs-inactive {
+                        background-color: $blueLightest2;
+                    }
+                    a {
+                        font-size: 18px;
+                        color: $blueDarkest;
+                        padding: 10px 30px;
+                    }
+                }
+            }
+        }
+        .message-body-editor {
+            margin-top: -8px;
+            padding: 2.0rem;
+            background-color: $white;
+            .mce-panel.mce-toolbar-grp {
+                background-color: $white;
+            }
+        }
+    }
 
     .lia-menu-bar .lia-menu-bar-buttons {
         float: right;
@@ -206,6 +337,44 @@
 
     .default-menu-option:after, .lia-common-dropdown-toggle:after {
         content: "\f141";
+    }
+
+    .lia-message-options .lia-menu-navigation .default-menu-option:before {
+        content: '\f141' !important;
+    }
+
+    .lia-quilt-row-navigation {
+        .lia-component-message-view-widget-author-avatar.UserAvatar {
+            position: relative;
+            display: inline-block;
+            float: left;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .lia-component-message-view-widget-author-username {
+            display: block;
+            float: left;
+        }
+        .lia-component-message-view-widget-body {
+            clear: both;
+            padding-top: 2.0rem;
+        }
+    }
+
+    .lia-content h2.message-subject {
+        line-height:1.2;
+        .lia-message-read .lia-link-navigation {
+            font-weight: 300;
+            font-size: 42px;
+            font-size: 4.2rem;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .lia-quilt-row-navigation {
+            padding: 2.0rem;
+        }
     }
 }
 
@@ -215,8 +384,8 @@
 .lia-content {
     .lia-message-view-idea-message-item {
         .lia-message-subject {
-            clear: both;
-            h2 .lia-message-read a {
+            h2 .lia-message-read a,
+            h2 .lia-message-unread a {
                 color: $blueLight;
                 font-size: 24px;
                 font-size: 2.4rem;
@@ -309,9 +478,11 @@
                 content: none !important;
             }
             visibility: collapse;
+            float: right;
+            padding-top: 1rem;
             .message-status-link {
                 visibility: visible;
-                float: left;
+                float: right;
                 border: 1px solid $pinkLight;
                 padding: 0 1em;
                 border-radius: 4px;
@@ -344,7 +515,7 @@
                             }
                             &:before {
                                 font-family: $sansFontFamily ;
-                                content: 'in';
+                                content: 'in ';
                                 transform: none;
                                 color: $turquoiseDark;
                             }
@@ -491,42 +662,43 @@ a.label-link:hover, a.label-link:focus {
 .LabelsForArticle  .lia-list-standard-inline {
     text-align: right;
 }
-
-.LabelsForArticle .label-link {
-    background-color: transparent;
-    color: #309FD8;
-    padding: .1em 1em;
-    margin-bottom: 0;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 16px;
-    line-height:1;
-
-    &:before {
-         color: #309FD8;
-         content: "\f02b";
-         display: inline-block;
-         font: normal normal normal 16px/1 FontAwesome;
-         -moz-osx-font-smoothing: grayscale;
-         -webkit-font-smoothing: antialiased;
-         line-height: 1.71428571;
-         text-rendering: auto;
-         transform: scaleX(-1);
-         position: relative;
-         left: -5px;
-         top: 0;
-     }
-
-    @media screen and (min-width: 663px) {
-        font-size:16px;
-    }
-
-
-
-    &:hover, &:focus {
+.BlogArticlePage,
+.ForumTopicPage,
+.IdeaPage {
+    .LabelsForArticle .label-link {
         background-color: transparent;
         color: #309FD8;
-        text-decoration: underline;
+        padding: .1em 1em;
+        margin-bottom: 0;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1;
+        cursor: pointer;
+        &:before {
+            color: #309FD8;
+            content: "\f02b";
+            display: inline-block;
+            font: normal normal normal 16px/1 FontAwesome;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.71428571;
+            text-rendering: auto;
+            transform: scaleX(-1);
+            position: relative;
+            left: -5px;
+            top: 0;
+        }
+
+        @media screen and (min-width: 663px) {
+            font-size: 16px;
+        }
+
+        &:hover, &:focus {
+            background-color: transparent;
+            color: #309FD8;
+            text-decoration: underline;
+        }
     }
 }
 

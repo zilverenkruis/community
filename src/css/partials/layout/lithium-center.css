@@ -43,10 +43,6 @@ $maxwidth : 980px;
 }
 /*top row navigation*/
 .ReplyPage {
-    .lia-page-header{
-        display: none;
-    }
-
     .lia-quilt-row-main {
         > .lia-quilt-column > .lia-quilt-column-alley {
             margin: auto;
@@ -56,8 +52,8 @@ $maxwidth : 980px;
 }
 .ForumTopicPage,
 .IdeaPage,
-.TkbArticlePage
-{
+.TkbArticlePage,
+.BlogArticlePage {
     .lia-quilt-row-navigation {
         /*> .lia-quilt-column-alley {*/
         > .lia-quilt-column > .lia-quilt-column-alley {
@@ -69,6 +65,11 @@ $maxwidth : 980px;
 
 
 .BlogArticlePage {
+    .lia-quilt-row-navigation {
+        > .lia-quilt-column > .lia-quilt-column-alley {
+            max-width: 738px;
+        }
+    }
 
     .lia-component-kudos {
         position: relative;
@@ -77,8 +78,6 @@ $maxwidth : 980px;
     }
 
     #message_social {
-        position: relative;
-        top: -76px;
         z-index: 10;
         display: inline-block;
 
@@ -107,7 +106,7 @@ $maxwidth : 980px;
             .lia-component-message_social,
             .lia-blog-article-page-article-subject {
                 margin: auto;
-                max-width: 980px;
+                max-width: 738px;
                 display: block;                
             }
         }

@@ -93,7 +93,7 @@ ZK.prepareFilters = function($) {
                 };
             }
         });
-        console.log(filters.parent('.ideas-filtering.filter-section').length);
+        //console.log(filters.parent('.ideas-filtering.filter-section').length);
         filters.parent('.ideas-filtering.filter-section').append('<div class="filters-label">Filter op: </div>')
     }
 };
@@ -116,13 +116,27 @@ ZK.getAvatarsByApiCall = function($) {
                     profilelink.classList.add('lia-user-profile');
 
                     var image = document.createElement('IMG');
-                    image.src = jQuery(this).text();
+                    var src = jQuery(this).text();
+                    if (src.indexOf('http://') > -1) {
+                        src = src.replace('http://', 'https://');
+                    }
+                    image.src = src;
                     image.classList.add('lia-user-avatar');
 
-                    profilelink.prepend(image);
+                    jQuery(profilelink).prepend(image);
                     jThis.prepend(profilelink);
                 });
             });
         });
     }
-}
+};
+
+ZK.removeCommentForm = function($) {
+    var mainnav = jQuery('.IdeaPage .main-community-nav');
+    if (mainnav.length && mainnav.hasClass('isAdmin')) {
+        var commentform = jQuery('.IdeaPage #commenteditorform ');
+        if (commentform.length) {
+            commentform.remove();
+        }
+    }
+};

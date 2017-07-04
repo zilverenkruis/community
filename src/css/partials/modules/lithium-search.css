@@ -5,8 +5,10 @@
         &.home {
             background-color: $blueLightest2;
             padding-top: 0;
+            .search-input {
+                padding-right: 12px;
+            }
         }
-
     }
     .lia-quilt-vitality {
         background-color: $blueLightest2;
@@ -135,6 +137,9 @@
     .items-list .item-img-wrapper > a {
         display: inline-block;
         max-width: 120px;
+        max-height: 120px;
+        overflow: hidden;
+        border-radius: 4px;
     }
 
     .lia-quilt-category-page-forum2016 .lia-component-custom-latest-post-category-all {
@@ -311,15 +316,6 @@
         font-size: 20px;
         font-weight: 600;
     }
-
-
-    #actionMenuDropDown {
-        .lia-js-menu-opener.default-menu-option,
-        .lia-js-menu-opener.default-menu-option:hover,
-        .lia-js-menu-opener.default-menu-option:active {
-            border: 1px solid $blue;
-        }
-    }
 }
 
 .ViewProfilePage {
@@ -434,6 +430,7 @@
         .lia-component-common-widget-search-form {
             .SearchForm.lia-form-inline .search-input {
                 height: 45px;
+                padding-right: 12px;
             }
             .lia-form-inline .lia-search-form-granularity {
                 height: 45px;    

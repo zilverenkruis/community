@@ -9,9 +9,12 @@ LITHIUM.jQuery(function($) {
     });
 
     ZK.restructureHTML($);
+    ZK.removeEmptyParagraphs($);
     ZK.removeEmptyRows($);
     ZK.removeEmptyStatus($);
+    ZK.moveBlogOptionMenu($);
     // ZK.shortenMessage($,400);
+    ZK.displayDotsOnOverflow($);
     // ZK.filterDropdown($);
     // ZK.commentCount($);
     ZK.accordion($);
@@ -23,17 +26,25 @@ LITHIUM.jQuery(function($) {
     ZK.scrollTo($);
     ZK.connectSocialButtons($);
     ZK.copyReactTo($);
+    ZK.constructReplyButton($);
+    ZK.removeBreadCrumbBoardLink($);
     //ZK.adaptCommentLinks($);
     ZK.moveStatus($);
     ZK.moveKudoButtons($);
     ZK.moveCommentAction($);
+    ZK.reorderFormElements($);
+    ZK.setCheckBoxesForLabels($);
+    ZK.styleFileInput($);
     ZK.prepareFilters($);
     ZK.getAvatarsByApiCall($);
+    ZK.removeCommentForm($);
     ZK.moveLabelBox($);
     ZK.setMarkerClick($);
     ZK.loadSearchPage($);
     ZK.onHideLoaderFeedback($);
     ZK.addCornersToNavLink($);
+    ZK.addCornersToHeaderImage($);
+    ZK.displayBlogImages($);
     ZK.mainNavItemsSetClick($);
     ZK.svgCorner();
 

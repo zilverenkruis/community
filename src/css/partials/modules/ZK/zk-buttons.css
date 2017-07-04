@@ -132,11 +132,10 @@
 
 .btn-large,
 .lia-component-reply-list .reply-action-link,
-.lia-panel-message-root .lia-action-reply.reply-action-link.reply-action-link
-{
-	padding: 6px 16px;1
-	/*font-size: 18px;*/
+.lia-panel-message .lia-action-reply.reply-action-link.reply-action-link {
+	padding: 6px 16px;
 	font-size: inherit;
+	font-weight: 600;
 	@mixin border-radius $borderRadiusLarge;
 
 	&[data-beforeicon]:before {
@@ -249,7 +248,7 @@ input[type="button"] {
 /*.lia-button-primary.lia-button-primary??? bad cssik */
 .btn-primary, 
 .lia-button-primary.lia-button-primary,
-.lia-panel-message-root .lia-action-reply.reply-action-link.reply-action-link {
+.lia-panel-message .lia-action-reply.reply-action-link.reply-action-link {
 	background: $btnPrimaryBackground;
 	color: $white;
 	border-color: $btnPrimaryBorder;
@@ -282,6 +281,21 @@ input[type="button"] {
 	&:focus {
 		color: $white;
 	}
+}
+
+.lia-action-reply:after {
+	font-family: zk-centralenav-fontregular;
+	content: 'a';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1em;
+	-webkit-font-smoothing: antialiased;
+	color: $white !important;
+	speak: none;
+	line-height: 1;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 0 0 9px;
 }
 
 .btn-info, .btn-primary-inversed {

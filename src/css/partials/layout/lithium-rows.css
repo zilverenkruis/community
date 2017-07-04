@@ -56,6 +56,25 @@
     }
 }
 
+@media screen and (max-width: 870px) {
+    .background-people {
+        height: 120px;
+        &:after {
+            background-size: 100%;
+            bottom: -90px;
+        }
+    }
+}
+
+@media screen and (max-width: 662px) {
+    .background-people {
+        height: 90px;
+        &:after {
+            bottom: -120px;
+        }
+    }
+}
+
 /*@media screen and (max-width: 1200px) {*/
     /*.lia-panel-content .full-width-bg {*/
         /*background-position: right -120px top !important;*/
@@ -67,11 +86,14 @@
     margin-top: -40px;    
 }
 
+.lia-quilt-row-zk-search {
+    @media screen and (max-width: 991px) {
+        .marker {
+            bottom: -30px;
+        }
+    }
+}
 
-/*test:*/
-/*.full-width-bg {
-    display: none;
-}*/
 .lia-quilt-row-navigation ~ .lia-quilt-row {
     .full-width-bg {
         display: none;
@@ -81,10 +103,16 @@
     /*padding-top: 40px;*/
     /*padding-bottom: 40px;*/
     padding: 40px 20px;
+    .marker {
+        bottom: -70px;
+    }
 }
 
 .lia-quilt-row-navigation ~ .lia-quilt-row:nth-child(odd):not(:last-child) {
     background-color: $moreBlueLightLithium;
+    .marker {
+        background-color: $white;
+    }
 }
 
 

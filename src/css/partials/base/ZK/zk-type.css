@@ -1,8 +1,7 @@
 .lia-content {
 
     p {
-        margin: 0 0 $baseLineHeight / 2;
-
+        margin: 0 0 calc($baseLineHeight/2);
     }
 
     .text-small {
@@ -170,7 +169,7 @@
 
     h1, h2, h3, h4, h5, h6,
     .h1, .h2, .h3, .h4, .h5, .h6 {
-        margin: ($baseLineHeight / 2) 0;
+        margin: calc($baseLineHeight / 2) 0;
         font-family: $headingsFontFamily;
         font-weight: $headingsFontWeight;
         line-height: $baseLineHeight;
@@ -225,7 +224,7 @@
         font-size: 2.6rem;
         color: $blueLight;
         font-weight: 400;
-        line-height: 44px;
+        line-height: 42px;
         line-height: 4.2rem;
         margin-top: 2.5rem;
     }

@@ -63,4 +63,16 @@ ZK.shortenMessage = function($, textLength) {
 				shortText($(this), textLength, articleURL);
 	        });	
         })();    
-}
+};
+
+ZK.displayDotsOnOverflow = function($) {
+    var overflowEls = jQuery('.chipped-content');
+    overflowEls.each(function() {
+        var jThis = jQuery(this);
+        if ((jThis.height() < this.scrollHeight || jThis.width() < this.scrollWidth) && jThis.css('overflow') == 'hidden') {
+            this.classList.add('overflown');
+        } else {
+            this.classList.remove('overflown');
+        }
+    });
+};

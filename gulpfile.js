@@ -38,6 +38,7 @@ var jsFiles = [
     sourceJS + 'community-accordion.js',
     sourceJS + 'community-scrollTo.js',
     sourceJS + 'community-comment-count.js',
+    sourceJS + 'community-doelgroepen.js',
     sourceJS + 'community-filter-dropdown.js',
     // sourceJS + 'community-correct-bg-height.js',
     sourceJS + 'community-create-bg.js',
@@ -45,6 +46,7 @@ var jsFiles = [
     sourceJS + 'community-search.js',
     sourceJS + 'community-forum.js',
     sourceJS + 'community-ideas.js',
+    sourceJS + 'community-postpage.js',
     sourceJS + 'community-home.js',
     sourceJS + 'community-onload.js'
 ]

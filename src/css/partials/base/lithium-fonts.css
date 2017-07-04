@@ -3,7 +3,7 @@
     -webkit-font-smoothing: antialiased;
 }
 body {
-    font-family: $sansFontFamily ;    
+    font-family: $sansFontFamily ;
 }
 
 
@@ -20,6 +20,10 @@ h2,
     a, a:link {
         color: inherit;
         font-size: inherit;
+    }
+    h5 {
+        font-size: 20px;
+        font-weight: normal;
     }
 }
 

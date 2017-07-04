@@ -40,14 +40,59 @@
 
 /* (forum postpage) */
 
-.PostPage,
-.UserLoginPage {
+.lia-page-header {
+    width: 980px;
+    margin: 0 auto;
+    h1 span.lia-link-navigation {
+        color: $blueDark;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 991px) {
     .lia-page-header {
-        width: 980px;
-        margin: 0 auto;
-        h1 span.lia-link-navigation {
-            color: $blueDark;
-            font-weight: 600;
+        width: 100%;
+        padding: 0 2.0rem !important;
+        h1.PageTitle {
+            padding: 2.0rem 0;
+        }
+    }
+}
+
+.MessageEditorForm .lia-form-buttons-empty-left-column {
+    .lia-quilt-column-16 {
+        .lia-form-submit.lia-button-group {
+            width: 130%
+        }
+    }
+}
+
+.PostPage,
+.EditPage,
+.UserLoginPage,
+.ReplyPage,
+.UserRegistrationPage,
+.MoveMessagesPage,
+.lia-quilt-notes-compose-page {
+    background-color: $moreBlueLightLithium;
+    .lia-quilt-row-header {
+        background-color: $white;
+    }
+    .discussion-link {
+        display: block;
+        padding: 1.0rem 1.0rem 1.0rem 2.0rem;
+    }
+    .MessageView {
+        .lia-quilt-row-main {
+            background-color: $white;
+        }
+    }
+    .MessageEditorForm,
+    .NoteEditorForm,
+    .lia-quilt-row-main,
+    .CommentEditorForm {
+        background-color: $moreBlueLightLithium;
+        .lia-quilt-row-main {
+            background-color: $white;
         }
     }
     .lia-quilt-column-main-content {
@@ -55,6 +100,9 @@
         width: 980px;
         float: none;
         padding: 0;
+        .lia-quilt-column-main-content {
+            width: auto;
+        }
         > .lia-quilt-column-alley-single {
             padding: 0 !important;
         }
@@ -62,22 +110,167 @@
             float: right;
         }
     }
-    .MessageEditorForm .lia-form-buttons-empty-left-column {
-        .lia-quilt-column-16 {
-            .lia-form-submit.lia-button-group {
-                width: 130%
+    .lia-quilt-row-footer {
+        margin: 0 auto;
+        width: 980px;
+    }
+    .lia-quilt-row .lia-quilt-row-footer {
+        width: auto;
+        margin: 0;
+    }
+
+    #tabgroup.lia-tabs-standard-wrapper {
+        margin-top: 1.0rem;
+        padding: 0;
+        background-color: $moreBlueLightLithium;
+        .lia-tabs-standard {
+            background-color: $moreBlueLightLithium;
+            margin: 0 0 8px 0;
+            .lia-tabs {
+                border-left: none;
+                &.lia-tabs-inactive {
+                    background-color: $blueLightest2;
+                }
+                a {
+                    font-size: 18px;
+                    color: $blueDarkest;
+                    padding: 10px 30px;
+                }
             }
         }
     }
+
+    .message-body-editor {
+        margin-top: -8px;
+        padding: 2.0rem;
+        background-color: $white;
+        .mce-panel.mce-toolbar-grp {
+            background-color: $white;
+        }
+    }
+
     @media screen and (max-width: 991px) {
-        .lia-page-header,
         .lia-quilt-column-main-content {
             width: 100%;
             padding: 0 2.0rem !important;
-            h1.PageTitle {
-                padding: 2.0rem 0;
+        }
+    }
+}
+
+.PostPage {
+    &.lia-idea {
+        .lia-quilt-row-header {
+            .lia-page-header {
+                background: url("/html/assets/header-postpage-idea.png") right bottom no-repeat;
             }
         }
+    }
+    .lia-quilt-row-header {
+        background-color: $blueLightest2;
+        .lia-page-header {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            background: url("/html/assets/header-home-2017.png") right 0px no-repeat;
+        }
+    }
+    .lia-quilt-row-main {
+        padding-top: 1.0rem;
+        background-color: $moreBlueLightLithium;
+    }
+    .MessageEditorForm {
+        .lia-quilt-column-18.lia-input-edit-form-column,
+        .lia-quilt-column-06.lia-input-edit-form-column {
+            background-color: $moreBlueLightLithium;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .lia-page-header {
+            padding-top: 70px !important;
+            padding-bottom: 70px !important;
+        }
+        .MessageEditorForm {
+            .lia-form-labels-fieldset-toggle .predefined-labels {
+                height: 520px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .MessageEditorForm {
+            padding-top: 0;
+            .lia-form-subject-entry {
+                margin-bottom: 2.0rem;
+                > .lia-form-label-wrapper {
+                    display: block !important;
+                }
+            }
+            .lia-form-body-entry > .lia-form-label-wrapper {
+                display: block !important;
+            }
+            .message-body-editor {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+
+    &.lia-board {
+        @media screen and (max-width: 767px) {
+            .MessageEditorForm {
+                .lia-form-labels-fieldset-toggle .predefined-labels {
+                    height: 800px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .lia-page-header {
+            padding-top: 1.0rem !important;
+            padding-bottom: 1.0rem !important;
+            background-image: none !important;
+        }
+    }
+}
+
+.PostPage,
+.EditPage {
+    .MessageEditorForm {
+        .lia-quilt-column-18.lia-input-edit-form-column,
+        .lia-quilt-column-06.lia-input-edit-form-column {
+            width: 100%;
+            float: left;
+            padding-left: 0;
+            padding-top: 2.0rem;
+        }
+    }
+    .lia-form-labels-fieldset-toggle {
+        .predefined-labels {
+            height: 240px;
+            padding: 2.0rem 2.0rem 1.0rem 2.0rem;
+            background-color: $white;
+            border-radius: 4px;
+            > span {
+                display: none;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 100%;
+                max-width: 100%;
+                li {
+                    padding-bottom: 1.0rem;
+                    input {
+                        margin-right: 1.0rem;
+                    }
+                }
+            }
+        }
+    }
+    .lia-form-attachments-fieldset-toggle {
+        margin-bottom: 3.0rem;
+        float: none;
     }
 }
 
@@ -163,7 +356,8 @@
 }
 
 .lia-panel-message {
-    .lia-component-author-rank-name {
+    .lia-component-author-rank-name,
+    .lia-component-author-rank {
         display: inline-block;
     }
 }
@@ -201,9 +395,8 @@
 .lia-message-author-username, /*forum message*/
 .lia-component-author, /*denk mee message*/
 .lia-message-author-avatar + .lia-component-author,
-.lia-message-author-avatar + .lia-message-author-username
-{
-    /*margin-left: 120px;*/
+.lia-message-author-avatar + .lia-message-author-username,
+.lia-message-author-avatar + .lia-message-author-with-avatar {
     width: auto;
     display: block;
 }
@@ -213,7 +406,9 @@
 }
 
 .lia-component-reply-list {
-    .lia-component-reply-button {
+    .lia-component-reply-button,
+    .lia-component-quick-reply-button,
+    .lia-component-accepted-solutions-button {
         display: none;
     }
 }
@@ -237,7 +432,8 @@
         .lia-quilt-column + .lia-quilt-column {
             display: none;
         }
-        .lia-quilt-column:first-child {
+        .lia-quilt-column:first-child,
+        .lia-quilt-column:last-child {
             width: 100%;
         } 
     }

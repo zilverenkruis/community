@@ -45,7 +45,7 @@
 
 @media screen and (min-width: 1000px) {
     .lia-component-common-widget-slide-out-user-menu .lia-notifications-messages-aggregate {
-        right: -3px;
+        right: -4px;
         top: -45px;
         display: block;
     }
@@ -53,6 +53,8 @@
 
 .user-navigation-user-profile {
     padding-right: 0;
+    float: right;
+    padding-left: 0.2rem;
 }
 
 .main-community-nav {
@@ -220,15 +222,18 @@
 .main-community-nav-2017 {
     padding: 3.0rem 0;
     position: relative;
-    &.forum-navigation .section-heading h2.title{
+    &.forum-navigation .section-heading h2.title {
+        display: inline-block;
+        position: relative;
         &:before {
             content: ' ';
-            background: transparent url(/html/assets/arm-roze.png) center -30px no-repeat;
+            background: transparent url(/html/assets/arm-roze.png) center -20px no-repeat;
             position: absolute;
-            width: 131px;
-            height: 151px;
-            left: 60px;
-            top: -102px;
+            width: 135px;
+            height: 170px;
+            left: -140px;
+            top: -115px;
+            background-size:contain;
         }
     }
     .wrapper {
@@ -258,6 +263,7 @@
         border-radius: 4px;
         border-bottom: 3px solid $borderGray;
         transition: all 700ms;
+        height: 100px;
         &.has-subnav {
             a.nav-2017-link:after {
                 font-family: zk-centralenav-fontregular;
@@ -277,13 +283,27 @@
         a.nav-2017-link {
             display: block;
             position: relative;
+            height: 97px;
+            z-index: 2;
+            &:focus .nav-text{
+                text-decoration: none;
+                .nav-nrofmessages {
+                    text-decoration: none;
+                }
+            }
+            &:hover .nav-text{
+                text-decoration: underline;
+                .nav-nrofmessages {
+                    text-decoration: underline;
+                }
+            }
         }
         .main-community-subnav-2017 {
             position: absolute;
             top: 120px;
             left: 0;
             width: 100%;
-            height: 150px;
+            height: 230px;
             background-color: $white;
             border-radius: 4px;
             padding: 1rem 2rem;
@@ -319,7 +339,7 @@
             }
             .nav-text {
                 float: left;
-                padding: 2.5rem 2.0rem;
+                padding: 2.5rem 1.0rem 2.5rem 2.0rem;
                 text-align: left;
                 h3.nav-title {
                     margin-top: 0;
@@ -365,17 +385,26 @@
         }
     }
     @media screen and (max-width: 870px) {
+        &.forum-navigation .section-heading h2.title {
+            &:before {
+                content: none;
+            }
+        }
         .inline-grid.desktop-one-half {
             .nav-row {
-                height: 250px;
+                height: auto;
                 position: static;
             }
             .grid-item {
+                text-align: center;
                 width: 100%;
                 margin-right: 0;
                 position: relative;
                 .main-community-subnav-2017 {
-                    height: 310px;
+                    height: auto;
+                    .nav-boards {
+                        display: block;
+                    }
                 }
             }
         }
@@ -391,12 +420,6 @@
                         width: 100%;
                         text-align: center;
                         float: none;
-                    }
-                }
-                .main-community-subnav-2017 {
-                    height: auto;
-                    .nav-boards {
-                        display: block;
                     }
                 }
             }
