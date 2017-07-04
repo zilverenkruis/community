@@ -30,7 +30,7 @@
         </ul>
     </div>
     <div class="view-all-link-wrapper">
-        <a href="/t5/Blog/bg-p/Blog" class="btn btn-link strong" data-icon="a">Bekijk alle blogs</a>
+        <a href="/t5/Blog/bg-p/Blog/label-name/${label}" class="btn btn-link strong" data-icon="a">Bekijk alle blogs</a>
     </div>
     </@wrapComponent>
 </#if>
