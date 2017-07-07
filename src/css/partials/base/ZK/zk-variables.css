@@ -1,9 +1,9 @@
 
 $black: #000;
 $grayDark: #888888;
-$gray: lighten($black, 50%);
-$grayLight: lighten($black, 75%);
-$grayLightest            : #EEEEEE;
+$gray: #808080;
+$grayLight: #bfbfbf;
+$grayLightest: #EEEEEE;
 $white: #fff;
 $whiteOpacity: rgba(255, 255, 255, 0.9);
 $grayOpacity: rgba(152, 152, 152, 0.46);

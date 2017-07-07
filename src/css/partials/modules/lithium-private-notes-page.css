@@ -1,4 +1,8 @@
 .PrivateNotesPage {
+    .lia-page-header .lia-button-wrapper {
+        display: block;
+        margin-left: -30px;
+    }
 
     .lia-tabs-standard > li > span > a,
     .lia-tabs-standard > li .default-menu-option {

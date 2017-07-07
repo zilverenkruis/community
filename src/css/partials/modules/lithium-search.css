@@ -369,14 +369,16 @@
         padding-bottom:20px;
         display:block;
         width:100%;
-        text-align:center;
+        text-align:left;
         float: none;
+        .lia-fa {
+            color: $turquoise;
+        }
         @media screen and (max-width: 991px) {
             padding-left: 20px;
             padding-right: 20px;
         }
-
-    }
+   }
 
     .lia-component-badges-widget-user-badges-list,
     .lia-quilt-user-profile-statistics {
