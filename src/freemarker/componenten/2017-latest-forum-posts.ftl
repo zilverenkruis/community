@@ -1,5 +1,6 @@
 <#include "common-functions.ftl">
 <#assign type = coreNode.nodeType />
+<#assign id = coreNode.id />
 <#assign label = coreNode.title />
 <#assign dateFormat = settings.name.get("layout.format_pattern_date")  />
 <#assign timeFormat = settings.name.get("layout.format_pattern_time")  />
@@ -29,7 +30,7 @@
                 </#list>
                 <li class="view-all-link-wrapper">
                     <div>
-                        <a href="/t5/Diabetes/bd-p/${label}" class="btn btn-link strong" data-icon="a">Bekijk alle ${label} topics</a>
+                        <a href="/t5/${label}/bd-p/${id}" class="btn btn-link strong" data-icon="a">Bekijk alle ${label} topics</a>
                         <a href="/t5/forums/postpage/board-id/${label}" class="btn btn-primary btn-large strong" data-icon="a">Plaats een nieuw topic</a>
                     </div>
                 </li>
