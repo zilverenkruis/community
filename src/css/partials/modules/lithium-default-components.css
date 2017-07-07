@@ -688,7 +688,10 @@ form .lia-fa.lia-fa-thread.lia-fa-tkb:before {
 
 .lia-component-users-widget-unsaved-drafts,
 .CategoryListDisplay,
-.MessageHistoryPage .lia-component-forums-widget-message-list {
+.MessageHistoryPage .lia-component-forums-widget-message-list,
+.lia-quilt-confirmation-page > .lia-quilt-row-main,
+.lia-quilt-email-message-page > .lia-quilt-row-main,
+.lia-quilt-notify-moderator-page > .lia-quilt-row-main {
     margin-right: auto;
     margin-left: auto;
     max-width: 980px;

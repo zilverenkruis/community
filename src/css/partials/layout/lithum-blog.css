@@ -230,6 +230,9 @@
             z-index: 2;
         }
     }
+    .lia-quilt-blog-topic-message > .lia-quilt-row-footer {
+        padding: 0 0 2.0rem;
+    }
 
     .lia-quilt-blog-topic-message > .lia-quilt-row-header .lia-quilt-column-header-left .lia-message-post-date {
         display: block;
