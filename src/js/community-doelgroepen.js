@@ -26,3 +26,11 @@ ZK.displayBlogImages = function() {
         });
     });
 };
+
+ZK.showHeaderVideo = function() {
+    var headervideo = jQuery('.lia-quilt-category-page-doelgroepen2017 .CustomContent .video-container');
+    var headerimage = jQuery('.lia-quilt-category-page-doelgroepen2017 .doelgroep-heading .doelgroep-heading-visual img');
+    if (headervideo.length && headerimage.length) {
+        headerimage.replaceWith(headervideo);
+    }
+};

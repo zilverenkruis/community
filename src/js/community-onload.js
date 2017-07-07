@@ -45,6 +45,7 @@ LITHIUM.jQuery(function($) {
     ZK.addCornersToNavLink($);
     ZK.addCornersToHeaderImage($);
     ZK.displayBlogImages($);
+    ZK.showHeaderVideo($);
     ZK.mainNavItemsSetClick($);
     ZK.svgCorner();
 
