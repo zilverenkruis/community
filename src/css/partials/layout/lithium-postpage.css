@@ -48,12 +48,29 @@
         font-weight: 600;
     }
 }
+
+.LabelPage {
+    .lia-page-header {
+        h1.PageTitle {
+            display: block;
+            margin-left: -30px;
+        }
+    }
+}
+
 @media screen and (max-width: 991px) {
     .lia-page-header {
         width: 100%;
         padding: 0 2.0rem !important;
         h1.PageTitle {
             padding: 2.0rem 0;
+        }
+    }
+    .LabelPage {
+        .lia-page-header {
+            h1.PageTitle {
+                margin-left: 0;
+            }
         }
     }
 }
