@@ -110,7 +110,11 @@
 	}
 }
 
-.lia-component-reply-list .reply-action-link {
+.lia-component-reply-list .reply-action-link,
+.constructed-reply-link,
+.constructed-reply-link:hover,
+.constructed-reply-link:active,
+.constructed-reply-link:focus {
 	float:right;
 	background: #C93A83;
 	color: #fff;
@@ -132,11 +136,13 @@
 
 .btn-large,
 .lia-component-reply-list .reply-action-link,
-.lia-panel-message .lia-action-reply.reply-action-link.reply-action-link {
+.lia-panel-message .lia-action-reply.reply-action-link.reply-action-link,
+.constructed-reply-link {
 	padding: 6px 16px;
 	font-size: inherit;
 	font-weight: 600;
 	@mixin border-radius $borderRadiusLarge;
+	margin-bottom: 1.0rem;
 
 	&[data-beforeicon]:before {
 		font-size: 16px;
