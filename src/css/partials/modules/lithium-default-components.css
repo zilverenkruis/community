@@ -759,6 +759,9 @@ a.tab-link:focus {
     .SimpleMessageList > .MessageList .lia-list-wide .lia-list-row {
         padding-left: 50px;
     }
+    .MessageList .lia-list-wide .lia-list-row {
+        padding-left: 75px;
+    }
 }
 
 @media screen and (max-width: 767px) {
