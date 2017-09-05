@@ -12,7 +12,7 @@ ZK.displayBlogImages = function() {
     var teasers = jQuery('.hidden.blog-teaser');
 
     teasers.each(function() {
-        var spans = jQuery(this).find('span');
+        var spans = jQuery(this).find('p > span');
         spans.each(function(index) {
             if (index === 1) {
                 var jThis = jQuery(this);
@@ -26,7 +26,7 @@ ZK.displayBlogImages = function() {
         });
     });
 };
-
+ZK.displayBlogImages()
 ZK.showHeaderVideo = function() {
     var headervideo = jQuery('.lia-quilt-category-page-doelgroepen2017 .CustomContent .video-container');
     var headerimage = jQuery('.lia-quilt-category-page-doelgroepen2017 .doelgroep-heading .doelgroep-heading-visual img');
