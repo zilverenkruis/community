@@ -8,7 +8,7 @@
 <#assign interaction = "forum" />
 
 <#attempt>
-    <#assign numRows = env.context.component.getParameter("rows")!"10" />
+    <#assign numRows = env.context.component.getParameter("rows")!"14" />
     <#recover>
 </#attempt>
 
@@ -23,19 +23,19 @@
 
 <#if messages?? && messages.data?? && messages.data.items?? && messages.data.items?size gt 0>
     <@wrapComponent name="custom-latest-post-" + type + "-" + interaction>
-        <div class="items-list doelgroep-item-list">
-            <ul class="items">
-                <#list messages.data.items as msg>
-                    <@displayMessage message=msg />
-                </#list>
-                <li class="view-all-link-wrapper">
-                    <div>
-                        <a href="/t5/${label}/bd-p/${id}" class="btn btn-link strong" data-icon="a">Bekijk alle ${label} topics</a>
-                        <a href="/t5/forums/postpage/board-id/${label}" class="btn btn-primary btn-large strong" data-icon="a">Plaats een nieuw topic</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+    <div class="items-list doelgroep-item-list">
+        <ul class="items">
+            <#list messages.data.items as msg>
+                <@displayMessage message=msg />
+            </#list>
+            <li class="view-all-link-wrapper">
+                <div>
+                    <a href="/t5/custom/page/page-id/LabelPage/label-name/${label}" class="btn btn-link strong" data-icon="a">Bekijk alle ${label} topics</a>
+                    <a href="/t5/forums/postpage/board-id/${label}" class="btn btn-primary btn-large strong" data-icon="a">Plaats een nieuw topic</a>
+                </div>
+            </li>
+        </ul>
+    </div>
 
     </@wrapComponent>
 </#if>
