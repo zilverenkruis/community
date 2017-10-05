@@ -31,7 +31,7 @@
             <li class="view-all-link-wrapper">
                 <div>
                     <a href="/t5/custom/page/page-id/LabelPage/label-name/${label}" class="btn btn-link strong" data-icon="a">Bekijk alle ${label} topics</a>
-                    <a href="/t5/forums/postpage/board-id/${label}" class="btn btn-primary btn-large strong" data-icon="a">Plaats een nieuw topic</a>
+                    <a href="/t5/forums/postpage/board-id/${id}" class="btn btn-primary btn-large strong" data-icon="a">Plaats een nieuw topic</a>
                 </div>
             </li>
         </ul>
