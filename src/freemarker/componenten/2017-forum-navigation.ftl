@@ -5,7 +5,7 @@
         <#assign collectiviteitCount = countCollectiviteit.data.count />
     </#if>
 
-    <#assign countAlternatiefQ = "select count(*) from messages where board.id = 'Alternatief' and depth=0 AND conversation.style='forum'" />
+    <#assign countAlternatiefQ = "select count(*) from messages where board.id = 'alternatief' and depth=0 AND conversation.style='forum'" />
     <#assign countAlternatief = rest("2.0", "/search?q=${countAlternatiefQ?url}") />
     <#if countAlternatief?? && countAlternatief?has_content && countAlternatief.data?? && countAlternatief.status == "success">
         <#assign alternatiefCount = countAlternatief.data.count />
