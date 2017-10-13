@@ -348,10 +348,16 @@ input[type="button"] {
 .lia-button-image-kudos.lia-button-image-kudos-enabled .kudos-link,
 .lia-button-image-kudos.lia-button-image-kudos .kudos-link
 {
-	background: $btnNormalBackground;
-	color: $white;
-	border-color: $btnNormalBorder;
-	border-radius: 4px;
+	background: $btnNormalBackground !important;
+	color: $white !important;
+	border-radius: 4px !important;
+	padding: 6px 12px !important;
+	border-bottom: 2px solid $btnNormalBorder !important;
+	&:before,
+	&:after {
+		color: $white !important;
+		font-weight: 600;
+	}
 	> a {
 		color: $white;
 		text-decoration: none;

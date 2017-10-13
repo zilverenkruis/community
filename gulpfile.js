@@ -47,6 +47,7 @@ var jsFiles = [
     sourceJS + 'community-forum.js',
     sourceJS + 'community-ideas.js',
     sourceJS + 'community-postpage.js',
+    sourceJS + 'community-qanda.js',
     sourceJS + 'community-home.js',
     sourceJS + 'community-onload.js'
 ]

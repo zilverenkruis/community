@@ -1,0 +1,115 @@
+.ForumQandATopicMessageList {
+  .lia-message-view-wrapper {
+    margin-bottom: 10px;
+  }
+  .UserAvatar {
+    float: left !important;
+    > img {
+      height: 50px !important;
+      width: 50px !important;
+    }
+  }
+  .UserName {
+    display: block;
+    > .lia-user-name-link > span.login-bold,
+    .lia-user-rank {
+      color: $blueLight !important;
+      &:after{
+        content: none !important;
+      }
+    }
+  }
+  .lia-component-post-date {
+    color: $blueLight !important;
+    margin-left: 0;
+    &:before {
+      content: '';
+      display: block;
+    }
+    > span {
+      display: block;
+    }
+  }
+  .MessageView {
+    .lia-quilt-forum-qanda-question {
+      #actionMenuDropDown {
+        position: absolute;
+        right: -20px;
+      }
+      .MessageSubject {
+        h2.message-subject a.lia-link-navigation {
+          font-size: 28px;
+          font-size: 2.8rem;
+          font-weight: 400;
+          line-height: 52px;
+          line-height: 5.2rem;
+        }
+      }
+      .lia-quilt-row-main {
+        display: none;
+      }
+      .lia-forum-qanda-question-subject-wrapper {
+        padding-top: 0;
+        .lia-component-solved-indicator {
+          position: static;
+          margin-bottom: 30px;
+        }
+      }
+      .lia-quilt-row-footer {
+        margin-top: 2.0em;
+      }
+    }
+    .lia-quilt-row-mod-controls {
+      background-color: $white;
+      form.lia-form-expanded {
+        padding: 20px 20px 0;
+        border: 0;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+  .lia-forum-qanda-message-list-page-position-display {
+    margin: 10px 0 10px 10px;
+    color: $blueDark;
+
+  }
+  .lia-product-answer-expand-link-wrapper {
+    position: absolute;
+    right: 0;
+  }
+  .lia-component-solved-indicator,
+  .lia-component-solution-info {
+    border-radius: 4px;
+    padding: 3px 10px !important;
+  }
+  .lia-component-solution-info {
+    top: -60px !important;
+    left: 0 !important;
+    line-height: 1.7 !important;
+  }
+  .lia-message-view-display.lia-message-view-forum-qanda-answer {
+    border-top: none;
+  }
+  .lia-message-list li {
+    margin-bottom: 10px;
+  }
+  .lia-component-messages-widget-expandable-answer-comment-list {
+    > ul > li {
+      margin-left: 30px;
+      border-top: none;
+    }
+  }
+
+  .lia-quilt-forum-qanda-answer {
+    .lia-quilt-row-footer {
+      .lia-edit-message-link,
+      .delete-all-message,
+      .lia-product-comment-expand-link,
+      .lia-link-ticket-post-action {
+        display: none;
+      }
+    }
+  }
+}
