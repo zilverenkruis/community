@@ -1022,6 +1022,8 @@ only screen and (max-width: 760px),
 
 .lia-paging-full-wrapper.lia-paging-pager {
     margin-top: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 .lia-panel-message-content .lia-message-subject,

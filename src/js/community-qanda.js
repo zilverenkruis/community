@@ -15,3 +15,40 @@ ZK.reorderQandACommentBodyWrapperAndAuthorRankDate = function($) {
         });
     }
 };
+
+ZK.hideQuestionOnFollowUpPages = function($) {
+    var prevlink = jQuery('a.lia-link-navigation[rel="prev"]');
+    if (prevlink.length) {
+        var question = jQuery('.ForumQandATopicMessageList > .lia-panel-message');
+        if (question.length) {
+            question.hide();
+        }
+    }
+}
+
+ZK.runTimedoutAfterMutation = function($) {
+    setTimeout(function() {
+        ZK.hideQuestionOnFollowUpPages($);
+        ZK.reorderQandACommentBodyWrapperAndAuthorRankDate($);
+        ZK.avatars($);
+        }, 2000);
+}
+
+ZK.addClickToNextPrevLinks = function($) {
+    var target = document.querySelector('.lia-quilt-forum-qanda-topic-page > .lia-quilt-row.lia-quilt-row-main-one');
+
+    if (typeof target !== 'undefined') {
+        var observer = new MutationObserver(function(mutations) {
+            for (var i=0; i<mutations.length; i++) {
+                if (mutations[i].type === 'attributes') {
+                    ZK.runTimedoutAfterMutation($);
+                    break;
+                }
+            }
+        });
+
+        var config = { attributes: true, childList: true, characterData: true, subtree: true }
+
+        observer.observe(target, config);
+    }
+}
