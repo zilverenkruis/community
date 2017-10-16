@@ -110,7 +110,11 @@
 	}
 }
 
-.lia-component-reply-list .reply-action-link {
+.lia-component-reply-list .reply-action-link,
+.constructed-reply-link,
+.constructed-reply-link:hover,
+.constructed-reply-link:active,
+.constructed-reply-link:focus {
 	float:right;
 	background: #C93A83;
 	color: #fff;
@@ -132,11 +136,13 @@
 
 .btn-large,
 .lia-component-reply-list .reply-action-link,
-.lia-panel-message .lia-action-reply.reply-action-link.reply-action-link {
+.lia-panel-message .lia-action-reply.reply-action-link.reply-action-link,
+.constructed-reply-link {
 	padding: 6px 16px;
 	font-size: inherit;
 	font-weight: 600;
 	@mixin border-radius $borderRadiusLarge;
+	margin-bottom: 1.0rem;
 
 	&[data-beforeicon]:before {
 		font-size: 16px;
@@ -342,10 +348,16 @@ input[type="button"] {
 .lia-button-image-kudos.lia-button-image-kudos-enabled .kudos-link,
 .lia-button-image-kudos.lia-button-image-kudos .kudos-link
 {
-	background: $btnNormalBackground;
-	color: $white;
-	border-color: $btnNormalBorder;
-	border-radius: 4px;
+	background: $btnNormalBackground !important;
+	color: $white !important;
+	border-radius: 4px !important;
+	padding: 6px 12px !important;
+	border-bottom: 2px solid $btnNormalBorder !important;
+	&:before,
+	&:after {
+		color: $white !important;
+		font-weight: 600;
+	}
 	> a {
 		color: $white;
 		text-decoration: none;

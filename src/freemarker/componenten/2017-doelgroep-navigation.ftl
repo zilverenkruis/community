@@ -20,7 +20,7 @@
         <#assign mantelzorgCount = mantelzorgPosts.data.count />
     </#if>
 
-    <#assign seniorenPostsQ = "SELECT count(*) FROM messages WHERE labels.text='Senioren' AND depth=0" />
+    <#assign seniorenPostsQ = "SELECT count(*) FROM messages WHERE labels.text='Ouder worden' AND depth=0" />
     <#assign seniorenPosts = rest("2.0", "/search?q=${seniorenPostsQ?url}") />
 
     <#if seniorenPosts?? && seniorenPosts?has_content && seniorenPosts.data?? && seniorenPosts.status == "success">

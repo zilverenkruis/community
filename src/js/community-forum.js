@@ -14,6 +14,7 @@ ZK.constructReplyButton = function($) {
     if (jQuery('.ForumTopicPage .lia-paging-pager .lia-paging-page-previous a.lia-link-navigation').length > 0) {
         var rsslink = jQuery('link[type="application/rss+xml"]');
         var topicclosed = jQuery('.outdated-topic-notification').length > 0;
+        var replylist = jQuery('.lia-component-reply-list');
         if (rsslink.length && !topicclosed) {
             var linkurl = rsslink.attr('href'),
                 startindexboard = linkurl.indexOf('board.id=') + 9,
@@ -30,9 +31,11 @@ ZK.constructReplyButton = function($) {
             btn.classList.add('lia-button');
             btn.classList.add('lia-button-secondary');
             btn.classList.add('reply-action-link');
+            btn.classList.add('constructed-reply-link');
             btn.classList.add('lia-action-reply');
             btn.innerHTML = 'Reageren'
-            jQuery('.lia-component-reply-list').append(btn);
+            replylist.before(btn);
+            replylist.append(btn.cloneNode(true));
         }
     }
 };

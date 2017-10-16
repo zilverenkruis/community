@@ -12,7 +12,7 @@ ZK.displayBlogImages = function() {
     var teasers = jQuery('.hidden.blog-teaser');
 
     teasers.each(function() {
-        var spans = jQuery(this).find('span');
+        var spans = jQuery(this).find('p > span');
         spans.each(function(index) {
             if (index === 1) {
                 var jThis = jQuery(this);

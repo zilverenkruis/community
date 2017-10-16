@@ -1,5 +1,4 @@
 LITHIUM.jQuery(function($) {
-
     $.each(['show', 'hide'], function (i, ev) {
         var el = $.fn[ev];
         $.fn[ev] = function () {
@@ -18,7 +17,6 @@ LITHIUM.jQuery(function($) {
     // ZK.filterDropdown($);
     // ZK.commentCount($);
     ZK.accordion($);
-    // ZK.avatars($);
     ZK.avatars($);
     // ZK.correctBGHeight($);
 
@@ -35,6 +33,9 @@ LITHIUM.jQuery(function($) {
     ZK.reorderFormElements($);
     ZK.setCheckBoxesForLabels($);
     ZK.styleFileInput($);
+    ZK.reorderQandACommentBodyWrapperAndAuthorRankDate($);
+    ZK.hideQuestionOnFollowUpPages($);
+    ZK.doDOMProcessingOnNextPage($);
     ZK.prepareFilters($);
     ZK.getAvatarsByApiCall($);
     ZK.removeCommentForm($);
