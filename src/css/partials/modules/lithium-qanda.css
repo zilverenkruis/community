@@ -34,7 +34,8 @@
     .lia-quilt-forum-qanda-question {
       #actionMenuDropDown {
         position: absolute;
-        right: -20px;
+        right: -6px;
+        top: -30px !important;
       }
       .MessageSubject {
         h2.message-subject a.lia-link-navigation {

@@ -457,6 +457,7 @@ ul.defaultlist {
     .lia-menu-navigation-wrapper {
         right: 10px;
         top: -20px;
+        position: absolute;
         .default-menu-option:before {
             content: '\f141';
             background: none;

@@ -1,6 +1,6 @@
 
 ZK.reorderQandACommentBodyWrapperAndAuthorRankDate = function($) {
-    var bodywrappers = jQuery('.lia-product-comment-body-wrapper');
+    var bodywrappers = jQuery('.lia-quilt-forum-qanda-topic-page .lia-product-comment-body-wrapper');
     if (bodywrappers.length) {
         bodywrappers.each(function() {
             var jThis = jQuery(this);
@@ -17,7 +17,7 @@ ZK.reorderQandACommentBodyWrapperAndAuthorRankDate = function($) {
 };
 
 ZK.hideQuestionOnFollowUpPages = function($) {
-    var prevlink = jQuery('a.lia-link-navigation[rel="prev"]');
+    var prevlink = jQuery('.lia-quilt-forum-qanda-topic-page a.lia-link-navigation[rel="prev"]');
     if (prevlink.length) {
         var question = jQuery('.ForumQandATopicMessageList > .lia-panel-message');
         if (question.length) {
@@ -31,10 +31,10 @@ ZK.runTimedoutAfterMutation = function($) {
         ZK.hideQuestionOnFollowUpPages($);
         ZK.reorderQandACommentBodyWrapperAndAuthorRankDate($);
         ZK.avatars($);
-        }, 2000);
+    }, 2000);
 }
 
-ZK.addClickToNextPrevLinks = function($) {
+ZK.doDOMProcessingOnNextPage = function($) {
     var target = document.querySelector('.lia-quilt-forum-qanda-topic-page > .lia-quilt-row.lia-quilt-row-main-one');
 
     if (typeof target !== 'undefined') {
