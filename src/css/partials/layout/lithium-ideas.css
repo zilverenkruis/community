@@ -562,7 +562,8 @@
 
     .author-avatar.author-avatarbyapicall-wrapper {
         position: absolute;
-        left: 1.5rem;
+        left: -80px;
+        top: 15px;
         .lia-user-profile {
             display: block;
             .lia-user-avatar {
@@ -731,6 +732,14 @@ a.label-link:hover, a.label-link:focus {
 .lia-quilt-2016-section-homepage-denkmee {
     .message-board {
         display: none;
+    }
+}
+
+.lia-idea .lia-quilt-idea-message-item .lia-quilt-row-main {
+    padding: 0 25px 0 93px;
+    .lia-message-subject {
+        padding-top: 1.0rem;
+        max-width: 75%;
     }
 }
 
