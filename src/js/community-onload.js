@@ -33,7 +33,6 @@ LITHIUM.jQuery(function($) {
     ZK.reorderFormElements($);
     ZK.setCheckBoxesForLabels($);
     ZK.styleFileInput($);
-    ZK.reorderQandACommentBodyWrapperAndAuthorRankDate($);
     ZK.hideQuestionOnFollowUpPages($);
     ZK.doDOMProcessingOnNextPage($);
     ZK.prepareFilters($);
