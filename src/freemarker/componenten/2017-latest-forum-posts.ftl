@@ -18,7 +18,7 @@
 </#attempt>
 
 <#assign interactionQ = " AND conversation.style='${interaction}'" />
-<#assign messagesQ = "SELECT id, author, subject, kudos.sum(weight), conversation.last_post_time, post_time, post_time_friendly, view_href FROM messages WHERE depth=0 ${labelQuery} ${interactionQ} ORDER BY conversation.last_post_time DESC LIMIT ${numRows}" />
+<#assign messagesQ = "SELECT id, author, subject, kudos.sum(weight), conversation.last_post_time, post_time, post_time_friendly, view_href, replies.count(*) FROM messages WHERE depth=0 ${labelQuery} ${interactionQ} ORDER BY conversation.last_post_time DESC LIMIT ${numRows}" />
 <#assign messages = rest("2.0", "/search?q=${messagesQ?url}") />
 
 <#if messages?? && messages.data?? && messages.data.items?? && messages.data.items?size gt 0>
@@ -83,14 +83,9 @@
                 <div class="kudos">
                     <span class="unit">${message.kudos.sum.weight}
                 </div>
-                <#assign countQ = "SELECT count(*) FROM messages WHERE parent.id = '${message.id}'">
-                <#assign count = rest("2.0", "/search?q=${countQ?url}") />
-                <#assign nrofreplies = '0' />
-                <#if count?? && count?has_content && count.data?? && count.status == "success">
-                    <div class="replies">
-                        <span class="unit">${count.data.count}</span>
-                    </div>
-                </#if>
+                <div class="replies">
+                    <span class="unit">${message.replies.count}</span>
+                </div>
             </div>
         </div>
     </div>
