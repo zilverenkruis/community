@@ -381,6 +381,10 @@
         display: none;
     }
 
+    .lia-truncate-with-message-link {
+        max-height: none;
+    }
+
     @media screen and (max-width: 991px) {
         .lia-quilt-row-navigation {
             padding: 2.0rem;
