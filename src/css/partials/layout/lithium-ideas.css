@@ -213,7 +213,9 @@
             margin-bottom: 0;
             padding-bottom: 0;
             .author-avatar.author-avatarbyapicall-wrapper {
-                position: static;
+                position: relative;
+                left: auto;
+                top: auto;
                 float: left;
                 .lia-user-profile .lia-user-avatar {
                     width: 100px;
@@ -294,6 +296,9 @@
                     }
                 }
             }
+            .article-labels-title {
+                display: none;
+            }
         }
     }
 
@@ -371,6 +376,15 @@
             font-size: 4.2rem;
         }
     }
+
+    .lia-link-navigation.blog-link.lia-message-comment-post.lia-component-comments-action-comments-link {
+        display: none;
+    }
+
+    .lia-truncate-with-message-link {
+        max-height: none;
+    }
+
     @media screen and (max-width: 991px) {
         .lia-quilt-row-navigation {
             padding: 2.0rem;
@@ -562,7 +576,8 @@
 
     .author-avatar.author-avatarbyapicall-wrapper {
         position: absolute;
-        left: 1.5rem;
+        left: -80px;
+        top: 15px;
         .lia-user-profile {
             display: block;
             .lia-user-avatar {
@@ -666,14 +681,14 @@ a.label-link:hover, a.label-link:focus {
 .ForumTopicPage,
 .IdeaPage {
     .LabelsForArticle .label-link {
-        background-color: transparent;
-        color: #309FD8;
-        padding: .1em 1em;
+        background-color: transparent !important;
+        color: #309FD8 !important;
+        padding: .1em 1em !important;
         margin-bottom: 0;
-        display: inline-block;
+        display: inline-block !important;
         font-weight: bold;
-        font-size: 16px;
-        line-height: 1;
+        font-size: 16px !important;
+        line-height: 1 !important;
         cursor: pointer;
         &:before {
             color: #309FD8;
@@ -695,9 +710,9 @@ a.label-link:hover, a.label-link:focus {
         }
 
         &:hover, &:focus {
-            background-color: transparent;
-            color: #309FD8;
-            text-decoration: underline;
+            background-color: transparent !important;
+            color: #309FD8 !important;
+            text-decoration: underline !important;
         }
     }
 }
@@ -731,6 +746,14 @@ a.label-link:hover, a.label-link:focus {
 .lia-quilt-2016-section-homepage-denkmee {
     .message-board {
         display: none;
+    }
+}
+
+.lia-idea .lia-quilt-idea-message-item .lia-quilt-row-main {
+    padding: 0 25px 0 93px;
+    .lia-message-subject {
+        padding-top: 1.0rem;
+        max-width: 75%;
     }
 }
 

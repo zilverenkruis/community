@@ -225,8 +225,8 @@
         padding: 0;
         .KudosButton {
             position: absolute;
-            top: 97px;
-            left: 81px;
+            top: 117px;
+            left: 74px;
             z-index: 2;
         }
     }

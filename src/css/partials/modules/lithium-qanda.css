@@ -70,6 +70,14 @@
       }
 
     }
+    .lia-product-question-author-rank-date {
+      position: relative;
+    }
+    .lia-message-view-forum-qanda-answer-comment.lia-message-view-display {
+      .lia-menu-navigation-wrapper {
+        right: -10px;
+      }
+    }
   }
   .lia-forum-qanda-message-list-page-position-display {
     margin: 10px 0 10px 10px;

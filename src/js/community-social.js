@@ -2,8 +2,8 @@
 ZK.connectSocialButtons = function($) {
 
 
-    if (LITHIUM.jQuery('#message_social_container').length) {
-        var socialMenu = LITHIUM.jQuery('#message_social_container');
+    if (LITHIUM.jQuery('#message_social').length) {
+        var socialMenu = LITHIUM.jQuery('.message_social_container');
         var socialButton = LITHIUM.jQuery(".btn",socialMenu);
         var target = LITHIUM.jQuery(".message_social_sharing",socialMenu);
         var socialLinks = LITHIUM.jQuery("a",target);
