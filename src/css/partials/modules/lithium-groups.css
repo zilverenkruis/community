@@ -1,0 +1,133 @@
+.GroupDetails {
+    margin-top: 30px;
+}
+
+.lia-component-group-members-list .lia-list-wide {
+    font-size:14px;
+}
+
+.lia-user-rank{
+    font-size:14px;
+}
+
+@media (min-width: 768px) {
+    .lia-component-group-members-list a.lia-button {
+        border-width: 0px;
+        font-weight: normal;
+        text-decoration: underline;
+        color: #0073CF;
+        padding: 0px;
+        background-color: transparent;
+        font-size:14px;
+    }
+
+    .lia-component-group-members-list a.lia-button:hover, 
+    .lia-component-group-members-list a.lia-button:active:focus, 
+    .lia-component-group-members-list a.lia-button:active, 
+    .lia-component-group-members-list a.lia-button:focus {
+        background-color: transparent;
+        border-color: transparent;
+        color: #0073CF;
+    }
+}
+
+#groupmemberslist .lia-button-wrapper .lia-button {
+    min-width: 0px;
+}
+
+.lia-inline-confirm{
+    z-index: 100;
+}
+
+.lia-quilt-group-page .UserList .UserProfileSummary .lia-user-avatar {
+    position: absolute;
+}
+
+.lia-quilt-group-page .UserList thead {
+    display: none;
+}
+
+.GroupMemberListRoleForm .lia-button-Cancel-action {
+    width: 100%;
+}
+
+.GroupMemberListRoleForm .lia-button-wrapper-Cancel-action {
+    padding: 0;
+}
+
+.GroupMemberListRoleForm .lia-button-Submit-action {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.GroupMessagePage #threadnavigator {
+    display: none;
+}
+
+.GroupMessagePage .lia-page-header {
+    padding: 0;
+}
+
+.GroupMessagePage .lia-page-header .PageTitle span {
+    font-size: 22px;
+    color: #002857;
+    font-weight: normal;
+    margin: 12.5px 0;
+}
+
+.GroupMessagePage .lia-quilt-layout-two-column-message > .lia-quilt-row-header .lia-quilt-column-header-right {
+    text-align: left;
+}
+
+.GroupMessagePage .lia-quilt-group-message-page .lia-quilt-row-navigation {
+    margin: auto;
+    max-width: 980px;  
+}
+
+.GroupMessagePage .lia-message-view-group-reply-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
+.GroupMessagePage .lia-message-view-group-topic-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date {
+    display: block;
+    margin-left: 0;
+}
+
+.GroupMessagePage .lia-quilt-group-reply-message .lia-quilt-row-footer {
+    padding: 0;
+    margin: 0;
+}
+
+.GroupMessagePage .lia-quilt-group-reply-message .lia-quilt-column-left {
+    margin: 0;
+}
+
+@media (max-width: 991px){
+    .GroupMessagePage .lia-quilt-group-message-page .lia-quilt-row-main {
+        padding: 2.0rem;
+    }
+}
+
+.GroupInvitesPage .lia-quilt-group-invites-page .lia-quilt-row-main {
+    margin: auto;
+    max-width: 980px;  
+}
+
+.ReplyPage .lia-message-view-group-topic-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date {
+    margin:0;
+}
+
+
+
+
+
+
+#main-footer ul.inline > li{
+    padding-right: 0;
+}
+
+#main-footer a.btn-link{
+    font-size: 14px;
+}
+
+
+
+
+
